@@ -1,0 +1,2168 @@
+resultats
+├── indoor
+│   ├── dirs
+│   ├── ego_motion
+│   │   ├── 0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 2
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 3
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 4
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 5
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── ER_ICP_LM_Iter
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── lent-6-20
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-4-15
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── rapide-3-10
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── ER_max_neighbors_distance
+│   │   ├── 10.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 2.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 4.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 8.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-3.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── ER_Optim_Saturation
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-5.0-1.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-large-7.0-1.5
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-strict-3.0-0.8
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── ER_point_to_edge_match
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-8-3-0.1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-court-6-3-0.1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-tolere-8-3-0.2
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── ER_point_to_plane_match
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-5-0.04-0.1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-tolere-5-0.04-0.2
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-voisins-7-0.04-0.1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── KE_azimuth
+│   │   ├── avant-etroit-315-45
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── avant-large-270-90
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-0-360
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   ├── trajectoires
+│   │   └── tres-large-225-135
+│   │       ├── evo
+│   │       ├── fichiers_csv
+│   │       ├── maps
+│   │       └── ros_bag
+│   │           └── all_bag
+│   ├── KE_blob
+│   │   ├── active-1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── KE_dist_sens
+│   │   ├── eloigne-1.0-300.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-1.0-200.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── rapproche-0.5-200.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── KE_downsampling_max_points
+│   │   ├── 1500
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 2000
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 500
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-1000
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── KE_downsampling_voxel_grid
+│   │   ├── 0.5
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 1.5
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 2.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-1.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── KE_edge
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-0.5-10-20
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── strict-1.0-12-25
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── tolere-0.3-8-15
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   ├── trajectoires
+│   │   ├── tres-strict-2.0-15-30
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   └── tres-tolere-0.2-5-10
+│   │       ├── evo
+│   │       ├── fichiers_csv
+│   │       ├── maps
+│   │       └── ros_bag
+│   │           └── all_bag
+│   ├── KE_input_sampling_ratio
+│   │   ├── 0.3
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 0.5
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 0.75
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-1.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── KF_thresholds
+│   │   ├── dense-0.05-3
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── leger-0.2-8
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-0.1-5
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   ├── trajectoires
+│   │   └── tres-leger-0.5-10
+│   │       ├── evo
+│   │       ├── fichiers_csv
+│   │       ├── maps
+│   │       └── ros_bag
+│   │           └── all_bag
+│   ├── LOC_ICP_LM_Iter
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── lent-5-20
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-3-15
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── rapide-2-10
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── LOC_max_neighbors_distance
+│   │   ├── 12.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 2.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 4.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 8.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-3.0
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── LOC_Optim_Saturation
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-2.0-0.5
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-large-3.0-0.8
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-strict-1.5-0.4
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── LOC_point_to_blob_match
+│   │   ├── dense-14
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── leger-8
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-10
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── LOC_point_to_edge_match
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-9-5-0.1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-court-7-5-0.1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-tolere-9-5-0.2
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── LOC_point_to_plane_match
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-7-0.04-0.1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-tolere-7-0.04-0.2
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── plus-voisins-9-0.04-0.1
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   ├── SLAM_interpolation_model
+│   │   ├── 1-quadratique
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── 2-cubique
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── graphe_metriques_confiance
+│   │   │   └── evo
+│   │   ├── metriques_confidence
+│   │   │   └── evo
+│   │   ├── metriques_evo
+│   │   │   └── evo
+│   │   ├── par-defaut-0-lineaire
+│   │   │   ├── evo
+│   │   │   ├── fichiers_csv
+│   │   │   ├── maps
+│   │   │   └── ros_bag
+│   │   │       └── all_bag
+│   │   ├── summary
+│   │   │   └── evo
+│   │   ├── trajectoire
+│   │   │   └── evo
+│   │   └── trajectoires
+│   └── SLAM_undistortion
+│       ├── 0-aucun
+│       │   ├── evo
+│       │   ├── fichiers_csv
+│       │   ├── maps
+│       │   └── ros_bag
+│       │       └── all_bag
+│       ├── 1-unique
+│       │   ├── evo
+│       │   ├── fichiers_csv
+│       │   ├── maps
+│       │   └── ros_bag
+│       │       └── all_bag
+│       ├── 3-externe
+│       │   ├── evo
+│       │   ├── fichiers_csv
+│       │   ├── maps
+│       │   └── ros_bag
+│       │       └── all_bag
+│       ├── graphe_metriques_confiance
+│       │   └── evo
+│       ├── metriques_confidence
+│       │   └── evo
+│       ├── metriques_evo
+│       │   └── evo
+│       ├── par-defaut-2-rafine
+│       │   ├── evo
+│       │   ├── fichiers_csv
+│       │   ├── maps
+│       │   └── ros_bag
+│       │       └── all_bag
+│       ├── summary
+│       │   └── evo
+│       ├── trajectoire
+│       │   └── evo
+│       └── trajectoires
+└── Outdoor
+    ├── ego_motion
+    │   ├── ego_motion_0
+    │   │   ├── evo
+    │   │   ├── fichiers_csv
+    │   │   ├── graphes_confidence
+    │   │   ├── graphes_pose
+    │   │   ├── maps
+    │   │   └── ros_bag
+    │   │       ├── all_bag
+    │   │       ├── all_bag_sqlite
+    │   │       └── odom_bag
+    │   ├── ego_motion_1
+    │   │   ├── evo
+    │   │   ├── fichiers_csv
+    │   │   ├── graphes_confidence
+    │   │   ├── graphes_pose
+    │   │   ├── maps
+    │   │   └── ros_bag
+    │   │       ├── defaut_bag
+    │   │       ├── defaut_bag_all
+    │   │       ├── defaut_bag_odom
+    │   │       └── rosbag2_2025_06_16-11_08_51
+    │   ├── ego_motion_2
+    │   │   ├── evo
+    │   │   ├── fichiers_csv
+    │   │   ├── graphes_confidence
+    │   │   ├── graphes_pose
+    │   │   ├── maps
+    │   │   └── ros_bag
+    │   │       ├── all_bag
+    │   │       └── odom_bag
+    │   ├── ego_motion_3
+    │   │   ├── evo
+    │   │   ├── fichiers_csv
+    │   │   ├── graphes_confidence
+    │   │   ├── graphes_pose
+    │   │   ├── maps
+    │   │   └── ros_bag
+    │   │       ├── all_bag
+    │   │       └── odom_bag
+    │   ├── graphe_metriques_confiance
+    │   └── metriques_evo
+    │       ├── ego_motion_0
+    │       ├── ego_motion_1
+    │       ├── ego_motion_2
+    │       └── ego_motion_3
+    ├── ego_motion_registration
+    │   ├── ICP_and_LM_interations
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── High_ICP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── High_ICP-High_LM
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── High_LM
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── Low_ICP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── Low_ICP-Low_LM
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── Low_LM
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── metriques-confidence
+    │   │   ├── metriques_evo
+    │   │   ├── Par_defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── summary
+    │   │   └── TRAJECTOIRE
+    │   ├── ICP_and_LM_interations_extreme
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── HI-HP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── HI-LP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── LI-HP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── LI-LP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   └── summary
+    │   ├── ICP_and_LM_interations_leger
+    │   │   ├── DEF
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── HI-HP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── HI-LP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   ├── LI-HP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── LI-LP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   └── summary
+    │   ├── init_and_final_saturation_distance
+    │   │   ├── defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques-confidence
+    │   │   ├── metriques_evo
+    │   │   ├── strict
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── summary
+    │   │   ├── tres-lache
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── ultra-lache
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   └── ultra-strict
+    │   │       ├── evo
+    │   │       ├── fichiers_csv
+    │   │       ├── graphes_confidence
+    │   │       ├── graphes_pose
+    │   │       ├── maps
+    │   │       └── ros_bag
+    │   │           └── all_bag
+    │   ├── max_neighbors_distance
+    │   │   ├── 10
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 2
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 30
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 3.5
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 5
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 7.5
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 10
+    │   │   │   ├── 2
+    │   │   │   ├── 30
+    │   │   │   ├── 3.5
+    │   │   │   ├── 5
+    │   │   │   └── 7.5
+    │   │   ├── summary
+    │   │   └── trajectoires
+    │   └── point_to_edge_and_point_to_plane_matching
+    │       ├── graphe_metriques_confiance
+    │       ├── metriques_confidence
+    │       ├── metriques_evo
+    │       │   ├── Par_defaut
+    │       │   ├── permissif
+    │       │   ├── strict
+    │       │   ├── tres_permissif
+    │       │   └── tres_strict
+    │       ├── Par_defaut
+    │       │   ├── evo
+    │       │   ├── fichiers_csv
+    │       │   ├── graphes_confidence
+    │       │   ├── graphes_pose
+    │       │   ├── maps
+    │       │   └── ros_bag
+    │       │       ├── defaut_bag
+    │       │       ├── defaut_bag_all
+    │       │       ├── defaut_bag_odom
+    │       │       └── rosbag2_2025_06_16-11_08_51
+    │       ├── permissif
+    │       │   ├── evo
+    │       │   ├── fichiers_csv
+    │       │   ├── graphes_confidence
+    │       │   ├── graphes_pose
+    │       │   ├── maps
+    │       │   └── ros_bag
+    │       │       └── all_bag
+    │       ├── strict
+    │       │   ├── evo
+    │       │   ├── fichiers_csv
+    │       │   ├── graphes_confidence
+    │       │   ├── graphes_pose
+    │       │   ├── maps
+    │       │   └── ros_bag
+    │       │       └── all_bag
+    │       ├── summary
+    │       ├── trajectoires
+    │       ├── tres_permissif
+    │       │   ├── evo
+    │       │   ├── fichiers_csv
+    │       │   ├── graphes_confidence
+    │       │   ├── graphes_pose
+    │       │   ├── maps
+    │       │   └── ros_bag
+    │       │       ├── all_bag
+    │       │       ├── defaut_bag
+    │       │       ├── defaut_bag_all
+    │       │       ├── defaut_bag_odom
+    │       │       └── rosbag2_2025_06_16-11_08_51
+    │       └── tres_strict
+    │           ├── evo
+    │           ├── fichiers_csv
+    │           ├── graphes_confidence
+    │           ├── graphes_pose
+    │           ├── maps
+    │           └── ros_bag
+    │               └── all_bag
+    ├── ke
+    │   ├── azimuth_angle
+    │   │   ├── 0-360
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 0-360-par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 225-135
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── 270-90
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── 315-45
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 0_360
+    │   │   │   ├── 225_135
+    │   │   │   ├── 270_90
+    │   │   │   └── 315_45
+    │   │   └── summary
+    │   ├── blob
+    │   │   ├── disabled
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── disabled-par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── enabled
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── disabled
+    │   │   │   └── enabled
+    │   │   └── summary
+    │   ├── distance_to_lidar
+    │   │   ├── 1.0-200
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── 1.5-100
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── 1.5-200-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 1.5-300
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 3.0-200
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques-confidence
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 1.0_200
+    │   │   │   ├── 1.5_100
+    │   │   │   ├── 1.5_200
+    │   │   │   ├── 1.5_300
+    │   │   │   └── 3.0_200
+    │   │   └── summary
+    │   ├── downsampling.max_points
+    │   │   ├── 1000
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 1000-par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 200
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 2000
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 500
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 5000
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 200
+    │   │   │   ├── 2000
+    │   │   │   ├── 500
+    │   │   │   └── 5000
+    │   │   └── summary
+    │   ├── downsampling.voxel_grid_resolution
+    │   │   ├── 0.2
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 0.5
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 1.0
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 2.0
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 5.0
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques-confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 0.2
+    │   │   │   ├── 0.5
+    │   │   │   ├── 1.0
+    │   │   │   ├── 2.0
+    │   │   │   └── 5.0
+    │   │   └── summary
+    │   ├── edge_gaps
+    │   │   ├── 0.5-5-25
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 0.75-8-40
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 1-10-50-par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 1.5-15-75
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 2.0-20-100
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 0.5_5_25
+    │   │   │   ├── 0.75_8_40
+    │   │   │   ├── 1.5_15_75
+    │   │   │   └── 2.0_20_100
+    │   │   └── summary
+    │   ├── input_sampling_ratio
+    │   │   ├── 0.2
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── 0.4
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── 0.6
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── 0.8
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       └── odom_bag
+    │   │   ├── 1.0-par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 0_2
+    │   │   │   ├── 0_4
+    │   │   │   ├── 0_6
+    │   │   │   ├── 0_8
+    │   │   │   └── 1_0
+    │   │   └── summary
+    │   ├── min_beam_surface_angle
+    │   │   ├── 0
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 10
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 10-par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 20
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 30
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 5
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 0
+    │   │   │   ├── 10
+    │   │   │   ├── 20
+    │   │   │   ├── 30
+    │   │   │   └── 5
+    │   │   └── summary
+    │   ├── neighbors_radius
+    │   │   ├── 0.05
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 0.10-par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 0.15
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 0.25
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 0.50
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 0.05
+    │   │   │   ├── 0.10
+    │   │   │   ├── 0.15
+    │   │   │   ├── 0.25
+    │   │   │   └── 0.50
+    │   │   └── summary
+    │   ├── neighbors_side_nb
+    │   │   ├── 10
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 2
+    │   │   │   ├── 2
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 20
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 3
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 50
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 5-par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 10
+    │   │   │   ├── 2
+    │   │   │   ├── 20
+    │   │   │   ├── 3
+    │   │   │   ├── 5
+    │   │   │   └── 50
+    │   │   └── summary
+    │   ├── plane_angle_threshold
+    │   │   ├── 130-150
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 140-135
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 150-120-par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── all_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 165-105
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 175-95
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 130_150
+    │   │   │   ├── 140_135
+    │   │   │   ├── 150_120
+    │   │   │   ├── 165_105
+    │   │   │   └── 175_95
+    │   │   └── summary
+    │   ├── profil_leger
+    │   │   ├── evo
+    │   │   ├── fichiers_csv
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── graphes_confidence
+    │   │   ├── graphes_pose
+    │   │   ├── maps
+    │   │   ├── metriques_evo
+    │   │   │   └── profil_leger
+    │   │   └── ros_bag
+    │   │       ├── all_bag
+    │   │       └── odom_bag
+    │   ├── profil_leger_2
+    │   │   ├── evo
+    │   │   ├── fichiers_csv
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── graphes_confidence
+    │   │   ├── graphes_pose
+    │   │   ├── maps
+    │   │   ├── metriques_evo
+    │   │   │   └── profil_leger_2
+    │   │   └── ros_bag
+    │   │       ├── all_bag
+    │   │       └── odom_bag
+    │   ├── profil_par_defaut
+    │   │   ├── evo
+    │   │   ├── fichiers_csv
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── graphes_confidence
+    │   │   ├── graphes_pose
+    │   │   ├── maps
+    │   │   ├── metriques_evo
+    │   │   │   └── profil_par_defaut
+    │   │   └── ros_bag
+    │   │       ├── defaut_bag
+    │   │       ├── defaut_bag_all
+    │   │       ├── defaut_bag_odom
+    │   │       └── rosbag2_2025_06_16-11_08_51
+    │   ├── profil_robuste
+    │   │   ├── evo
+    │   │   ├── fichiers_csv
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── graphes_confidence
+    │   │   ├── graphes_pose
+    │   │   ├── maps
+    │   │   ├── metriques_evo
+    │   │   │   └── profil_robuste
+    │   │   └── ros_bag
+    │   │       ├── all_bag
+    │   │       └── odom_bag
+    │   └── profil_robuste_2
+    │       ├── evo
+    │       ├── fichiers_csv
+    │       ├── graphe_metriques_confiance
+    │       ├── graphes_confidence
+    │       ├── graphes_pose
+    │       ├── maps
+    │       ├── metriques_evo
+    │       │   └── profil_robuste_2
+    │       └── ros_bag
+    │           ├── all_bag
+    │           └── odom_bag
+    ├── localisation
+    │   ├── ICP_and_LM_interations
+    │   │   ├── DEF
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── DEF (Copie)
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── HI-HP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── HI-LP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── LI-HP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── LI-LP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── DEF
+    │   │   │   ├── HI-HP
+    │   │   │   ├── HI-LP
+    │   │   │   ├── LI-HP
+    │   │   │   └── LI-LP
+    │   │   └── summary
+    │   ├── ICP_and_LM_interations_2
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── High-ICP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── High-LM
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── High-LM-High-ICP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── Low-ICP
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── Low-ICP-Low-LM
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── Low-LM
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── metriques_confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── High-ICP
+    │   │   │   ├── High-LM
+    │   │   │   ├── High-LM-High-ICP
+    │   │   │   ├── Low-ICP
+    │   │   │   ├── Low-ICP-Low-LM
+    │   │   │   ├── Low-LM
+    │   │   │   └── Par_defaut
+    │   │   ├── Par_defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── summary
+    │   │   └── TRAJECTOIRE
+    │   ├── init_and_final_saturation_distance
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques-confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── par-defaut
+    │   │   │   ├── strict
+    │   │   │   ├── tres-lache
+    │   │   │   ├── ultra-lache
+    │   │   │   └── ultra-strict
+    │   │   ├── par-defaut
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── strict
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── summary
+    │   │   ├── tres-lache
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── ultra-lache
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   └── ultra-strict
+    │   │       ├── evo
+    │   │       ├── fichiers_csv
+    │   │       ├── graphes_confidence
+    │   │       ├── graphes_pose
+    │   │       ├── maps
+    │   │       └── ros_bag
+    │   │           └── all_bag
+    │   ├── max_neighbors_distance
+    │   │   ├── 10
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 2
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 30
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 3.5
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── 5.0
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       ├── defaut_bag
+    │   │   │       ├── defaut_bag_all
+    │   │   │       ├── defaut_bag_odom
+    │   │   │       └── rosbag2_2025_06_16-11_08_51
+    │   │   ├── 7.5
+    │   │   │   ├── evo
+    │   │   │   ├── fichiers_csv
+    │   │   │   ├── graphes_confidence
+    │   │   │   ├── graphes_pose
+    │   │   │   ├── maps
+    │   │   │   └── ros_bag
+    │   │   │       └── all_bag
+    │   │   ├── graphe_metriques_confiance
+    │   │   ├── metriques-confidence
+    │   │   ├── metriques_evo
+    │   │   │   ├── 10
+    │   │   │   ├── 2
+    │   │   │   ├── 30
+    │   │   │   ├── 3.5
+    │   │   │   ├── 5.0
+    │   │   │   └── 7.5
+    │   │   └── summary
+    │   ├── point_to_blob_match
+    │   │   └── blob_nb_neighbors
+    │   │       ├── 10
+    │   │       │   ├── evo
+    │   │       │   ├── fichiers_csv
+    │   │       │   ├── graphes_confidence
+    │   │       │   ├── graphes_pose
+    │   │       │   ├── maps
+    │   │       │   └── ros_bag
+    │   │       │       ├── all_bag
+    │   │       │       └── odom_bag
+    │   │       ├── 15
+    │   │       │   ├── evo
+    │   │       │   ├── fichiers_csv
+    │   │       │   ├── graphes_confidence
+    │   │       │   ├── graphes_pose
+    │   │       │   ├── maps
+    │   │       │   └── ros_bag
+    │   │       │       └── all_bag
+    │   │       ├── 25
+    │   │       │   ├── evo
+    │   │       │   ├── fichiers_csv
+    │   │       │   ├── graphes_confidence
+    │   │       │   ├── graphes_pose
+    │   │       │   ├── maps
+    │   │       │   └── ros_bag
+    │   │       │       └── all_bag
+    │   │       ├── 4
+    │   │       │   ├── evo
+    │   │       │   ├── fichiers_csv
+    │   │       │   ├── graphes_confidence
+    │   │       │   ├── graphes_pose
+    │   │       │   ├── maps
+    │   │       │   └── ros_bag
+    │   │       │       └── all_bag
+    │   │       ├── 7
+    │   │       │   ├── evo
+    │   │       │   ├── fichiers_csv
+    │   │       │   ├── graphes_confidence
+    │   │       │   ├── graphes_pose
+    │   │       │   ├── maps
+    │   │       │   └── ros_bag
+    │   │       │       └── all_bag
+    │   │       ├── disabled
+    │   │       │   ├── evo
+    │   │       │   ├── fichiers_csv
+    │   │       │   ├── graphes_confidence
+    │   │       │   ├── graphes_pose
+    │   │       │   ├── maps
+    │   │       │   └── ros_bag
+    │   │       │       ├── defaut_bag
+    │   │       │       ├── defaut_bag_all
+    │   │       │       ├── defaut_bag_odom
+    │   │       │       └── rosbag2_2025_06_16-11_08_51
+    │   │       ├── graphe_metriques_confiance
+    │   │       ├── metriques-confidence
+    │   │       └── metriques_evo
+    │   │           ├── 10
+    │   │           ├── 15
+    │   │           ├── 25
+    │   │           ├── 4
+    │   │           ├── 7
+    │   │           └── disabled
+    │   └── point_to_edge_and_point_to_plane_matching
+    │       ├── graphe_metriques_confiance
+    │       ├── metriques-confidence
+    │       ├── metriques_evo
+    │       │   ├── par-defaut
+    │       │   ├── permissif
+    │       │   ├── strict
+    │       │   ├── tres-permissif
+    │       │   └── tres-strict
+    │       ├── par-defaut
+    │       │   ├── evo
+    │       │   ├── fichiers_csv
+    │       │   ├── graphes_confidence
+    │       │   ├── graphes_pose
+    │       │   ├── maps
+    │       │   └── ros_bag
+    │       │       ├── defaut_bag
+    │       │       ├── defaut_bag_all
+    │       │       ├── defaut_bag_odom
+    │       │       └── rosbag2_2025_06_16-11_08_51
+    │       ├── permissif
+    │       │   ├── evo
+    │       │   ├── fichiers_csv
+    │       │   ├── graphes_confidence
+    │       │   ├── graphes_pose
+    │       │   ├── maps
+    │       │   └── ros_bag
+    │       │       └── all_bag
+    │       ├── strict
+    │       │   ├── evo
+    │       │   ├── fichiers_csv
+    │       │   ├── graphes_confidence
+    │       │   ├── graphes_pose
+    │       │   ├── maps
+    │       │   └── ros_bag
+    │       │       └── all_bag
+    │       ├── summary
+    │       ├── trajectoire
+    │       ├── tres-permissif
+    │       │   ├── evo
+    │       │   ├── fichiers_csv
+    │       │   ├── graphes_confidence
+    │       │   ├── graphes_pose
+    │       │   ├── maps
+    │       │   └── ros_bag
+    │       │       └── all_bag
+    │       └── tres-strict
+    │           ├── evo
+    │           ├── fichiers_csv
+    │           ├── graphes_confidence
+    │           ├── graphes_pose
+    │           ├── maps
+    │           └── ros_bag
+    │               └── all_bag
+    ├── Par_defaut
+    │   ├── evo
+    │   ├── fichiers_csv
+    │   ├── graphes_confidence
+    │   ├── graphes_pose
+    │   ├── maps
+    │   └── ros_bag
+    │       ├── defaut_bag
+    │       ├── defaut_bag_all
+    │       ├── defaut_bag_odom
+    │       └── rosbag2_2025_06_16-11_08_51
+    └── undistortion
+        ├── graphe_metriques_confiance
+        ├── metriques_evo
+        │   ├── undistortion_0
+        │   ├── undistortion_1
+        │   └── undistortion_2
+        ├── undistortion_0
+        │   ├── evo
+        │   ├── fichiers_csv
+        │   ├── graphes_confidence
+        │   ├── graphes_pose
+        │   ├── maps
+        │   └── ros_bag
+        │       ├── all_bag
+        │       └── odom_bag
+        ├── undistortion_1
+        │   ├── evo
+        │   ├── fichiers_csv
+        │   ├── graphes_confidence
+        │   ├── graphes_pose
+        │   ├── maps
+        │   └── ros_bag
+        │       ├── all_bag
+        │       └── odom_bag
+        └── undistortion_2
+            ├── evo
+            ├── fichiers_csv
+            ├── graphes_confidence
+            ├── graphes_pose
+            ├── maps
+            └── ros_bag
+                ├── defaut_bag
+                ├── defaut_bag_all
+                ├── defaut_bag_odom
+                └── rosbag2_2025_06_16-11_08_51
+
+2166 directories
