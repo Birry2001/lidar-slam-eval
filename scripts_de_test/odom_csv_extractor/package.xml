@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd"
+             schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>odom_csv_extractor</name>
+  <version>0.0.0</version>
+  <description>
+    Extrait des topics ROS 2 (Odometry et Confidence) depuis un bag et
+    les exporte en CSV à deux colonnes (timestamp + valeur).
+  </description>
+  <maintainer email="nochi@todo.todo">nochi</maintainer>
+  <license>Apache-2.0</license>
+
+  <depend>rclpy</depend>
+  <depend>rosbag2_py</depend>
+  <depend>nav_msgs</depend>
+  <depend>lidar_slam</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

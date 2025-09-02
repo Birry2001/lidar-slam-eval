@@ -1,0 +1,41 @@
+
+*.mcap
+
+# --- Éditeurs / OS ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.~lock*
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+*.egg-info/
+
+# --- ROS 2 / colcon ---
+build/
+install/
+log/
+.colcon/
+*.log
+
+# --- Données temporaires ---
+tmp/
+temp/
+*.tmp
+*.cache
+
+# --- ROS bags à ignorer ---
+*.db3
+*.bag
+
+
+**/ros_bag/
+

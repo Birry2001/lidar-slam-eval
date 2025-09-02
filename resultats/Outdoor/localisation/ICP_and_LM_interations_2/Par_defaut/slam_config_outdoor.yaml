@@ -1,0 +1,500 @@
+#########################################################
+#  Real-time LiDAR SLAM parameters for outdoor contexts #
+#########################################################
+
+/lidar_slam:
+  ros__parameters:
+
+    # SLAM will compute the pose of tracking_frame in odometry_frame coordinates system, using measurements in input pointcloud frames.
+    odometry_frame: "odom"       # Frame in which SLAM odometry and maps are expressed (default: odom)
+    tracking_frame: "base_link"  # Frame to track (ensure a valid TF tree is published to link input pointcloud frame_id) (default: base_link)
+    wheel_frame: "wheel"         # Frame for the wheel encoder
+    ins_frame : "ins"            # Frame for the INS
+    gps_frame : "gps"            # Frame for the GPS
+
+    lidars_nb: 1             # Number of lidars used. When various lidars used, keypoints extraction parameters need to be specify for each sensor.
+    frames_mode: 1           # The frames collection mode. 0: wait a specific time to collect frames; 1: wait for all lidar devices
+    frames_waiting_time: 0.2 # [s] Time to wait to receive frames
+    # Input LiDAR frames topics, expected as sensor_msgs/PointCloud2 messages with the following fields:
+    # - x, y, z (float): point coordinates
+    # - time (double): time offset to add to the pointcloud header timestamp to get approximate point-wise acquisition timestamp
+    # - intensity (float): intensity/reflectivity of the point
+    # - laser_id (uint16): numeric identifier of the laser ring that shot this point. The lowest/bottom laser ring should be 0, and it should increase upward.
+    # - label (uint8): optional input, not yet used.
+    input: "lidar_points"   # Single LiDAR input (default: lidar_points)
+    # input:  # multi LiDAR inputs
+    #   - "lidar_points_1"  # Main topic: SLAM will be run each time a non-empty frame is received on this topic
+    #   - "lidar_points_2"  # Secondary topics: non-empty frames will be buffered and added to main frame for multi-LiDAR SLAM.
+    #   - "lidar_points_3"
+
+    # SLAM node outputs
+    # If set to true, LidarSlamNode will publish the given output to a topic or to the TF server (default to true if not specified).
+    output:
+      registered_points: true  # Publish registered (and undistorted) SLAM pointcloud as LidarPoint PointCloud2 msg to topic 'slam_registered_points'.
+      pose:
+        odom: true             # Publish SLAM pose as an Odometry msg on 'slam_odom' topic.
+        tf: true               # Publish SLAM pose as a TF from 'odometry_frame' to 'tracking_frame'.
+        predicted_odom: false  # Publish latency-corrected SLAM pose as an Odometry msg on 'slam_predicted_odom' topic (default: false).
+        predicted_tf: false    # Publish latency-corrected SLAM pose as a TF from 'odometry_frame' to '<tracking_frame>_prediction' (default: false).
+        frequency: -1.         # Frequency of output SLAM pose (Hz). For each new scan, all previous poses since last scan
+                               # are published following this frequency. If negative, publish at SLAM frequency.
+      maps:
+        edges: true            # Publish edges keypoints map as a LidarPoint PointCloud2 msg to topic 'maps/edges'.
+        intensity_edges: true  # Publish intensity edges keypoints map as a LidarPoint PointCloud2 msg to topic 'maps/intensity_edges'.
+        planes: true           # Publish planes keypoints map as a LidarPoint PointCloud2 msg to topic 'maps/planes'.
+        blobs: true            # Publish blobs keypoints map as a LidarPoint PointCloud2 msg to topic 'maps/blobs'.
+      submaps:
+        edges: true            # Publish edges keypoints submap as a LidarPoint PointCloud2 msg to topic 'submaps/edges'.
+        intensity_edges: true  # Publish intensity edges keypoints map as a LidarPoint PointCloud2 msg to topic 'maps/intensity_edges'.
+        planes: true           # Publish planes keypoints submap as a LidarPoint PointCloud2 msg to topic 'submaps/planes'.
+        blobs: true            # Publish blobs keypoints submap as a LidarPoint PointCloud2 msg to topic 'submaps/blobs'.
+      # WARNING : The submaps only exist if update_maps is not 0 (the map is not fixed)
+      keypoints:
+        edges: true            # Publish extracted edges keypoints from current frame as a PointCloud2 msg to topic 'keypoints/edges'.
+        intensity_edges: true  # Publish extracted intensity edges keypoints from current frame as a PointCloud2 msg to topic 'keypoints/intensity_edges'.
+        planes: true           # Publish extracted planes keypoints from current frame as a PointCloud2 msg to topic 'keypoints/planes'.
+        blobs: true            # Publish extracted blobs keypoints from current frame as a PointCloud2 msg to topic 'keypoints/blobs'.
+      confidence: true         # Publish confidence estimators as a confidence msg to topic 'slam_confidence'.
+
+    # Save/load SLAM maps for reuse
+    maps:
+
+      # Path prefix of SLAM maps that will be loaded at startup (if empty, no map will be loaded).
+      # This is equivalent to publishing SlamCommand::LOAD_KEYPOINTS_MAPS to 'slam_command' topic at startup.
+      initial_maps: ""
+
+      # Initial SLAM pose in odometry_frame X, Y, Z, roll, pitch, yaw [m, rad] (default: 0, 0, 0, 0, 0, 0)
+      # This could be useful to set if you're using an initial map estimate, but without starting at the map origin
+      initial_pose: [0., 0., 0., 0., 0., 0.]
+
+
+      # PCD file format to use to save SLAM maps: 0) ascii, 1) binary, 2) binary_compressed.
+      # To save keypoints maps, send command SlamCommand::SAVE_KEYPOINTS_MAPS to 'slam_command' topic.
+      export_pcd_format: 2
+
+    external_sensors:
+      max_measures: 10000  # [nb] Maximum number of measures stored for each sensor
+                          # (used to look for synchronized values + to get back in time in play back mode)
+      time_threshold: 0.2 # [s] Maximum time difference between one measure and the studied pose to extrapolate
+                          # and between two measures to interpolate
+                          # /!\ For landmarks this parameter is also used to define a maximum time without seeing a tag
+                          # to reset the absolute pose with new observation (only in the case no poses were initially needed).
+      use_header_time: true # [bool] Use the time from the header messages
+                            # If false, ROS time from message reception is used
+      time_offset: 0.       # [s] Offset to apply on external sensor time data to get lidar time
+      calibration:
+        planar_trajectory: false # [bool] Notify that the trajectory to use to calibrate
+                                 # is planar so a degree of liberty is missing
+        lever_arm: -1.           # [meters] Distance between the SLAM tracked frame position
+                                 # and the external sensor frame position
+                                 # -1 disables the feature
+        window: 5                # [nb] Number of frames to define a window to build a constraint
+                                 # of relative motion when creating the relative pose contraint
+      # Optional GPS position use (if 'gps/enable'=true), subscribing to Odometry msg on 'gps_odom' topic.
+      # It allows to estimate calibration between GPS and SLAM trajectories,
+      # or post-optimize SLAM trajectory with pose graph optimization (PGO).
+      gps:
+        # Optional GPS positions use to calibrate output SLAM pose to world coordinates and/or optimize SLAM trajectory.
+        # If true, subscribes to topic 'gps_odom' (nav_msgs/Odometry), and logs GPS positions during 'logging/timeout' seconds.
+        # (WARNING Can be overridden in launch files with 'gps' arg).
+        enable: false
+
+      # Optional landmark detector (e.g. camera) use
+      landmark_detector:
+        enable: false            # [bool] To receive and use tags
+        weight: 0.               # [float] Weight to apply to one landmark constraint in the local optimization
+                                 # 0 disables the feature
+                                 # It is to be compared to each geometric constraint defined by a keypoint match
+        position_only: true      # [bool] To decide whether to use the whole tag pose (orientation + position)
+                                 # in the optimization or only the position
+        saturation_distance: 0.5 # [m] Saturation distance beyond which the landmark constraint
+                                 # is not taken into account in the local optimization
+        # Two constraints are usable: the relative constraint and the absolute constraint
+        # The absolute constraint requires loading the landmarks absolute pose in the global frame initially
+        # whereas the relative constraint uses the landmarks as common keypoints.
+        # The absolute constraint is:
+        # - enabled if the path is set,
+        # - disabled otherwise.
+        landmarks_file_path: ""  # [path] File loaded at initialization containing the tag absolute poses
+                                 # in the global frame (same as the initial maps)
+                                 # format must be csv with one header line :
+                                 # id,x,y,z,roll,pitch,yaw,cov0,[...],cov35
+                                 # /!\ The order of the elements matters.
+        publish_tags: false      # [bool] To publish the tags as tf
+
+      camera:
+        enable: false            # [bool] To receive and use RGB images from a camera
+        weight: 0.               # [float] Weight to apply to one pixel match constraint in the local optimization
+                                 # 0 disables the feature
+                                 # It is to be compared to each geometric constraint defined by a keypoint match
+        saturation_distance: 10. # [pix] Pixelic distance threshold to discard a pixel match from optical flow
+
+      external_poses:
+        enable: false            # [bool] To receive and use the external poses in SLAM (local opt or pose graph opt)
+        weight: 0.               # [float] Weight to apply to the constraint built on external poses
+        saturation_distance: 10. # [meters] Saturation distance to take the external pose into account
+                                 # in SLAM optimization, pose graph optimization or calibration
+
+      # Wheel encoder appliable for ground wheels for translation
+      # only motion or if relative mode is ON or with cable for any transformation
+      wheel_encoder:
+        enable: false            # [bool] To receive and use a wheel encoder (distance measurement)
+        relative: false          # [bool] To set the constraint from reference or from previous frame
+        weight: 0.               # [float] Weight to apply onto the wheel encoder constraint in the front end optimization
+        saturation_distance: 0.5 # [m] Spatial distance threshold to discard the measurement in SLAM optimization
+        reference: [0., 0., 0.]  # [m, m, m] Reference point for the odometry measure
+                                 # Do not set if relative mode is true, [0.,0.,0.] deactivates the feature
+        direction: [0., 0., 0.]  # [m, m, m] Direction on which the odometry is measured in world frame
+                                 # This applies only if the direction is fixed in time, i.e. the trajectory is a straight line
+                                 # [0.,0.,0.] deactivates the feature: the residual will be 1D
+
+      imu:
+        enable: false            # [bool] To receive and use a imu sensor
+        gravity_weight: 0.       # [double] Weight to apply onto the imu gravity constraint in the local optimization
+
+    graph:
+      g2o_file_name: ""    # [string] File where to store the g2o log info (viewable with g2o_viewer tool)
+      publish_path: false  # [bool] If true, publish optimized SLAM trajectory to 'pgo_slam_path' latched topic
+      covariance_scale: 1. # [float] Scale to apply to SLAM pose covariances in pose graph optimization
+      iterations_nb: 100   # [iterations] Number of iterations to perform to optimize the graph
+      # pose graph constraint
+      constraint:
+        loop_closure: true # [bool] to decide whether or not to add loop closure constraints into pose graph
+        landmark: false    # [bool] to decide whether or not to add landmark constraints into pose graph
+        gps: false         # [bool] to decide whether or not to add GPS constraints into pose graph
+        ext_pose: false    # [bool] to decide whether or not to add external pose constraints into pose graph
+      # Loop closure parameters
+      loop_closure:
+        # Ranges for submaps.
+        # A submap is built with frames in the range
+        # [frame_position + start_range, frame_position + end_range].
+        # Note : when using the click point feature of RVIZ, a match is searched for the current frame which has no frame after.
+        # Therefore, it is adviced to take empty post-mid-submaps (i.e. query_map_end_range = revisited_map_end_range = 0)
+        query_map_start_range: -7.0      # [m] Size (in meters) of the query pre-mid-submap.
+        query_map_end_range: 7.0         # [m] Size (in meters) of the query post-mid-submap.
+        revisited_map_start_range: -7.0  # [m] Size (in meters) of the revisited pre-mid-submap.
+        revisited_map_end_range: 7.0     # [m] Size (in meters) of the revisited post-mid-submap.
+        enable_offset: false             # [bool] Add an offset to loop closure transform prior in case of high drift during the loop.
+        use_submap: true                 # [bool] Enable the registration between two sub maps instead of registering a single frame to a sub map.
+        # Optimization
+        ICP_max_iter: 100                # [iterations] Number of ICP-optim iterations (building ICP matches then optimizing them) to perform.
+        LM_max_iter: 100                 # [iterations] Max number of iterations of the Levenberg-Marquardt optimizer to solve the ICP problem.
+
+    logging:
+      # Optional logging of computed pose, localization covariance and keypoints of each processed frame.
+      #  - A value of 0. will disable logging.
+      #  - A negative value will log all incoming data, without any timeout.
+      #  - A positive value will keep only most recent data, forgetting all previous data older than timeout seconds.
+      # Logged data will be used for pose graph optimization, GPS antenna/LiDAR sensor calibration using GPS data
+      # and when using the recovery mode : if the SLAM is lost, it will recover an older map from the logged information.
+      timeout: 1800.  # [s]
+
+      # How to store pointclouds data during keypoints logging (if logging_timeout != 0):
+      #  0) PCL pointcloud                    (in RAM,     no compression,      no overhead)
+      #  1) Octree compressed binary data     (in RAM,    ~5x compression,   ~3 ms overhead)
+      #  2) Ascii format PCD file             (on disk, ~0.6x compression,   ~5 ms overhead)
+      #  3) Binary format PCD file            (on disk, ~1.3x compression, ~0.3 ms overhead)
+      #  4) Binary compressed format PCD file (on disk, ~1.5x compression, ~0.8 ms overhead)
+      storage_type: 0
+
+      # Decide whether to log all frames or only keyframes
+      # /!\ All log frames are used in post graph processing
+      only_keyframes: false # [bool]
+
+    # SLAM parameters (see Slam.h for description). Comment parameter to get default value.
+    slam:
+
+      # General parameters
+      n_threads: 5      # [threads] Max number of threads to use for parallel processing
+      2d_mode: false    # [bool] Optimize only 2D pose (X, Y, rZ) of tracking_frame relatively to odometry_frame.
+
+      # How to estimate Ego-Motion (approximate relative motion since last frame).
+      # The ego-motion step aims to give a fast and approximate initialization of new
+      # frame world pose to ensure faster and more precise convergence in Localization step.
+      #  0) No ego-motion step is performed : relative motion is Identity, new estimated
+      #     Tworld is equal to previous Tworld. Fast, but may lead to unstable and imprecise
+      #     Localization step if motion is important.
+      #  1) Previous motion is extrapolated to estimate new Tworld pose from the
+      #     2 previous poses. Fast and precise if motion is roughly constant and continuous
+      #  2) Estimate Trelative (and therefore Tworld) by globally registering new frame
+      #     on previous frame. Slower and need textured enough environment, but do not
+      #     rely on constant motion hypothesis.
+      #  3) Previous motion is extrapolated to estimate new Tworld pose from
+      #     the 2 previous poses. Then this estimation is refined by globally registering
+      #     new frame on previous frame. Slower and need textured enough environment,
+      #     but should be more precise and rely less on constant motion hypothesis.
+      #  4) The prior motion is estimated using the external poses
+      #  5) The prior motion is estimated using the external poses when available and extrapolation otherwise
+      ego_motion: 1
+
+      # Undistortion mode, to correct rolling shutter distortion during frame acquisition.
+      # The undistortion should greatly improve the accuracy for smooth motions,
+      # but might be unstable for high-frequency motions.
+      #  0) NONE: no undistortion is performed :
+      #     - End scan pose is optimized using rigid registration of raw scan and map.
+      #     - Raw input scan is added to map.
+      #  1) ONCE: undistortion is performed only one using estimated ego-motion:
+      #     - Begin and end scan poses are interpolated using estimated ego-motion.
+      #     - Scan is undistorted between begin and end scan poses.
+      #     - Scan pose is iteratively optimized using rigid registration of undistorted scan and map.
+      #     - Undistorted scan is added to map.
+      #  2) REFINED: undistortion is iteratively refined using optimized ego-motion:
+      #     - Begin and end scan poses are interpolated using ego-motion.
+      #     - Scan is undistorted between begin and end scan poses.
+      #     - Scan pose is optimized using rigid registration of undistorted scan and map.
+      #     - Iterate the three previous steps with updated ego-motion and poses.
+      #     - Undistorted scan is added to map.
+      #  3) EXTERNAL: undistortion is performed using the external poses provided only once
+      undistortion: 2
+
+      # Verbosity level :
+      #  0) print errors, warnings or one time info
+      #  1) 0 + frame number, total frame processing time
+      #  2) 1 + extracted features, used keypoints, localization variance, ego-motion and localization summary
+      #  3) 2 + sub-problems processing duration
+      #  4) 3 + ceres optimization summary
+      #  5) 4 + logging/maps memory usage
+      verbosity: 3
+
+      # Determine the interpolation model which allows to get a pose (position + orientation)
+      # at a specific timestamp from a list of stamped poses.
+      # This interpolation is used in ego motion, undistortion and when using
+      # external poses, raw IMU data or a landmark detector.
+      # The different interpolation models available are :
+      # 0) LINEAR:     linear interpolation between 2 poses
+      # 1) QUADRATIC : quadratic spline from a set of 3 poses
+      # 2) CUBIC :     cubic spline from a set of 4 poses
+      interpolation_model: 0
+
+      # ICP and LM parameters for Ego-Motion registration step (used only if ego_motion is 2 or 3)
+      ego_motion_registration:
+        # Match
+        max_neighbors_distance: 5.      # [m] Max distance allowed between a current keypoint and its neighbors.
+        # Point to edge match
+        edge_nb_neighbors: 8            # [>=2] Initial number of edge neighbors to extract, that will be filtered out to keep best candidates.
+        edge_min_nb_neighbors: 3        # [>=2] Min number of resulting filtered edge neighbors (max 1 per scan line) to approximate the corresponding line model.
+        edge_max_model_error: 0.2       # [m] Max RMSE allowed between neighborhood and its fitted line model to create a point to line constraint.
+        # Point to plane match
+        plane_nb_neighbors: 5           # [>=3] Number of plane neighbors to extract to approximate the corresponding plane model.
+        planarity_threshold: 0.04       # [0-1] Min ratio between the 2 highest eigen values of the plane neighborhood to create a point to plane constraint :
+                                        # OK if l1/l2 > planarity_threshold (with l2>l1>l0)
+        plane_max_model_error: 0.1      # [m] Max RMSE allowed between neighborhood and its fitted plane model to create a point to plane constraint.
+        # Optimization
+        ICP_max_iter: 4                 # [iterations] Number of ICP-optim iterations (building ICP matches then optimizing them) to perform.
+        LM_max_iter: 15                 # [iterations] Max number of iterations of the Levenberg-Marquardt optimizer to solve the ICP problem.
+        init_saturation_distance: 5.    # [m] Initial distance beyond which residuals are saturated using Tukey loss to limit outlier contribution.
+        final_saturation_distance: 1.   # [m] Final distance beyond which residuals are saturated using Tukey loss to limit outlier contribution.
+      # ICP and LM parameters for Localization step
+      localization:
+        # Match
+        max_neighbors_distance: 5.      # [m] Max distance allowed between a current keypoint and its neighbors.
+        # Point to edge match
+        edge_nb_neighbors: 9            # [>=2] Initial number of edge neighbors to extract, that will be filtered out to keep best candidates.
+        edge_min_nb_neighbors: 5        # [>=2] Min number of resulting filtered edge neighbors (close to best line candidate) to approximate the corresponding line model.
+        edge_max_model_error: 0.2       # [m] Max RMSE allowed between neighborhood and its fitted line model to create a point to line constraint.
+        # Point to plane match
+        plane_nb_neighbors: 7           # [>=3] Number of plane neighbors to extract to approximate the corresponding plane model.
+        planarity_threshold: 0.04       # [0-1] Min ratio between the 2 highest eigen values of the plane neighborhood to create a point to plane constraint :
+                                        # OK if l1/l2 > planarity_threshold (with l2>l1>l0)
+        plane_max_model_error: 0.1      # [m] Max RMSE allowed between neighborhood and its fitted plane model to create a point to plane constraint.
+        # Point to blob match
+        blob_nb_neighbors: 10           # [>=4] Number of blob neighbors to extract to approximate the corresponding ellipsoid model.
+        # Optimization
+        ICP_max_iter: 3                 # [iterations] Number of ICP-optim iterations (building ICP matches then optimizing them) to perform.
+        LM_max_iter: 15                 # [iterations] Max number of iterations of the Levenberg-Marquardt optimizer to solve the ICP problem.
+        init_saturation_distance: 2.    # [m] Initial distance beyond which residuals are saturated using Tukey loss to limit outlier contribution.
+        final_saturation_distance: 0.5  # [m] Final distance beyond which residuals are saturated using Tukey loss to limit outlier contribution.
+
+      # Keyframes parameters. Only keyframes points are added to the maps.
+      keyframes:
+        distance_threshold: 0.5  # [m] Min distance to travel since last KF to add a new one
+        angle_threshold: 5.      # [°] Min angle to rotate since last KF to add a new one
+      # WARNING : these parameters are linked to the confidence threshold parameter
+      # If they are reduced, the confidence threshold may need to be increased to not take too many moving objects
+
+      # Confidence estimators on pose output
+      confidence:
+        window: 10                   # [frames] Nb of frames to define a window to denoise and derivate values
+        overlap:                     # Estimate how much the current scan is well registered on the current maps.
+          sampling_ratio: 1.0         # [0-1] Ratio of points to compute overlap on to save some time.
+                                     # 1 uses all points, 0.5 uses 1 point over 2, etc., 0 disables overlap computation.
+          gap_threshold: 0.04        # [0-1] Maximum authorized overlap gap, a greater gap might trigger an failure detection
+
+        motion_limits:               # Physical constraints on motion to check pose credibility.
+          acceleration: [.inf, .inf] # [linear_acc (m/s2), angular_acc (°/s2)] Acceleration limits.
+          velocity:     [.inf, .inf] # [linear_vel (m/s ), angular_vel (°/s )] Velocity limits.
+          pose:         [.inf, .inf] # [translation (m  ), orientation (°   )] Pose limits.
+
+        position_error:              # Maximum error on position estimated from optimization covariance
+          threshold: 0.15            # [m] Threshold to consider SLAM is OK. If the error is g.t. this threshold,
+                                     # a failure detection might be triggered
+
+        failure_detector:
+          enable: true              # [bool] Enable the failure detection
+          recovery_time: 1.          # [s] In case of failure, duration to come back in time to previous state
+
+      # Keypoints maps, saved as downsampled voxel grids
+      voxel_grid:
+        # How to update the maps:
+        #  0) No update is performed. Initial maps are kept as they are.
+        #     WARNING: Do not set this parameter to 0 if no initial maps have been loaded!
+        #  1) New keypoints are added if they lie in a free voxel relatively to an initial map
+        #  2) All new keypoints are added and the map is updated (initial keypoints can disappear)
+        #     1) and 2) will be equivalent if no initial maps have been loaded.
+        # This is equivalent to publishing :
+        #          *SlamCommand::DISABLE_SLAM_MAP_UPDATE
+        #          *SlamCommand::ENABLE_SLAM_MAP_EXPANSION
+        #          *SlamCommand::ENABLE_SLAM_MAP_UPDATE
+        # to 'slam_command' topic at startup.
+        update_maps: 2
+        # How to extract a submap to reduce the search:
+        #  0) Extract the bounding box of the current frame.
+        #     This makes submap extraction fast but more points might be implied in the search.
+        #  1) Extract the profile of the current frame (implied voxels + direct neighboring voxels)
+        #     This makes the submap extraction heavier but less points might be implied in the search.
+        #     This is generally a bit longer (<3ms) but can solve some local minima issues and is a bit more memory efficient.
+        submap_extraction_mode: 0
+        leaf_size:
+          edges: 0.3             # [m] Resolution used to downsample the edges map with a VoxelGrid filter.
+          intensity_edges: 0.2   # [m] Resolution used to downsample the edges map with a VoxelGrid filter.
+          planes: 0.6            # [m] Resolution used to downsample the planes map with a VoxelGrid filter.
+          blobs: 0.3             # [m] Resolution used to downsample the blobs map with a VoxelGrid filter.
+        # WARNING: the leaf sizes are linked with the confidence threshold parameter
+        # if they are reduced the confidence threshold may need to by reduced as well to extract enough target keypoints
+        size: 50                 # [voxels] Size of the voxel grid used to store keypoints maps : n*n*n voxels.
+        resolution: 10.          # [m/voxel] Resolution of a voxel.
+        # The sampling modes allow to decide which point to keep when downsampling the map using a voxel grid.
+        # 0) Keep the first point scanned in the voxel,
+        # 1) Get the last point scanned in the voxel,
+        # 2) Select the point with max intensity,
+        # 3) Select the closest point to the voxel center,
+        # 4) Compute the centroid of all points laying in the voxel.
+        sampling_mode:
+          edge: 2
+          intensity_edge: 2
+          plane: 2
+          blob: 2
+        decaying_threshold: -1  # [s] Time duration after which to eliminate a not fixed keypoint from the map.
+        min_frames_per_voxel: 2 # [frames] Minimum number of frames that must have reached a map voxel
+                                # to consider the voxel contains a target keypoint.
+                                # It is used to reject moving objects from the map
+                                # WARNING: this parameter may need to be adapted to the velocity of the robot,
+                                # and the parameterization : see leaf_size keyframes parameters for more details
+
+      # Keypoint extractor for each LiDAR sensor
+      ke:
+        # Single LiDAR input
+        # The extractor modes allow to decide which keypoint extractor to choose
+        # 0) Sparse extractor called SpinningSensorKeypointExtractor. Convenient for all lidars.
+        # 1) Dense extractor called DenseSpinningSensorKeypointExtractor. Better option for lidars with 64 and 128 lasers.
+        extractor_mode: 0
+        enable:
+          edge: true
+          intensity_edge: true
+          plane: true
+          blob: false
+        input_sampling_ratio: 1.           # [0-1] Ratio of points from which to extract the keypoints (for computation time issues)
+        min_distance_to_sensor: 1.5        # [m] Minimal point to sensor distance to consider a point as valid.
+        max_distance_to_sensor: 200.       # [m] Maximal point to sensor distance to consider a point as valid.
+        min_azimuth: 0.                    # [°] Minimal azimuth angle to consider the point as keypoint. Right thumb rule between min/max azimuth angles.
+        max_azimuth: 360.                  # [°] Maximal azimuth angle to consider the point as keypoint. Right thumb rule between min/max azimuth angles.
+        min_beam_surface_angle: 10.        # [°] Minimal angle between the point surface and the laser beam to consider a point as valid.
+        neighbors_side_nb: 5               # [>1] Minimum number of neighbors used on each side to estimate curvature and detect edges and planes.
+        neighbors_radius: 0.10             # [m] Minimum radius to define a neighborhood on each side of the studied point.
+        plane_angle_threshold: 150.        # [°] Threshold upon angle between left and right lines to consider a point as plane.
+                                           # It is used with its absolute sine value in SSKE for planes,
+                                           # with its cosine value in DSSKE for planes and
+                                           # with its opposite cosine value in DSSKE to filter too sharp edges.
+        edge_angle_threshold: 120.         # [°] Threshold upon angle between left and right lines to consider a point as edge.
+                                           # It is used with its absolute sine value in SSKE for edges and
+                                           # with its cosine value in DSSKE for edges.
+        edge_depth_gap_threshold: 1.       # [m] Threshold upon depth gap in neighborhood to select an edge keypoint.
+        edge_nb_gap_points: 10             # [points] Minimum number of successive missing points to consider a space gap.
+        edge_intensity_gap_threshold: 50.  # [0-255] Threshold upon intensity gap to select an edge keypoint.
+        downsampling:
+          max_points: 1000                   # [points] Maximum number of keypoints of each type to extract.
+          voxel_grid_resolution: 2.          # [m/voxel] Size of a voxel to downsample the extracted keypoints.
+          # Additional parameters for the dense extractor (DSSKE)
+          patch_size: 32                   # [nb] Size of a patch. It will contain at much patch_size*patch_size keypoints candidates.
+          sampling_mode: 0                 # {0, 1} Sampling mode for keypoint extraction :
+                                           # 0) Patch mode --> for a 2D grid built on the vertex map.
+                                           # 1) Voxel mode --> for a 3D grid built on the scan cloud, use voxel_grid_resolution common to SSKE.
+        # # Multi LiDAR inputs
+        # # The multiple devices to use for SLAM.
+        # # A keypoint extractor will be initialized for each device.
+        # device_ids:
+        #   - "lidar_frame_0"
+        #   - "lidar_frame_1"
+        # # Keypoint extractors parameters for each LiDAR sensor "device_<device_id>"
+        # device_lidar_frame_0:
+        #   # The extractor modes allow to decide which keypoint extractor to choose
+        #   # 0) Sparse extractor called SpinningSensorKeypointExtractor. Convenient for all lidars.
+        #   # 1) Dense extractor called DenseSpinningSensorKeypointExtractor. Better option for lidars with 64 and 128 lasers.
+        #   extractor_mode: 0
+        #   enable:
+        #     edge: true
+        #     intensity_edge: true
+        #     plane: true
+        #     blob: false
+        #   input_sampling_ratio: 0.6          # [0-1] Ratio of points from which to extract the keypoints (for computation time issues)
+        #   min_distance_to_sensor: 1.5        # [m] Minimal point to sensor distance to consider a point as valid.
+        #   max_distance_to_sensor: 200.       # [m] Maximal point to sensor distance to consider a point as valid.
+        #   min_azimuth: -45.                  # [°] Minimal azimuth angle to consider the point as keypoint. Right thumb rule between min/max azimuth angles.
+        #   max_azimuth: 45.                   # [°] Maximal azimuth angle to consider the point as keypoint. Right thumb rule between min/max azimuth angles.
+        #   min_beam_surface_angle: 10.        # [°] Minimal angle between the point surface and the laser beam to consider a point as valid.
+        #   neighbors_side_nb: 5               # [>1] Minimum number of neighbors used on each side to estimate curvature and detect edges and planes.
+        #   neighbors_radius: 0.10             # [m] Minimum radius to define a neighborhood on each side of the studied point.
+        #   plane_angle_threshold: 150.        # [°] Threshold upon angle between left and right lines to consider a point as plane.
+        #                                      # It is used with its absolute sine value in SSKE for planes,
+        #                                      # with its cosine value in DSSKE for planes and
+        #                                      # with its opposite cosine value in DSSKE to filter too sharp edges.
+        #   edge_angle_threshold: 120.         # [°] Threshold upon angle between left and right lines to consider a point as edge.
+        #                                      # It is used with its absolute sine value in SSKE for edges and
+        #                                      # with its cosine value in DSSKE for edges.
+        #   edge_depth_gap_threshold: 1.5      # [m] Threshold upon depth gap in neighborhood to select an edge keypoint.
+        #   edge_nb_gap_points: 10             # [points] Minimum number of successive missing points to consider a space gap.
+        #   edge_intensity_gap_threshold: 30.  # [0-255] Threshold upon intensity gap to select an edge keypoint.
+        #   downsampling:
+        #     max_points: 1000                 # [points] Maximum number of keypoints of each type to extract.
+        #     voxel_grid_resolution: 1.        # [m/voxel] Size of a voxel to downsample the extracted keypoints.
+        #     # Additional parameters for the dense extractor (DSSKE)
+        #     patch_size: 32                   # [nb] Size of a patch. It will contain at much patch_size*patch_size keypoints candidates.
+        #     sampling_mode: 0                 # {0, 1} Sampling mode for keypoint extraction :
+        #                                      # 0) Patch mode --> for a 2D grid built on the vertex map.
+        #                                      # 1) Voxel mode --> for a 3D grid built on the scan cloud, use voxel_grid_resolution common to SSKE.
+        # device_lidar_frame_1:
+        #   # The extractor modes allow to decide which keypoint extractor to choose
+        #   # 0) Sparse extractor called SpinningSensorKeypointExtractor. Convenient for all lidars.
+        #   # 1) Dense extractor called DenseSpinningSensorKeypointExtractor. Better option for lidars with 64 and 128 lasers.
+        #   extractor_mode: 0
+        #   enable:
+        #     edge: true
+        #     intensity_edge: true
+        #     plane: true
+        #     blob: false
+        #   input_sampling_ratio: 1.           # [0-1] Ratio of points from which to extract the keypoints (for computation time issues)
+        #   min_distance_to_sensor: 1.5        # [m] Minimal point to sensor distance to consider a point as valid.
+        #   max_distance_to_sensor: 200.       # [m] Maximal point to sensor distance to consider a point as valid.
+        #   min_azimuth: -45.                  # [°] Minimal azimuth angle to consider the point as keypoint. Right thumb rule between min/max azimuth angles.
+        #   max_azimuth: 45.                   # [°] Maximal azimuth angle to consider the point as keypoint. Right thumb rule between min/max azimuth angles.
+        #   min_beam_surface_angle: 10.        # [°] Minimal angle between the point surface and the laser beam to consider a point as valid.
+        #   neighbors_side_nb: 5               # [>1] Minimum number of neighbors used on each side to estimate curvature and detect edges and planes.
+        #   neighbors_radius: 0.10             # [m] Minimum radius to define a neighborhood on each side of the studied point.
+        #   plane_angle_threshold: 150.        # [°] Threshold upon angle between left and right lines to consider a point as plane.
+        #                                      # It is used with its absolute sine value in SSKE for planes,
+        #                                      # with its cosine value in DSSKE for planes and
+        #                                      # with its opposite cosine value in DSSKE to filter too sharp edges.
+        #   edge_angle_threshold: 120.         # [°] Threshold upon angle between left and right lines to consider a point as edge.
+        #                                      # It is used with its absolute sine value in SSKE for edges and
+        #                                      # with its cosine value in DSSKE for edges.
+        #   edge_depth_gap_threshold: 1.5      # [m] Threshold upon depth gap in neighborhood to select an edge keypoint.
+        #   edge_nb_gap_points: 10             # [points] Minimum number of successive missing points to consider a space gap.
+        #   edge_intensity_gap_threshold: 200. # [0-255] Threshold upon intensity gap to select an edge keypoint.
+        #   downsampling:
+        #     max_points: 1000                 # [points] Maximum number of keypoints of each type to extract.
+        #     voxel_grid_resolution: 1.        # [m/voxel] Size of a voxel to downsample the extracted keypoints.
+        #     # Additional parameters for the dense extractor (DSSKE)
+        #     patch_size: 32                   # [nb] Size of a patch. It will contain at much patch_size*patch_size keypoints candidates.
+        #     sampling_mode: 0                 # {0, 1} Sampling mode for keypoint extraction :
+        #                                      # 0) Patch mode --> for a 2D grid built on the vertex map.
+        #                                      # 1) Voxel mode --> for a 3D grid built on the scan cloud, use voxel_grid_resolution common to SSKE.

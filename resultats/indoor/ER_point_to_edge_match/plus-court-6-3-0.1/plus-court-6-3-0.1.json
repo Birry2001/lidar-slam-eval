@@ -1,0 +1,5 @@
+{
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.edge_nb_neighbors": 6,
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.edge_min_nb_neighbors": 3,
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.edge_max_model_error": 0.1
+}

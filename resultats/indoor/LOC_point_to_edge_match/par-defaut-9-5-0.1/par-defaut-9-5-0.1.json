@@ -1,0 +1,5 @@
+{
+  "/lidar_slam.ros__parameters.slam.localization.edge_nb_neighbors": 9,
+  "/lidar_slam.ros__parameters.slam.localization.edge_min_nb_neighbors": 5,
+  "/lidar_slam.ros__parameters.slam.localization.edge_max_model_error": 0.1
+}

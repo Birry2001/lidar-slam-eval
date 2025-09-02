@@ -1,0 +1,1122 @@
+{
+  "ego_motion/par-defaut-1": {
+    "steps": {
+      "override_yaml": 0.06411600112915039,
+      "record_bag": 3.000474691390991,
+      "launch_slam": 3.001084327697754,
+      "play_lidar": 155.63815069198608,
+      "stop_restore": 3.506117582321167
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ego_motion/0": {
+    "steps": {
+      "override_yaml": 0.05722379684448242,
+      "record_bag": 3.000709056854248,
+      "launch_slam": 3.0010430812835693,
+      "play_lidar": 141.175687789917,
+      "stop_restore": 3.5568861961364746
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ego_motion/2": {
+    "steps": {
+      "override_yaml": 1.4660048484802246,
+      "record_bag": 3.001286506652832,
+      "launch_slam": 3.001251220703125,
+      "play_lidar": 141.0150158405304,
+      "stop_restore": 3.4580304622650146
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ego_motion/3": {
+    "steps": {
+      "override_yaml": 0.060520172119140625,
+      "record_bag": 3.0006818771362305,
+      "launch_slam": 3.0009825229644775,
+      "play_lidar": 140.87204694747925,
+      "stop_restore": 3.404646396636963
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ego_motion/4": {
+    "steps": {
+      "override_yaml": 0.058202266693115234,
+      "record_bag": 3.0007214546203613,
+      "launch_slam": 3.001389265060425,
+      "play_lidar": 140.88415813446045,
+      "stop_restore": 3.4048359394073486
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ego_motion/5": {
+    "steps": {
+      "override_yaml": 0.05639338493347168,
+      "record_bag": 3.0006937980651855,
+      "launch_slam": 3.0013675689697266,
+      "play_lidar": 141.17139840126038,
+      "stop_restore": 3.303846836090088
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_max_neighbors_distance/par-defaut-3.0": {
+    "steps": {
+      "override_yaml": 0.05580902099609375,
+      "record_bag": 3.0003724098205566,
+      "launch_slam": 3.0013270378112793,
+      "play_lidar": 141.48789024353027,
+      "stop_restore": 3.416260004043579
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_max_neighbors_distance/2.0": {
+    "steps": {
+      "override_yaml": 0.05896759033203125,
+      "record_bag": 3.0007190704345703,
+      "launch_slam": 3.0013206005096436,
+      "play_lidar": 140.9617578983307,
+      "stop_restore": 3.3533174991607666
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_max_neighbors_distance/4.0": {
+    "steps": {
+      "override_yaml": 0.06107640266418457,
+      "record_bag": 3.00073504447937,
+      "launch_slam": 3.0010018348693848,
+      "play_lidar": 141.17637968063354,
+      "stop_restore": 3.355156421661377
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_max_neighbors_distance/8.0": {
+    "steps": {
+      "override_yaml": 0.05616450309753418,
+      "record_bag": 3.0007262229919434,
+      "launch_slam": 3.001319169998169,
+      "play_lidar": 140.96294736862183,
+      "stop_restore": 3.3608012199401855
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_max_neighbors_distance/10.0": {
+    "steps": {
+      "override_yaml": 0.0573577880859375,
+      "record_bag": 3.000702142715454,
+      "launch_slam": 3.0013132095336914,
+      "play_lidar": 140.9794478416443,
+      "stop_restore": 3.6688528060913086
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_point_to_edge_match/par-defaut-8-3-0.1": {
+    "steps": {
+      "override_yaml": 0.058804988861083984,
+      "record_bag": 3.000386953353882,
+      "launch_slam": 3.0010359287261963,
+      "play_lidar": 140.96000361442566,
+      "stop_restore": 3.408097743988037
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_point_to_edge_match/plus-court-6-3-0.1": {
+    "steps": {
+      "override_yaml": 0.05880403518676758,
+      "record_bag": 3.0007362365722656,
+      "launch_slam": 3.001380205154419,
+      "play_lidar": 140.96925330162048,
+      "stop_restore": 3.6548831462860107
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_point_to_edge_match/plus-tolere-8-3-0.2": {
+    "steps": {
+      "override_yaml": 0.05713510513305664,
+      "record_bag": 3.0006701946258545,
+      "launch_slam": 3.0013647079467773,
+      "play_lidar": 140.9660472869873,
+      "stop_restore": 3.5562589168548584
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_point_to_plane_match/par-defaut-5-0.04-0.1": {
+    "steps": {
+      "override_yaml": 0.8152680397033691,
+      "record_bag": 3.0014092922210693,
+      "launch_slam": 3.001011848449707,
+      "play_lidar": 141.09813451766968,
+      "stop_restore": 3.5550124645233154
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_point_to_plane_match/plus-voisins-7-0.04-0.1": {
+    "steps": {
+      "override_yaml": 0.05588483810424805,
+      "record_bag": 3.000725507736206,
+      "launch_slam": 3.0014231204986572,
+      "play_lidar": 140.98418712615967,
+      "stop_restore": 3.3540852069854736
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_point_to_plane_match/plus-tolere-5-0.04-0.2": {
+    "steps": {
+      "override_yaml": 0.05905437469482422,
+      "record_bag": 3.000777006149292,
+      "launch_slam": 3.000866413116455,
+      "play_lidar": 140.8831388950348,
+      "stop_restore": 3.5605924129486084
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_ICP_LM_Iter/par-defaut-4-15": {
+    "steps": {
+      "override_yaml": 0.9398672580718994,
+      "record_bag": 3.001343011856079,
+      "launch_slam": 3.001248359680176,
+      "play_lidar": 141.20378804206848,
+      "stop_restore": 3.4553983211517334
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_ICP_LM_Iter/rapide-3-10": {
+    "steps": {
+      "override_yaml": 0.057816267013549805,
+      "record_bag": 3.0005927085876465,
+      "launch_slam": 3.0012571811676025,
+      "play_lidar": 140.9639585018158,
+      "stop_restore": 3.3560163974761963
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_ICP_LM_Iter/lent-6-20": {
+    "steps": {
+      "override_yaml": 0.708627462387085,
+      "record_bag": 3.001297950744629,
+      "launch_slam": 3.0006179809570312,
+      "play_lidar": 140.8860466480255,
+      "stop_restore": 3.5072436332702637
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_Optim_Saturation/par-defaut-5.0-1.0": {
+    "steps": {
+      "override_yaml": 0.05817365646362305,
+      "record_bag": 3.000365972518921,
+      "launch_slam": 3.001028060913086,
+      "play_lidar": 141.16715812683105,
+      "stop_restore": 3.619866371154785
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_Optim_Saturation/plus-strict-3.0-0.8": {
+    "steps": {
+      "override_yaml": 0.25612449645996094,
+      "record_bag": 3.0012381076812744,
+      "launch_slam": 3.001344919204712,
+      "play_lidar": 140.89190649986267,
+      "stop_restore": 3.456195831298828
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "ER_Optim_Saturation/plus-large-7.0-1.5": {
+    "steps": {
+      "override_yaml": 0.0564417839050293,
+      "record_bag": 3.0007221698760986,
+      "launch_slam": 3.0010221004486084,
+      "play_lidar": 141.07463002204895,
+      "stop_restore": 3.354018449783325
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_max_neighbors_distance/par-defaut-3.0": {
+    "steps": {
+      "override_yaml": 0.05675029754638672,
+      "record_bag": 3.000614643096924,
+      "launch_slam": 3.0013434886932373,
+      "play_lidar": 141.17283248901367,
+      "stop_restore": 3.404310464859009
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_max_neighbors_distance/2.0": {
+    "steps": {
+      "override_yaml": 0.061267852783203125,
+      "record_bag": 3.0005099773406982,
+      "launch_slam": 3.001056432723999,
+      "play_lidar": 140.8803768157959,
+      "stop_restore": 3.365344762802124
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_max_neighbors_distance/4.0": {
+    "steps": {
+      "override_yaml": 0.05811500549316406,
+      "record_bag": 3.0006842613220215,
+      "launch_slam": 3.0013608932495117,
+      "play_lidar": 141.0659465789795,
+      "stop_restore": 3.5048038959503174
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_max_neighbors_distance/8.0": {
+    "steps": {
+      "override_yaml": 0.43425750732421875,
+      "record_bag": 3.001246452331543,
+      "launch_slam": 3.0013844966888428,
+      "play_lidar": 140.8839282989502,
+      "stop_restore": 3.456350088119507
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_max_neighbors_distance/12.0": {
+    "steps": {
+      "override_yaml": 0.058373451232910156,
+      "record_bag": 3.000729560852051,
+      "launch_slam": 3.0013322830200195,
+      "play_lidar": 141.08193802833557,
+      "stop_restore": 3.457763910293579
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_point_to_edge_match/par-defaut-9-5-0.1": {
+    "steps": {
+      "override_yaml": 0.05810904502868652,
+      "record_bag": 3.0007143020629883,
+      "launch_slam": 3.0013070106506348,
+      "play_lidar": 140.97212481498718,
+      "stop_restore": 3.4137983322143555
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_point_to_edge_match/plus-court-7-5-0.1": {
+    "steps": {
+      "override_yaml": 0.05666780471801758,
+      "record_bag": 3.000781536102295,
+      "launch_slam": 3.001371145248413,
+      "play_lidar": 140.8712193965912,
+      "stop_restore": 3.3040847778320312
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_point_to_edge_match/plus-tolere-9-5-0.2": {
+    "steps": {
+      "override_yaml": 0.057146549224853516,
+      "record_bag": 3.0007262229919434,
+      "launch_slam": 3.001389503479004,
+      "play_lidar": 141.07361912727356,
+      "stop_restore": 3.3552186489105225
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_point_to_plane_match/par-defaut-7-0.04-0.1": {
+    "steps": {
+      "override_yaml": 0.5749197006225586,
+      "record_bag": 3.000943660736084,
+      "launch_slam": 3.00128173828125,
+      "play_lidar": 140.8988070487976,
+      "stop_restore": 3.3053512573242188
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_point_to_plane_match/plus-voisins-9-0.04-0.1": {
+    "steps": {
+      "override_yaml": 0.05726742744445801,
+      "record_bag": 3.0003697872161865,
+      "launch_slam": 3.001134157180786,
+      "play_lidar": 140.86352562904358,
+      "stop_restore": 3.666170120239258
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_point_to_plane_match/plus-tolere-7-0.04-0.2": {
+    "steps": {
+      "override_yaml": 0.05788922309875488,
+      "record_bag": 3.000709056854248,
+      "launch_slam": 3.0009663105010986,
+      "play_lidar": 140.9596712589264,
+      "stop_restore": 3.406050205230713
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_ICP_LM_Iter/par-defaut-3-15": {
+    "steps": {
+      "override_yaml": 0.05597424507141113,
+      "record_bag": 3.000551700592041,
+      "launch_slam": 3.0011520385742188,
+      "play_lidar": 140.96930289268494,
+      "stop_restore": 3.355757236480713
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_ICP_LM_Iter/rapide-2-10": {
+    "steps": {
+      "override_yaml": 0.05592465400695801,
+      "record_bag": 3.0006563663482666,
+      "launch_slam": 3.001343250274658,
+      "play_lidar": 140.97043776512146,
+      "stop_restore": 3.4185378551483154
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_ICP_LM_Iter/lent-5-20": {
+    "steps": {
+      "override_yaml": 0.05818986892700195,
+      "record_bag": 3.000737190246582,
+      "launch_slam": 3.0013773441314697,
+      "play_lidar": 140.96143889427185,
+      "stop_restore": 3.506260395050049
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_Optim_Saturation/par-defaut-2.0-0.5": {
+    "steps": {
+      "override_yaml": 0.05836653709411621,
+      "record_bag": 3.00062894821167,
+      "launch_slam": 3.0012524127960205,
+      "play_lidar": 140.9144537448883,
+      "stop_restore": 3.4165115356445312
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_Optim_Saturation/plus-strict-1.5-0.4": {
+    "steps": {
+      "override_yaml": 0.05788373947143555,
+      "record_bag": 3.0005738735198975,
+      "launch_slam": 3.001408815383911,
+      "play_lidar": 141.07360076904297,
+      "stop_restore": 3.557191848754883
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_Optim_Saturation/plus-large-3.0-0.8": {
+    "steps": {
+      "override_yaml": 0.05788254737854004,
+      "record_bag": 3.0007331371307373,
+      "launch_slam": 3.001028060913086,
+      "play_lidar": 141.07931661605835,
+      "stop_restore": 3.3545584678649902
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_point_to_blob_match/par-defaut-10": {
+    "steps": {
+      "override_yaml": 0.05520963668823242,
+      "record_bag": 3.000717878341675,
+      "launch_slam": 3.0013527870178223,
+      "play_lidar": 140.97293710708618,
+      "stop_restore": 3.6046946048736572
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_point_to_blob_match/dense-14": {
+    "steps": {
+      "override_yaml": 0.0573575496673584,
+      "record_bag": 3.000737428665161,
+      "launch_slam": 3.0013420581817627,
+      "play_lidar": 140.9658441543579,
+      "stop_restore": 3.5050747394561768
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "LOC_point_to_blob_match/leger-8": {
+    "steps": {
+      "override_yaml": 0.055960893630981445,
+      "record_bag": 3.0003724098205566,
+      "launch_slam": 3.0013160705566406,
+      "play_lidar": 140.87340927124023,
+      "stop_restore": 3.3630852699279785
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_blob/par-defaut-0": {
+    "steps": {
+      "override_yaml": 0.6247119903564453,
+      "record_bag": 3.0008716583251953,
+      "launch_slam": 3.0013442039489746,
+      "play_lidar": 140.88648414611816,
+      "stop_restore": 3.3615167140960693
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_blob/active-1": {
+    "steps": {
+      "override_yaml": 0.05846357345581055,
+      "record_bag": 3.0003840923309326,
+      "launch_slam": 3.001281261444092,
+      "play_lidar": 141.07494163513184,
+      "stop_restore": 3.419191837310791
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_dist_sens/par-defaut-1.0-200.0": {
+    "steps": {
+      "override_yaml": 1.1565837860107422,
+      "record_bag": 3.0008318424224854,
+      "launch_slam": 3.0013489723205566,
+      "play_lidar": 140.90699696540833,
+      "stop_restore": 3.56784725189209
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_dist_sens/rapproche-0.5-200.0": {
+    "steps": {
+      "override_yaml": 0.05839824676513672,
+      "record_bag": 3.0006942749023438,
+      "launch_slam": 3.0011544227600098,
+      "play_lidar": 140.8628659248352,
+      "stop_restore": 3.418020486831665
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_dist_sens/eloigne-1.0-300.0": {
+    "steps": {
+      "override_yaml": 0.06690216064453125,
+      "record_bag": 3.0007200241088867,
+      "launch_slam": 3.0013890266418457,
+      "play_lidar": 140.96730184555054,
+      "stop_restore": 3.4054477214813232
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_azimuth/par-defaut-0-360": {
+    "steps": {
+      "override_yaml": 0.057976484298706055,
+      "record_bag": 3.000713348388672,
+      "launch_slam": 3.0009732246398926,
+      "play_lidar": 141.07729053497314,
+      "stop_restore": 3.3571319580078125
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_azimuth/avant-etroit-315-45": {
+    "steps": {
+      "override_yaml": 0.05793309211730957,
+      "record_bag": 3.0007333755493164,
+      "launch_slam": 3.0013415813446045,
+      "play_lidar": 141.07936787605286,
+      "stop_restore": 3.358015537261963
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_azimuth/avant-large-270-90": {
+    "steps": {
+      "override_yaml": 0.05800223350524902,
+      "record_bag": 3.0004565715789795,
+      "launch_slam": 3.0010433197021484,
+      "play_lidar": 140.87478065490723,
+      "stop_restore": 3.555753231048584
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_azimuth/tres-large-225-135": {
+    "steps": {
+      "override_yaml": 0.056209564208984375,
+      "record_bag": 3.000375747680664,
+      "launch_slam": 3.0013749599456787,
+      "play_lidar": 140.96678185462952,
+      "stop_restore": 3.615166425704956
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_edge/par-defaut-0.5-10-20": {
+    "steps": {
+      "override_yaml": 0.05787515640258789,
+      "record_bag": 3.0006792545318604,
+      "launch_slam": 3.0013911724090576,
+      "play_lidar": 140.98546862602234,
+      "stop_restore": 3.3680241107940674
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_edge/strict-1.0-12-25": {
+    "steps": {
+      "override_yaml": 0.057790279388427734,
+      "record_bag": 3.0007381439208984,
+      "launch_slam": 3.0013866424560547,
+      "play_lidar": 141.17512559890747,
+      "stop_restore": 3.561596155166626
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_edge/tres-strict-2.0-15-30": {
+    "steps": {
+      "override_yaml": 0.05777239799499512,
+      "record_bag": 3.000652313232422,
+      "launch_slam": 3.001356601715088,
+      "play_lidar": 141.38643860816956,
+      "stop_restore": 3.507269859313965
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_edge/tolere-0.3-8-15": {
+    "steps": {
+      "override_yaml": 1.5780813694000244,
+      "record_bag": 3.001354932785034,
+      "launch_slam": 3.0013017654418945,
+      "play_lidar": 140.90859699249268,
+      "stop_restore": 3.611715316772461
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_edge/tres-tolere-0.2-5-10": {
+    "steps": {
+      "override_yaml": 0.056034088134765625,
+      "record_bag": 3.0004210472106934,
+      "launch_slam": 3.0013744831085205,
+      "play_lidar": 141.07693004608154,
+      "stop_restore": 3.3579978942871094
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_downsampling_max_points/par-defaut-1000": {
+    "steps": {
+      "override_yaml": 0.057648420333862305,
+      "record_bag": 3.0004096031188965,
+      "launch_slam": 3.0010085105895996,
+      "play_lidar": 140.96675181388855,
+      "stop_restore": 3.403761863708496
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_downsampling_max_points/500": {
+    "steps": {
+      "override_yaml": 0.056032657623291016,
+      "record_bag": 3.0003955364227295,
+      "launch_slam": 3.0012528896331787,
+      "play_lidar": 140.97075819969177,
+      "stop_restore": 3.4038867950439453
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_downsampling_max_points/1500": {
+    "steps": {
+      "override_yaml": 0.056412458419799805,
+      "record_bag": 3.0007026195526123,
+      "launch_slam": 3.0009889602661133,
+      "play_lidar": 140.9697482585907,
+      "stop_restore": 3.4570863246917725
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_downsampling_max_points/2000": {
+    "steps": {
+      "override_yaml": 0.057732582092285156,
+      "record_bag": 3.0004100799560547,
+      "launch_slam": 3.0010318756103516,
+      "play_lidar": 140.96363496780396,
+      "stop_restore": 3.606099843978882
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_downsampling_voxel_grid/par-defaut-1.0": {
+    "steps": {
+      "override_yaml": 0.05612683296203613,
+      "record_bag": 3.0004148483276367,
+      "launch_slam": 3.0013527870178223,
+      "play_lidar": 140.98625135421753,
+      "stop_restore": 3.456571578979492
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_downsampling_voxel_grid/0.5": {
+    "steps": {
+      "override_yaml": 0.056450605392456055,
+      "record_bag": 3.000396728515625,
+      "launch_slam": 3.001077175140381,
+      "play_lidar": 140.9628040790558,
+      "stop_restore": 3.458317756652832
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_downsampling_voxel_grid/1.5": {
+    "steps": {
+      "override_yaml": 0.05775737762451172,
+      "record_bag": 3.0004682540893555,
+      "launch_slam": 3.0013766288757324,
+      "play_lidar": 140.97186470031738,
+      "stop_restore": 3.4086906909942627
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_downsampling_voxel_grid/2.0": {
+    "steps": {
+      "override_yaml": 0.05799460411071777,
+      "record_bag": 3.0006885528564453,
+      "launch_slam": 3.0013039112091064,
+      "play_lidar": 140.98489809036255,
+      "stop_restore": 3.4065439701080322
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_input_sampling_ratio/par-defaut-1.0": {
+    "steps": {
+      "override_yaml": 2.9464316368103027,
+      "record_bag": 3.0013840198516846,
+      "launch_slam": 3.0013678073883057,
+      "play_lidar": 141.0205738544464,
+      "stop_restore": 3.5572707653045654
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_input_sampling_ratio/0.75": {
+    "steps": {
+      "override_yaml": 0.0576779842376709,
+      "record_bag": 3.0007026195526123,
+      "launch_slam": 3.001324415206909,
+      "play_lidar": 141.1880247592926,
+      "stop_restore": 3.4042649269104004
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_input_sampling_ratio/0.5": {
+    "steps": {
+      "override_yaml": 0.055965423583984375,
+      "record_bag": 3.000701427459717,
+      "launch_slam": 3.0010111331939697,
+      "play_lidar": 141.06831002235413,
+      "stop_restore": 3.417573928833008
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KE_input_sampling_ratio/0.3": {
+    "steps": {
+      "override_yaml": 0.05791211128234863,
+      "record_bag": 3.0007596015930176,
+      "launch_slam": 3.0009634494781494,
+      "play_lidar": 140.87717151641846,
+      "stop_restore": 3.3159353733062744
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "SLAM_interpolation_model/par-defaut-0-lineaire": {
+    "steps": {
+      "override_yaml": 0.05831575393676758,
+      "record_bag": 3.0004160404205322,
+      "launch_slam": 3.00138258934021,
+      "play_lidar": 141.0711007118225,
+      "stop_restore": 3.6070268154144287
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "SLAM_interpolation_model/1-quadratique": {
+    "steps": {
+      "override_yaml": 0.0574343204498291,
+      "record_bag": 3.000699520111084,
+      "launch_slam": 3.001380681991577,
+      "play_lidar": 141.06759786605835,
+      "stop_restore": 3.6167070865631104
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "SLAM_interpolation_model/2-cubique": {
+    "steps": {
+      "override_yaml": 0.057273149490356445,
+      "record_bag": 3.000680446624756,
+      "launch_slam": 3.001368522644043,
+      "play_lidar": 140.98692893981934,
+      "stop_restore": 3.4168341159820557
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "SLAM_undistortion/par-defaut-2-rafine": {
+    "steps": {
+      "override_yaml": 0.05887746810913086,
+      "record_bag": 3.000774383544922,
+      "launch_slam": 3.001053810119629,
+      "play_lidar": 141.17955088615417,
+      "stop_restore": 3.469994306564331
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "SLAM_undistortion/0-aucun": {
+    "steps": {
+      "override_yaml": 0.058185577392578125,
+      "record_bag": 3.000415086746216,
+      "launch_slam": 3.0010769367218018,
+      "play_lidar": 141.17463541030884,
+      "stop_restore": 3.4057140350341797
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "SLAM_undistortion/1-unique": {
+    "steps": {
+      "override_yaml": 1.5103428363800049,
+      "record_bag": 3.001406192779541,
+      "launch_slam": 3.001354932785034,
+      "play_lidar": 141.112158536911,
+      "stop_restore": 3.553952217102051
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "SLAM_undistortion/3-externe": {
+    "steps": {
+      "override_yaml": 0.05568051338195801,
+      "record_bag": 3.000619649887085,
+      "launch_slam": 3.000711441040039,
+      "play_lidar": 141.1718044281006,
+      "stop_restore": 3.4675240516662598
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KF_thresholds/par-defaut-0.1-5": {
+    "steps": {
+      "override_yaml": 0.057711124420166016,
+      "record_bag": 3.0007359981536865,
+      "launch_slam": 3.0009031295776367,
+      "play_lidar": 140.97106909751892,
+      "stop_restore": 3.4538581371307373
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KF_thresholds/dense-0.05-3": {
+    "steps": {
+      "override_yaml": 0.05588817596435547,
+      "record_bag": 3.000730276107788,
+      "launch_slam": 3.0013267993927,
+      "play_lidar": 141.07190823554993,
+      "stop_restore": 3.407585620880127
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KF_thresholds/leger-0.2-8": {
+    "steps": {
+      "override_yaml": 0.05716228485107422,
+      "record_bag": 3.000746726989746,
+      "launch_slam": 3.0010383129119873,
+      "play_lidar": 140.87958931922913,
+      "stop_restore": 3.406919479370117
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  },
+  "KF_thresholds/tres-leger-0.5-10": {
+    "steps": {
+      "override_yaml": 0.057639360427856445,
+      "record_bag": 3.000370740890503,
+      "launch_slam": 3.0010311603546143,
+      "play_lidar": 140.86838579177856,
+      "stop_restore": 3.5143299102783203
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && source install/setup....>"
+    }
+  }
+}

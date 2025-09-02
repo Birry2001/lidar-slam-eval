@@ -1,0 +1,4 @@
+{
+  "/lidar_slam.ros__parameters.slam.ke.downsampling.max_points": 500,
+  "/lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution": 1.0
+}

@@ -1,0 +1,3 @@
+{
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.max_neighbors_distance": 3.0
+}

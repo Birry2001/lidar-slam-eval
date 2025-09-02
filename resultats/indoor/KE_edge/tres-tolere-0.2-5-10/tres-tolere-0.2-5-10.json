@@ -1,0 +1,5 @@
+{
+  "/lidar_slam.ros__parameters.slam.ke.edge_depth_gap_threshold": 0.2,
+  "/lidar_slam.ros__parameters.slam.ke.edge_nb_gap_points": 5,
+  "/lidar_slam.ros__parameters.slam.ke.edge_intensity_gap_threshold": 10.0
+}

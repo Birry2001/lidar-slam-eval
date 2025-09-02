@@ -1,0 +1,4 @@
+{
+  "/lidar_slam.ros__parameters.slam.keyframes.distance_threshold": 0.5,
+  "/lidar_slam.ros__parameters.slam.keyframes.angle_threshold": 10
+}

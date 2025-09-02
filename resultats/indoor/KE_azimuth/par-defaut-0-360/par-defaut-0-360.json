@@ -1,0 +1,4 @@
+{
+  "/lidar_slam.ros__parameters.slam.ke.min_azimuth": 0,
+  "/lidar_slam.ros__parameters.slam.ke.max_azimuth": 360
+}
