@@ -8,7 +8,7 @@ lidar: "velodyne"            # hesai | livox | ouster | velodyne
 mode: "outdoor"              # indoor | outdoor
 
 bag: "/ABSOLUTE/PATH/TO/bag1.db3"       # ex: "/home/<user>/bags/bag1.db3"
-ref_tum: "/ABSOLUTE/PATH/TO/reference.tum"  # Trajectoire de référence (défaut ou GT)
+ref_tum: "/home/nochi/test_ws/Evaluation_SLAM_KITWARE/Outdoor/Par_defaut/evo/defaut.tum"  # Trajectoire de référence (défaut ou GT)
 
 # Fichier YAML de base utilisé pour l'expérience (valeurs par défaut outdoor)
 base_config: "slam_config_outdoor.yaml"
