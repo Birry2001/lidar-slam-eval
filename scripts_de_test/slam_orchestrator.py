@@ -1,20 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-slam_orchestrator.py - Orchestrateur SLAM KITWARE
+slam_orchestrator.py - Orchestrateur SLAM KITWARE (Option A — symlink-install)
 
-Comportement :
-  1) Demande le chemin d’un plan YAML (.yaml/.yml).
-  2) Charge & VALIDE le plan (structure, noms, présence 'par-defaut-', chemins de params,
-     existence/type vs YAML indoor/outdoor).
-  3) N’exécute la campagne que si la validation est OK.
-  4) Build unique puis boucle tests :
-       override YAML -> ros2 bag record -> ros2 launch -> ros2 bag play -> arrêt propre + restore YAML
-  5) Post-traitements + rapports.
-
-Notes :
-- Gère les nœuds YAML racine avec OU sans slash (/lidar_slam vs lidar_slam).
-- Utilise SIGINT → SIGTERM → SIGKILL sur le *groupe* (start_new_session=True).
+Ajouts clés :
+- Build unique en --symlink-install incluant aussi 'odom_csv_extractor' s'il est présent.
+- Pré-check pour vérifier que 'odom_csv_extractor' est exécutable avant post-traitements.
 """
 
 import json
@@ -39,8 +30,10 @@ app = typer.Typer()
 # -------------------------------------------------------------------------
 SCRIPT_DIR = Path(__file__).parent.resolve()
 BASE_DIR   = Path.home() / "test_ws" / "Evaluation_SLAM_KITWARE"
+WS_DIR     = Path.home() / "test_ws"
+SRC_DIR    = WS_DIR / "src"
 
-# YAML actifs (utilisés par les launch files)
+# YAML actifs (utilisés par les launch files) — Option A : on modifie ceux de src/
 OUTDOOR_YAML = Path.home() / "test_ws/src/ros2_wrapping/lidar_slam/params/slam_config_outdoor.yaml"
 INDOOR_YAML  = Path.home() / "test_ws/src/ros2_wrapping/lidar_slam/params/slam_config_indoor.yaml"
 
@@ -68,7 +61,7 @@ POST_SCRIPTS = [
 ENV = Environment(loader=FileSystemLoader(str(SCRIPT_DIR)),
                   autoescape=select_autoescape(['html']))
 
-# Délais (à adapter à la taille des bags)
+# Délais
 RECORDER_FLUSH_TIMEOUT_S = 90
 LAUNCH_STOP_TIMEOUT_S    = 30
 SPAWN_GRACE_S            = 3
@@ -110,10 +103,29 @@ def save_checkpoint(path: Path, data: Dict[str, Any]) -> None:
     path.write_text(json.dumps(data, indent=2))
 
 # -------------------------------------------------------------------------
+# Recherche de packages ROS 2 dans le workspace
+# -------------------------------------------------------------------------
+def find_ros2_package_src(pkg_name: str, src_root: Path) -> Optional[Path]:
+    """
+    Cherche un dossier contenant un package.xml dont <name> == pkg_name.
+    Retourne le chemin du dossier package ou None.
+    """
+    if not src_root.exists():
+        return None
+    for pkg_dir in src_root.rglob("package.xml"):
+        try:
+            txt = pkg_dir.read_text(encoding="utf-8", errors="ignore")
+            # Match simple et robuste (évite dépendances XML)
+            if re.search(rf"<name>\s*{re.escape(pkg_name)}\s*</name>", txt):
+                return pkg_dir.parent
+        except Exception:
+            pass
+    return None
+
+# -------------------------------------------------------------------------
 # Accès/écriture paramètres (compatible /lidar_slam et lidar_slam)
 # -------------------------------------------------------------------------
 def _resolve_root_key(d: Dict[str, Any], k: str) -> str:
-    """Retourne la clé réellement présente dans d pour k en testant avec/sans slash."""
     if k in d:
         return k
     if k.startswith('/') and k[1:] in d:
@@ -128,7 +140,7 @@ def get_in(d: Dict[str, Any], path: str) -> Optional[Any]:
     for i, k in enumerate(parts):
         if not isinstance(sub, dict):
             return None
-        if i == 0:  # racine
+        if i == 0:
             k = _resolve_root_key(sub, k)
         if k not in sub:
             return None
@@ -144,6 +156,12 @@ def set_in(d: Dict[str, Any], path: str, value: Any) -> None:
         sub = sub.setdefault(k, {})
     sub[parts[-1]] = value
 
+def yaml_to_param_name(pth: str) -> str:
+    for prefix in ("/lidar_slam.ros__parameters.", "lidar_slam.ros__parameters."):
+        if pth.startswith(prefix):
+            return pth[len(prefix):]
+    return pth
+
 # -------------------------------------------------------------------------
 # Gestion process (arrêt propre)
 # -------------------------------------------------------------------------
@@ -153,37 +171,28 @@ def graceful_stop(p: Optional[subprocess.Popen],
                   t1: int = RECORDER_FLUSH_TIMEOUT_S,
                   t2: int = 15,
                   t3: int = 5) -> None:
-    """SIGINT -> SIGTERM -> SIGKILL sur le groupe (start_new_session=True)."""
     if p is None or p.poll() is not None:
         return
     try:
         pgid = os.getpgid(p.pid)
     except ProcessLookupError:
         return
-
-    # 1) arrêt propre (Ctrl-C) — rosbag2 réagit au SIGINT. :contentReference[oaicite:3]{index=3}
     try:
         os.killpg(pgid, first_sig)
     except ProcessLookupError:
         return
     try:
-        p.wait(timeout=t1)
-        return
+        p.wait(timeout=t1); return
     except subprocess.TimeoutExpired:
         pass
-
-    # 2) plus ferme
     try:
         os.killpg(pgid, signal.SIGTERM)
     except ProcessLookupError:
         return
     try:
-        p.wait(timeout=t2)
-        return
+        p.wait(timeout=t2); return
     except subprocess.TimeoutExpired:
         pass
-
-    # 3) dernier recours
     try:
         os.killpg(pgid, signal.SIGKILL)
     except ProcessLookupError:
@@ -212,9 +221,13 @@ def override_yaml_values(orig_yaml: Path, yaml_path: Path,
     data = yaml.safe_load(orig_yaml.read_text())
     for path, val in values.items():
         dv = get_in(orig, path)
-        # Respecter le type du défaut si possible
         if isinstance(dv, bool):
-            nv = bool(val)
+            if isinstance(val, bool):
+                nv = val
+            elif isinstance(val, int):
+                nv = bool(val)
+            else:
+                raise ValueError(f"Attendu bool/int pour {path}, reçu {type(val).__name__}")
         elif isinstance(dv, int) and not isinstance(dv, bool):
             nv = int(val)
         elif isinstance(dv, float):
@@ -233,11 +246,6 @@ def _read_yaml(path: Path) -> Any:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 def _compose_from_style_A(doc: Dict[str, Any]) -> Tuple[Dict[str, Any], Dict[str, Dict[str, Any]]]:
-    """
-    Style A (compact) — racine :
-      experiment, lidar, mode, bag|bag_path, ref_tum,
-      tests: { <test_name>: { configs: { <cfg>: {<param>: <val>, ...}, ... } } }
-    """
     orch = {
         "experiment": doc["experiment"],
         "lidar": doc["lidar"],
@@ -256,11 +264,6 @@ def _compose_from_style_A(doc: Dict[str, Any]) -> Tuple[Dict[str, Any], Dict[str
     return orch, tests_data
 
 def _compose_from_style_B(doc: Dict[str, Any]) -> Tuple[Dict[str, Any], Dict[str, Dict[str, Any]]]:
-    """
-    Style B — racine :
-      orchestrator:{experiment,lidar,mode,bag|bag_path,ref_tum},
-      tests: [ {name, params?, configs:[{name, values:{...}}, ...]} ... ]
-    """
     orch = {
         "experiment": doc["orchestrator"]["experiment"],
         "lidar": doc["orchestrator"]["lidar"],
@@ -295,7 +298,6 @@ def _paramname_ok(name: str) -> bool:
     return name.startswith("/lidar_slam.ros__parameters.") or name.startswith("lidar_slam.ros__parameters.")
 
 def _configname_ok(name: str) -> bool:
-    # minuscules/chiffres/points/tirets, commence par lettre/chiffre
     return bool(re.fullmatch(r"[a-z0-9][a-z0-9\.\-]*", name))
 
 def _has_default_config(cfgs: List[str]) -> bool:
@@ -315,7 +317,6 @@ def validate_plan(orch: Dict[str, Any],
                   mode_yaml_ref: Path) -> List[str]:
     errors: List[str] = []
 
-    # Orchestrator
     for req in ("experiment", "lidar", "mode", "bag_path", "ref_tum"):
         if req not in orch or orch[req] in (None, "", []):
             errors.append(f"[orchestrator] Champ requis manquant: {req}")
@@ -338,7 +339,6 @@ def validate_plan(orch: Dict[str, Any],
         errors.append("[tests] Aucun test défini.")
         return errors
 
-    # YAML de référence
     yaml_ref_path = mode_yaml_ref
     yaml_ref = None
     if yaml_ref_path.exists():
@@ -357,7 +357,7 @@ def validate_plan(orch: Dict[str, Any],
 
         for c in cfgs:
             if not _configname_ok(c):
-                errors.append(f"[{tname}] Nom de config invalide '{c}' (tirets/points/chiffres/minuscules uniquement)")
+                errors.append(f"[{tname}] Nom de config invalide '{c}'")
 
         for p in params:
             if not _paramname_ok(p):
@@ -371,7 +371,6 @@ def validate_plan(orch: Dict[str, Any],
                 if not _paramname_ok(pth):
                     errors.append(f"[{tname}/{c}] Paramètre non conforme: {pth}")
                     continue
-
                 if yaml_ref is not None:
                     dv = get_in(yaml_ref, pth)
                     if dv is None:
@@ -380,13 +379,11 @@ def validate_plan(orch: Dict[str, Any],
                         if not _coerce_type_like(dv, v):
                             errors.append(f"[{tname}/{c}] Type incompatible pour {pth} "
                                           f"(défaut={type(dv).__name__}, valeur={type(v).__name__})")
-
         if params:
             for c in cfgs:
                 extra = sorted(set(vals.get(c, {}).keys()) - set(params))
                 if extra:
                     errors.append(f"[{tname}/{c}] Valeurs définies pour des paramètres non listés dans 'params': {extra}")
-
     return errors
 
 # -------------------------------------------------------------------------
@@ -441,7 +438,7 @@ def process_config(
         if dry_run:
             return
         p = subprocess.Popen(cmd, shell=True, executable="/bin/bash",
-                             start_new_session=True)  # nouveau groupe
+                             start_new_session=True)
         report[key]["artefacts"]["bag_proc"] = p
         time.sleep(SPAWN_GRACE_S)
 
@@ -461,10 +458,34 @@ def process_config(
         report[key]["artefacts"]["slam_proc"] = p
         time.sleep(SPAWN_GRACE_S)
 
+    @record_step("check_params_runtime")
+    def step_check_params():
+        effective: Dict[str, str] = {}
+        for pth in values.keys():
+            pn = yaml_to_param_name(pth)
+            out_text = ""
+            rc = 1
+            for _ in range(6):
+                cmd = (
+                    f'bash -lc "cd ~/test_ws && source install/setup.bash && '
+                    f'ros2 param get /lidar_slam {pn}"'
+                )
+                proc = subprocess.run(cmd, shell=True, executable="/bin/bash",
+                                      capture_output=True, text=True)
+                rc = proc.returncode
+                if rc == 0:
+                    out_text = proc.stdout.strip()
+                    break
+                time.sleep(0.5)
+            if rc != 0:
+                out_text = f"<get failed rc={rc}>"
+            effective[pn] = out_text
+        report[key]["artefacts"]["effective_params"] = effective
+
     @record_step("play_lidar")
     def step_play_lidar():
-        # ros2 bag play se termine naturellement après lecture
-        return run_cmd(f"ros2 bag play {bag_path}", dry_run)
+        cmd = f'bash -lc "cd ~/test_ws && source install/setup.bash && exec ros2 bag play {bag_path}"'
+        return run_cmd(cmd, dry_run)
 
     @record_step("stop_restore")
     def step_stop_restore():
@@ -479,7 +500,7 @@ def process_config(
         typer.echo(f"▶ YAML restored from {orig_yaml}")
 
     # Pipeline
-    step_override_yaml(); step_record_bag(); step_launch_slam(); step_play_lidar(); step_stop_restore()
+    step_override_yaml(); step_record_bag(); step_launch_slam(); step_check_params(); step_play_lidar(); step_stop_restore()
 
 # -------------------------------------------------------------------------
 # Main
@@ -490,7 +511,7 @@ def main(
 ):
     typer.secho("🛠️  Orchestrateur SLAM KITWARE", fg=typer.colors.BLUE)
 
-    # 1) Plan YAML demandé au démarrage (typer.prompt) :contentReference[oaicite:4]{index=4}
+    # 1) Plan YAML demandé au démarrage
     plan_path = Path(typer.prompt("Chemin du plan (.yaml/.yml)"))
     if not validate_path(plan_path):
         raise typer.Exit(1)
@@ -502,7 +523,7 @@ def main(
         typer.secho(f"❌ Erreur de lecture du plan: {e}", fg=typer.colors.RED)
         raise typer.Exit(1)
 
-    # 3) Validation (structure + types vs YAML de référence ROS 2) :contentReference[oaicite:5]{index=5}
+    # 3) Validation (structure + types vs YAML de référence ROS 2)
     mode = orch.get("mode", "outdoor")
     yaml_ref = ORIG_IN_YAML if mode == "indoor" else ORIG_OUT_YAML
     if not yaml_ref.exists():
@@ -530,7 +551,7 @@ def main(
 
     # 5) Dossiers & index
     exp_dir = make_dirs(BASE_DIR, exp, tests_data)
-    index = Path.home() / "test_ws" / f"{exp}.txt"
+    index = WS_DIR / f"{exp}.txt"
     index.write_text("\n".join(str(exp_dir / t) for t in tests_data.keys()))
 
     # JSON par config (compat scripts existants)
@@ -544,16 +565,63 @@ def main(
     report: Dict[str, Any] = {}
     checkpoint = load_checkpoint(exp_dir / "checkpoints.json")
 
-    # 7) Build unique
-    build_cmd = 'bash -lc "cd ~/test_ws && source install/setup.bash && colcon build --base-paths src/ros2_wrapping"'
-    typer.echo(f"▶ Build once: {build_cmd}")
+    # 7) Build unique — symlink-install (inclut odom_csv_extractor situé à la racine du WS)
+    odom_pkg_dir = Path.home() / "test_ws" / "odom_csv_extractor"
+    if odom_pkg_dir.exists() and (odom_pkg_dir / "package.xml").exists():
+        build_cmd = (
+            'bash -lc "cd ~/test_ws && '
+            'if [ -f /opt/ros/jazzy/setup.bash ]; then source /opt/ros/jazzy/setup.bash; fi; '
+            # On build explicitement les DEUX chemins : ros2_wrapping et odom_csv_extractor
+            f'colcon build --symlink-install --base-paths src/ros2_wrapping {odom_pkg_dir}"'
+        )
+    else:
+        # Fallback (au cas où le dossier/manifest n'existe pas)
+        build_cmd = (
+            'bash -lc "cd ~/test_ws && '
+            'if [ -f /opt/ros/jazzy/setup.bash ]; then source /opt/ros/jazzy/setup.bash; fi; '
+            'colcon build --symlink-install --base-paths src/ros2_wrapping && '
+            'colcon build --symlink-install --packages-select odom_csv_extractor || true"'
+        )
+
+    typer.echo(f"▶ Build once (with symlinks): {build_cmd}")
     if not dry_run:
         rc = run_cmd(build_cmd, dry_run=False)
         if rc != 0:
             typer.secho(f"❌ Échec build colcon (code {rc})", fg=typer.colors.RED)
             raise typer.Exit(1)
 
-    # 8) Boucle d’exécution
+    # Vérification rapide que l'exécutable est dispo
+    if not dry_run:
+        check_cmd = (
+            'bash -lc "cd ~/test_ws && source install/setup.bash && '
+            'ros2 run odom_csv_extractor extract_to_csv -h >/dev/null 2>&1"'
+        )
+        rc = run_cmd(check_cmd, dry_run=False)
+        if rc != 0:
+            typer.secho(
+                "❌ 'odom_csv_extractor' introuvable après build. Vérifie le contenu de ~/test_ws/odom_csv_extractor.",
+                fg=typer.colors.RED
+            )
+            raise typer.Exit(1)
+
+    # 8) Vérification rapide de la dispo d'odom_csv_extractor
+    if not dry_run:
+        check_cmd = (
+            'bash -lc "cd ~/test_ws && source install/setup.bash && '
+            'ros2 run odom_csv_extractor extract_to_csv -h >/dev/null 2>&1"'
+        )
+        rc = run_cmd(check_cmd, dry_run=False)
+        if rc != 0:
+            msg = (
+                "❌ Le package/exécutable 'odom_csv_extractor' est introuvable après build.\n"
+                "   ➜ Vérifie que le dossier du package est bien présent sous ~/test_ws/src\n"
+                "     (avec un package.xml contenant <name>odom_csv_extractor</name>),\n"
+                "     puis relance l’orchestrateur."
+            )
+            typer.secho(msg, fg=typer.colors.RED)
+            raise typer.Exit(1)
+
+    # 9) Boucle d’exécution
     for t, td in tests_data.items():
         for c in td["configs"]:
             key = f"{t}/{c}"
@@ -569,12 +637,14 @@ def main(
             except Exception as e:
                 typer.secho(f"❌ Erreur pendant {key}: {e}", fg=typer.colors.RED)
 
-    # 9) Extraction CSV
-    run_cmd(f'bash -lc "cd ~/test_ws && source install/setup.bash && '
-            f'ros2 run odom_csv_extractor extract_to_csv -d {index}"',
-            dry_run)
+    # 10) Extraction CSV (odom_csv_extractor)
+    run_cmd(
+        f'bash -lc "cd ~/test_ws && source install/setup.bash && '
+        f'ros2 run odom_csv_extractor extract_to_csv -d {index}"',
+        dry_run
+    )
 
-    # 10) Post-traitements
+    # 11) Post-traitements
     summary_dir = exp_dir / "summary"
     summary_dir.mkdir(exist_ok=True)
     summary_json = summary_dir / f"summary_{exp}.json"
@@ -597,12 +667,12 @@ def main(
             except CalledProcessError as e:
                 typer.secho(f"❌ Erreur {script} code {e.returncode}", fg=typer.colors.RED)
 
-    # 11) Déplacement index
+    # 12) Déplacement index
     dirs = exp_dir / "dirs"
     dirs.mkdir(exist_ok=True)
     shutil.move(str(index), str(dirs / index.name))
 
-    # 12) Rapports
+    # 13) Rapports
     out_json = exp_dir / "report.json"
     out_html = exp_dir / "report.html"
     out_json.write_text(json.dumps(clean_for_json(report), indent=2))
