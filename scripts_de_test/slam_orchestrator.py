@@ -57,7 +57,7 @@ POST_SCRIPTS = [
     ("extract_trajectories.py",          "-d {index}"),
     ("extract_trajectory_plots.py",      "-d {index}"),
     ("summarize_by_metric.py",           "{exp_dir} {summary_output}"),
-    ("compute_evo_metrics_no_align.py",  "-d {index} -r {ref}"),
+    ("compute_evo_metrics_auto_align.py", "-d {index} -r {ref}"),
     ("run_plots_confiance.sh",           "{exp}.txt"),
 ]
 
