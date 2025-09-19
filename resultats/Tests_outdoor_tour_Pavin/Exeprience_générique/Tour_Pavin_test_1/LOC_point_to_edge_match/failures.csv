@@ -1,0 +1,5 @@
+test,config,reason,metric,value,threshold
+LOC_point_to_edge_match,tres-strict-12-7-0.15,overlap_unrealistic,overlap_mean,1.0,0.999
+LOC_point_to_edge_match,tres-strict-12-7-0.15,overlap_unrealistic,overlap_min,1.0,0.999
+LOC_point_to_edge_match,tres-strict-12-7-0.15,position_error_zero_mean,position_error_mean,0.0,0.0
+LOC_point_to_edge_match,strict-12-7-0.15,APE_too_high,APE,42.335667,3.397525

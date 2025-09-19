@@ -1,0 +1,17 @@
+test,config,reason,metric,value,threshold
+LOC_point_to_blob_match,4,APE_too_high,APE,15.603546,13.355581
+LOC_point_to_blob_match,7,APE_too_high,APE,13.362368,13.355581
+KE_distance_to_lidar,rapproche-0.5-200.0,APE_too_high,APE,12.53099,11.599176500000002
+KE_edge_gaps,0.5-5-25-plus-permissif,APE_too_high,APE,10.683127,10.368896999999999
+KE_downsampling_max_points,5000,APE_too_high,APE,16.886771,12.917907
+KE_downsampling_voxel_grid_resolution,0.2-extremement-fine,APE_too_high,APE,12.21063,11.030945000000003
+KE_densite_dextraction_de_KP,profil-dense,APE_too_high,APE,23.044048,19.166431999999997
+KE_densite_dextraction_de_KP,profil-tres-dense,APE_too_high,APE,20.84149,19.166431999999997
+ER_Optim_Saturation,tres-strict-2.0-0.5,APE_too_high,APE,11.476222,11.117066000000001
+ER_Optim_Saturation,ultra-lache-10-2.0,APE_too_high,APE,11.161752,11.117066000000001
+ER_point_to_edge_and_point_to_plane_matching,permissif,APE_too_high,APE,10.862675,10.580330999999996
+ER_point_to_edge_and_point_to_plane_matching,tres-permissif,APE_too_high,APE,11.869088,10.580330999999996
+LOC_max_neighbors_distance,12.0,APE_too_high,APE,12.013411,11.957809
+LOC_ICP_LM_Iter,icp-lm-extremes-100-100,APE_too_high,APE,11.501427,11.308932500000001
+LOC_ICP_LM_Iter,lm-extreme-100,APE_too_high,APE,11.482091,11.308932500000001
+SLAM_interpolation_model,2-cubique,APE_too_high,APE,11.134049,10.594727000000004

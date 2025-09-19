@@ -1,0 +1,5 @@
+{
+  "/lidar_slam.ros__parameters.slam.ke.enable.blob": false,
+  "/lidar_slam.ros__parameters.slam.ke.input_sampling_ratio": 0.75,
+  "/lidar_slam.ros__parameters.slam.ke.downsampling.max_points": 750
+}

@@ -1,0 +1,4 @@
+{
+  "/lidar_slam.ros__parameters.slam.ke.plane_angle_threshold": 150.0,
+  "/lidar_slam.ros__parameters.slam.ke.edge_angle_threshold": 120.0
+}

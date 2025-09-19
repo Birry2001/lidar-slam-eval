@@ -1,0 +1,4 @@
+{
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.ICP_max_iter": 4,
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.LM_max_iter": 15
+}

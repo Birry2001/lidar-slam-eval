@@ -1,0 +1,18 @@
+[
+  {
+    "test":"KE_downsampling_max_points",
+    "config":"200",
+    "reason":"APE_too_high",
+    "metric":"APE",
+    "value":20.993883,
+    "threshold":2.0164875
+  },
+  {
+    "test":"KE_downsampling_max_points",
+    "config":"500",
+    "reason":"APE_too_high",
+    "metric":"APE",
+    "value":6.434592,
+    "threshold":2.0164875
+  }
+]

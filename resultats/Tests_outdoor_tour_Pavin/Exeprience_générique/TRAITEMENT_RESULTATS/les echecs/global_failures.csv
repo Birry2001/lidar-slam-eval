@@ -1,0 +1,12 @@
+test,config,reason,metric,value,threshold
+LOC_point_to_blob_match,4,APE_too_high,APE,10.966947,4.959309
+KE_azimuth_angle,45-45,APE_too_high,APE,24.591571,2.9763345000000005
+KE_downsampling_max_points,200,APE_too_high,APE,20.993883,2.0164875
+KE_downsampling_max_points,500,APE_too_high,APE,6.434592,2.0164875
+KE_densite_dextraction_de_KP,profil-dense,APE_too_high,APE,10.9281,2.06468
+KE_densite_dextraction_de_KP,profil-tres-dense,APE_too_high,APE,21.417238,2.06468
+LOC_point_to_edge_match,tres-strict-12-7-0.15,overlap_unrealistic,overlap_mean,1.0,0.999
+LOC_point_to_edge_match,tres-strict-12-7-0.15,overlap_unrealistic,overlap_min,1.0,0.999
+LOC_point_to_edge_match,tres-strict-12-7-0.15,position_error_zero_mean,position_error_mean,0.0,0.0
+LOC_point_to_edge_match,strict-12-7-0.15,APE_too_high,APE,42.335667,3.397525
+KF_thresholds,leger-0.7-8,APE_too_high,APE,2.003648,1.9988965

@@ -1,0 +1,2838 @@
+{
+  "KE_blob_enable/par-defaut-disabled": {
+    "steps": {
+      "override_yaml": 0.0515894889831543,
+      "record_bag": 3.000880718231201,
+      "launch_slam": 4.725394248962402,
+      "check_params_runtime": 33.54206418991089,
+      "play_lidar": 89.35613203048706,
+      "stop_restore": 3.1561570167541504
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.enable.blob": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_blob_enable/enabled": {
+    "steps": {
+      "override_yaml": 0.06037569046020508,
+      "record_bag": 3.0008907318115234,
+      "launch_slam": 4.735811710357666,
+      "check_params_runtime": 33.283053398132324,
+      "play_lidar": 88.98960781097412,
+      "stop_restore": 3.7144038677215576
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.enable.blob": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_blob_match/4": {
+    "steps": {
+      "override_yaml": 0.0618743896484375,
+      "record_bag": 3.000713348388672,
+      "launch_slam": 4.782159805297852,
+      "check_params_runtime": 33.70393514633179,
+      "play_lidar": 88.98709392547607,
+      "stop_restore": 4.033272743225098
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.blob_nb_neighbors": "<node not found>",
+        "slam.ke.enable.blob": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_blob_match/7": {
+    "steps": {
+      "override_yaml": 0.06627202033996582,
+      "record_bag": 3.0005977153778076,
+      "launch_slam": 4.9509899616241455,
+      "check_params_runtime": 33.516640186309814,
+      "play_lidar": 89.25106406211853,
+      "stop_restore": 11.91790223121643
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.blob_nb_neighbors": "<node not found>",
+        "slam.ke.enable.blob": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_blob_match/par-defaut-10": {
+    "steps": {
+      "override_yaml": 0.06124281883239746,
+      "record_bag": 3.000551462173462,
+      "launch_slam": 4.808356523513794,
+      "check_params_runtime": 33.63031792640686,
+      "play_lidar": 89.12934255599976,
+      "stop_restore": 3.7950119972229004
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.blob_nb_neighbors": "<node not found>",
+        "slam.ke.enable.blob": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_blob_match/15": {
+    "steps": {
+      "override_yaml": 0.058992862701416016,
+      "record_bag": 3.0008764266967773,
+      "launch_slam": 4.735559940338135,
+      "check_params_runtime": 33.669275999069214,
+      "play_lidar": 89.21594023704529,
+      "stop_restore": 3.849487066268921
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.blob_nb_neighbors": "<node not found>",
+        "slam.ke.enable.blob": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_blob_match/25": {
+    "steps": {
+      "override_yaml": 0.07712030410766602,
+      "record_bag": 3.0005087852478027,
+      "launch_slam": 4.783774137496948,
+      "check_params_runtime": 33.707484006881714,
+      "play_lidar": 88.98119902610779,
+      "stop_restore": 3.694082021713257
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.blob_nb_neighbors": "<node not found>",
+        "slam.ke.enable.blob": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_input_sampling_ratio/par-defaut-1.0": {
+    "steps": {
+      "override_yaml": 0.0569305419921875,
+      "record_bag": 3.0008087158203125,
+      "launch_slam": 4.7377307415008545,
+      "check_params_runtime": 33.24658823013306,
+      "play_lidar": 89.55171418190002,
+      "stop_restore": 3.1681296825408936
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.input_sampling_ratio": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_input_sampling_ratio/0.8": {
+    "steps": {
+      "override_yaml": 0.06082868576049805,
+      "record_bag": 3.000710964202881,
+      "launch_slam": 4.750041484832764,
+      "check_params_runtime": 33.11061644554138,
+      "play_lidar": 88.95657777786255,
+      "stop_restore": 3.0577573776245117
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.input_sampling_ratio": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_input_sampling_ratio/0.6": {
+    "steps": {
+      "override_yaml": 0.05979323387145996,
+      "record_bag": 3.0008373260498047,
+      "launch_slam": 4.7223968505859375,
+      "check_params_runtime": 33.30171322822571,
+      "play_lidar": 89.39405035972595,
+      "stop_restore": 3.123077630996704
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.input_sampling_ratio": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_input_sampling_ratio/0.4": {
+    "steps": {
+      "override_yaml": 0.06022143363952637,
+      "record_bag": 3.000890016555786,
+      "launch_slam": 4.749051809310913,
+      "check_params_runtime": 33.24799585342407,
+      "play_lidar": 89.32248711585999,
+      "stop_restore": 3.0826382637023926
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.input_sampling_ratio": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_input_sampling_ratio/0.2": {
+    "steps": {
+      "override_yaml": 0.07791280746459961,
+      "record_bag": 3.000807285308838,
+      "launch_slam": 4.741241931915283,
+      "check_params_runtime": 33.021918058395386,
+      "play_lidar": 89.57702970504761,
+      "stop_restore": 3.1230902671813965
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.input_sampling_ratio": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_distance_to_lidar/par-defaut-1.5-200": {
+    "steps": {
+      "override_yaml": 0.06532979011535645,
+      "record_bag": 3.0008270740509033,
+      "launch_slam": 4.741472005844116,
+      "check_params_runtime": 33.43472218513489,
+      "play_lidar": 90.28851771354675,
+      "stop_restore": 2.9911203384399414
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_distance_to_sensor": "<node not found>",
+        "slam.ke.max_distance_to_sensor": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_distance_to_lidar/eloigne-1.5-300.0": {
+    "steps": {
+      "override_yaml": 0.05786442756652832,
+      "record_bag": 3.000781297683716,
+      "launch_slam": 4.726595640182495,
+      "check_params_runtime": 33.621922731399536,
+      "play_lidar": 88.99873375892639,
+      "stop_restore": 3.2091946601867676
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_distance_to_sensor": "<node not found>",
+        "slam.ke.max_distance_to_sensor": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_distance_to_lidar/rapproche-0.5-200.0": {
+    "steps": {
+      "override_yaml": 0.06475281715393066,
+      "record_bag": 3.0008046627044678,
+      "launch_slam": 4.749014616012573,
+      "check_params_runtime": 33.60676670074463,
+      "play_lidar": 89.59102654457092,
+      "stop_restore": 3.1605403423309326
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_distance_to_sensor": "<node not found>",
+        "slam.ke.max_distance_to_sensor": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_distance_to_lidar/large-0.5-300": {
+    "steps": {
+      "override_yaml": 0.05798029899597168,
+      "record_bag": 3.00052547454834,
+      "launch_slam": 4.741406440734863,
+      "check_params_runtime": 33.334537982940674,
+      "play_lidar": 89.55626106262207,
+      "stop_restore": 3.094618558883667
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_distance_to_sensor": "<node not found>",
+        "slam.ke.max_distance_to_sensor": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_azimuth_angle/par-defaut-0-360": {
+    "steps": {
+      "override_yaml": 0.0631868839263916,
+      "record_bag": 3.000504732131958,
+      "launch_slam": 4.753232717514038,
+      "check_params_runtime": 33.326990842819214,
+      "play_lidar": 89.34865403175354,
+      "stop_restore": 3.182957410812378
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_azimuth": "<node not found>",
+        "slam.ke.max_azimuth": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_azimuth_angle/90-90": {
+    "steps": {
+      "override_yaml": 0.05954456329345703,
+      "record_bag": 3.000537157058716,
+      "launch_slam": 4.744872808456421,
+      "check_params_runtime": 33.13366627693176,
+      "play_lidar": 89.6560685634613,
+      "stop_restore": 3.0332958698272705
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_azimuth": "<node not found>",
+        "slam.ke.max_azimuth": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_azimuth_angle/45-45": {
+    "steps": {
+      "override_yaml": 0.06143546104431152,
+      "record_bag": 3.0008604526519775,
+      "launch_slam": 4.750246524810791,
+      "check_params_runtime": 33.05004596710205,
+      "play_lidar": 89.842613697052,
+      "stop_restore": 2.904391288757324
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_azimuth": "<node not found>",
+        "slam.ke.max_azimuth": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_azimuth_angle/135-135": {
+    "steps": {
+      "override_yaml": 0.42206859588623047,
+      "record_bag": 3.001434803009033,
+      "launch_slam": 4.734759569168091,
+      "check_params_runtime": 33.29212784767151,
+      "play_lidar": 88.94580745697021,
+      "stop_restore": 3.1249887943267822
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_azimuth": "<node not found>",
+        "slam.ke.max_azimuth": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_min_beam_surface_angle/par-defaut-10": {
+    "steps": {
+      "override_yaml": 0.05838179588317871,
+      "record_bag": 3.000822067260742,
+      "launch_slam": 4.7437355518341064,
+      "check_params_runtime": 33.0664484500885,
+      "play_lidar": 89.29495477676392,
+      "stop_restore": 3.0897111892700195
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_beam_surface_angle": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_min_beam_surface_angle/0": {
+    "steps": {
+      "override_yaml": 0.05791282653808594,
+      "record_bag": 3.0005006790161133,
+      "launch_slam": 4.721046686172485,
+      "check_params_runtime": 33.21491718292236,
+      "play_lidar": 89.49480175971985,
+      "stop_restore": 3.198939085006714
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_beam_surface_angle": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_min_beam_surface_angle/20": {
+    "steps": {
+      "override_yaml": 0.05785107612609863,
+      "record_bag": 3.0008206367492676,
+      "launch_slam": 4.71985125541687,
+      "check_params_runtime": 33.321311712265015,
+      "play_lidar": 89.39129424095154,
+      "stop_restore": 3.1477925777435303
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_beam_surface_angle": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_min_beam_surface_angle/30": {
+    "steps": {
+      "override_yaml": 0.06371545791625977,
+      "record_bag": 3.000556468963623,
+      "launch_slam": 4.7220618724823,
+      "check_params_runtime": 33.30623126029968,
+      "play_lidar": 89.12149786949158,
+      "stop_restore": 3.0902154445648193
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_beam_surface_angle": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_min_beam_surface_angle/5": {
+    "steps": {
+      "override_yaml": 0.06530213356018066,
+      "record_bag": 3.000535726547241,
+      "launch_slam": 4.724620342254639,
+      "check_params_runtime": 33.387906551361084,
+      "play_lidar": 89.51998805999756,
+      "stop_restore": 3.1439590454101562
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.min_beam_surface_angle": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_side_nb/par-defaut-5": {
+    "steps": {
+      "override_yaml": 0.05782628059387207,
+      "record_bag": 3.0008339881896973,
+      "launch_slam": 4.741742372512817,
+      "check_params_runtime": 33.374494552612305,
+      "play_lidar": 89.52706909179688,
+      "stop_restore": 3.3055570125579834
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_side_nb": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_side_nb/2": {
+    "steps": {
+      "override_yaml": 0.059320926666259766,
+      "record_bag": 3.0007426738739014,
+      "launch_slam": 4.810465574264526,
+      "check_params_runtime": 33.20548725128174,
+      "play_lidar": 89.61461901664734,
+      "stop_restore": 1.6917872428894043
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_side_nb": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_side_nb/3": {
+    "steps": {
+      "override_yaml": 0.9826509952545166,
+      "record_bag": 3.0013930797576904,
+      "launch_slam": 4.760704755783081,
+      "check_params_runtime": 33.321741342544556,
+      "play_lidar": 89.04226088523865,
+      "stop_restore": 2.986457586288452
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_side_nb": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_side_nb/10": {
+    "steps": {
+      "override_yaml": 0.06300234794616699,
+      "record_bag": 3.0007665157318115,
+      "launch_slam": 4.772786617279053,
+      "check_params_runtime": 33.14232015609741,
+      "play_lidar": 89.29729747772217,
+      "stop_restore": 3.071498394012451
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_side_nb": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_side_nb/20": {
+    "steps": {
+      "override_yaml": 0.06322550773620605,
+      "record_bag": 3.000882387161255,
+      "launch_slam": 4.74465799331665,
+      "check_params_runtime": 33.32019758224487,
+      "play_lidar": 89.35524249076843,
+      "stop_restore": 3.097139358520508
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_side_nb": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_side_nb/50": {
+    "steps": {
+      "override_yaml": 0.05925917625427246,
+      "record_bag": 3.0008320808410645,
+      "launch_slam": 4.7301857471466064,
+      "check_params_runtime": 33.36465287208557,
+      "play_lidar": 89.01186275482178,
+      "stop_restore": 3.1569435596466064
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_side_nb": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_radius/par-defaut-0.10": {
+    "steps": {
+      "override_yaml": 0.06394600868225098,
+      "record_bag": 3.000807285308838,
+      "launch_slam": 4.745684623718262,
+      "check_params_runtime": 33.280784130096436,
+      "play_lidar": 89.43738293647766,
+      "stop_restore": 3.206972360610962
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_radius": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_radius/0.05": {
+    "steps": {
+      "override_yaml": 0.06006360054016113,
+      "record_bag": 3.0008046627044678,
+      "launch_slam": 4.796220064163208,
+      "check_params_runtime": 33.30956244468689,
+      "play_lidar": 89.01736378669739,
+      "stop_restore": 3.093975782394409
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_radius": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_radius/0.15": {
+    "steps": {
+      "override_yaml": 0.05980515480041504,
+      "record_bag": 3.0008127689361572,
+      "launch_slam": 4.751757383346558,
+      "check_params_runtime": 33.28850793838501,
+      "play_lidar": 89.08233952522278,
+      "stop_restore": 3.1133623123168945
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_radius": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_radius/0.25": {
+    "steps": {
+      "override_yaml": 0.05849742889404297,
+      "record_bag": 3.000453472137451,
+      "launch_slam": 4.7518298625946045,
+      "check_params_runtime": 32.92928647994995,
+      "play_lidar": 89.15248823165894,
+      "stop_restore": 3.0873255729675293
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_radius": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_neighbors_radius/0.50": {
+    "steps": {
+      "override_yaml": 0.06305384635925293,
+      "record_bag": 3.000549793243408,
+      "launch_slam": 4.7468955516815186,
+      "check_params_runtime": 33.45751476287842,
+      "play_lidar": 89.32100510597229,
+      "stop_restore": 3.1955277919769287
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.neighbors_radius": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_plane_edge_angle_thresholds/par-defaut-150-120": {
+    "steps": {
+      "override_yaml": 0.05860400199890137,
+      "record_bag": 3.0008296966552734,
+      "launch_slam": 4.76923131942749,
+      "check_params_runtime": 33.40244483947754,
+      "play_lidar": 89.2958333492279,
+      "stop_restore": 3.1951611042022705
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.plane_angle_threshold": "<node not found>",
+        "slam.ke.edge_angle_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_plane_edge_angle_thresholds/165-105-strict": {
+    "steps": {
+      "override_yaml": 0.06310224533081055,
+      "record_bag": 3.000544309616089,
+      "launch_slam": 4.779319763183594,
+      "check_params_runtime": 33.49740505218506,
+      "play_lidar": 89.05546355247498,
+      "stop_restore": 3.2099521160125732
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.plane_angle_threshold": "<node not found>",
+        "slam.ke.edge_angle_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_plane_edge_angle_thresholds/175-95-tres-strict": {
+    "steps": {
+      "override_yaml": 0.06270003318786621,
+      "record_bag": 3.0006940364837646,
+      "launch_slam": 4.79006290435791,
+      "check_params_runtime": 33.369657039642334,
+      "play_lidar": 89.46243166923523,
+      "stop_restore": 3.168595552444458
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.plane_angle_threshold": "<node not found>",
+        "slam.ke.edge_angle_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_plane_edge_angle_thresholds/140-135-permissif": {
+    "steps": {
+      "override_yaml": 0.06450366973876953,
+      "record_bag": 3.000725507736206,
+      "launch_slam": 4.7605671882629395,
+      "check_params_runtime": 33.662747383117676,
+      "play_lidar": 89.1198525428772,
+      "stop_restore": 3.164161443710327
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.plane_angle_threshold": "<node not found>",
+        "slam.ke.edge_angle_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_plane_edge_angle_thresholds/130-150-tres-permissif": {
+    "steps": {
+      "override_yaml": 0.058646440505981445,
+      "record_bag": 3.000561475753784,
+      "launch_slam": 4.751687288284302,
+      "check_params_runtime": 33.477176904678345,
+      "play_lidar": 89.20905351638794,
+      "stop_restore": 3.098771333694458
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.plane_angle_threshold": "<node not found>",
+        "slam.ke.edge_angle_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_edge_gaps/par-defaut-1-10-50": {
+    "steps": {
+      "override_yaml": 0.05817699432373047,
+      "record_bag": 3.0004937648773193,
+      "launch_slam": 4.741969108581543,
+      "check_params_runtime": 33.350237131118774,
+      "play_lidar": 89.53656601905823,
+      "stop_restore": 3.0411975383758545
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.edge_depth_gap_threshold": "<node not found>",
+        "slam.ke.edge_nb_gap_points": "<node not found>",
+        "slam.ke.edge_intensity_gap_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_edge_gaps/0.5-5-25-plus-permissif": {
+    "steps": {
+      "override_yaml": 0.36722540855407715,
+      "record_bag": 3.0011558532714844,
+      "launch_slam": 4.762276649475098,
+      "check_params_runtime": 33.75710964202881,
+      "play_lidar": 89.18624830245972,
+      "stop_restore": 3.1294515132904053
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.edge_depth_gap_threshold": "<node not found>",
+        "slam.ke.edge_nb_gap_points": "<node not found>",
+        "slam.ke.edge_intensity_gap_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_edge_gaps/0.75-8-40-permissif": {
+    "steps": {
+      "override_yaml": 0.06058311462402344,
+      "record_bag": 3.0008180141448975,
+      "launch_slam": 4.755289793014526,
+      "check_params_runtime": 33.427042961120605,
+      "play_lidar": 89.36582636833191,
+      "stop_restore": 3.0925116539001465
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.edge_depth_gap_threshold": "<node not found>",
+        "slam.ke.edge_nb_gap_points": "<node not found>",
+        "slam.ke.edge_intensity_gap_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_edge_gaps/1.5-15-75-strict": {
+    "steps": {
+      "override_yaml": 0.06532716751098633,
+      "record_bag": 3.0004239082336426,
+      "launch_slam": 4.766125679016113,
+      "check_params_runtime": 33.499613523483276,
+      "play_lidar": 89.25258588790894,
+      "stop_restore": 3.148616313934326
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.edge_depth_gap_threshold": "<node not found>",
+        "slam.ke.edge_nb_gap_points": "<node not found>",
+        "slam.ke.edge_intensity_gap_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_edge_gaps/2.0-20-100-tres-strict": {
+    "steps": {
+      "override_yaml": 0.058440208435058594,
+      "record_bag": 3.0008199214935303,
+      "launch_slam": 4.735504388809204,
+      "check_params_runtime": 33.61417746543884,
+      "play_lidar": 88.98586368560791,
+      "stop_restore": 3.104451894760132
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.edge_depth_gap_threshold": "<node not found>",
+        "slam.ke.edge_nb_gap_points": "<node not found>",
+        "slam.ke.edge_intensity_gap_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_max_points/par-defaut-1000": {
+    "steps": {
+      "override_yaml": 0.2923581600189209,
+      "record_bag": 3.0014424324035645,
+      "launch_slam": 4.760259389877319,
+      "check_params_runtime": 33.515655755996704,
+      "play_lidar": 89.42119669914246,
+      "stop_restore": 3.1359333992004395
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_max_points/200": {
+    "steps": {
+      "override_yaml": 0.46773242950439453,
+      "record_bag": 3.0012640953063965,
+      "launch_slam": 4.785030841827393,
+      "check_params_runtime": 33.693870544433594,
+      "play_lidar": 89.2174425125122,
+      "stop_restore": 2.9765448570251465
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_max_points/500": {
+    "steps": {
+      "override_yaml": 0.06528162956237793,
+      "record_bag": 3.000822067260742,
+      "launch_slam": 4.747491836547852,
+      "check_params_runtime": 33.60625338554382,
+      "play_lidar": 88.9949209690094,
+      "stop_restore": 3.1283626556396484
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_max_points/1500": {
+    "steps": {
+      "override_yaml": 0.060515403747558594,
+      "record_bag": 3.0008082389831543,
+      "launch_slam": 4.7497265338897705,
+      "check_params_runtime": 33.78031396865845,
+      "play_lidar": 89.13891124725342,
+      "stop_restore": 3.2312886714935303
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_max_points/2000": {
+    "steps": {
+      "override_yaml": 0.059627532958984375,
+      "record_bag": 3.000457525253296,
+      "launch_slam": 4.719272136688232,
+      "check_params_runtime": 33.469494104385376,
+      "play_lidar": 89.13363647460938,
+      "stop_restore": 3.151365280151367
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_max_points/5000": {
+    "steps": {
+      "override_yaml": 0.05771183967590332,
+      "record_bag": 3.0004525184631348,
+      "launch_slam": 4.700869560241699,
+      "check_params_runtime": 33.23911499977112,
+      "play_lidar": 89.40628981590271,
+      "stop_restore": 3.022118330001831
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_voxel_grid_resolution/par-defaut-2.0": {
+    "steps": {
+      "override_yaml": 0.8907504081726074,
+      "record_bag": 3.0012500286102295,
+      "launch_slam": 4.732633352279663,
+      "check_params_runtime": 33.38843750953674,
+      "play_lidar": 89.13732957839966,
+      "stop_restore": 3.135711431503296
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.voxel_grid_resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_voxel_grid_resolution/0.2-extremement-fine": {
+    "steps": {
+      "override_yaml": 0.06533026695251465,
+      "record_bag": 3.0008084774017334,
+      "launch_slam": 4.743508338928223,
+      "check_params_runtime": 33.25567102432251,
+      "play_lidar": 89.41658210754395,
+      "stop_restore": 3.097729444503784
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.voxel_grid_resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_voxel_grid_resolution/0.5-tres-fine": {
+    "steps": {
+      "override_yaml": 0.4020674228668213,
+      "record_bag": 3.0015761852264404,
+      "launch_slam": 4.734033107757568,
+      "check_params_runtime": 33.298444509506226,
+      "play_lidar": 89.34075498580933,
+      "stop_restore": 3.140491008758545
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.voxel_grid_resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_voxel_grid_resolution/1.0-fine": {
+    "steps": {
+      "override_yaml": 0.06709504127502441,
+      "record_bag": 3.0006747245788574,
+      "launch_slam": 4.755839824676514,
+      "check_params_runtime": 33.26679968833923,
+      "play_lidar": 89.33203601837158,
+      "stop_restore": 3.088430404663086
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.voxel_grid_resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_voxel_grid_resolution/7.0-tres-large": {
+    "steps": {
+      "override_yaml": 0.05714273452758789,
+      "record_bag": 3.000831127166748,
+      "launch_slam": 4.744214296340942,
+      "check_params_runtime": 33.21816372871399,
+      "play_lidar": 89.3613224029541,
+      "stop_restore": 3.121025323867798
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.voxel_grid_resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_downsampling_voxel_grid_resolution/5.0-large": {
+    "steps": {
+      "override_yaml": 0.06413841247558594,
+      "record_bag": 3.0005006790161133,
+      "launch_slam": 4.765064239501953,
+      "check_params_runtime": 33.23955249786377,
+      "play_lidar": 89.20593333244324,
+      "stop_restore": 3.06658935546875
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.downsampling.voxel_grid_resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_densite_dextraction_de_KP/par-defaut": {
+    "steps": {
+      "override_yaml": 0.06217217445373535,
+      "record_bag": 3.0008130073547363,
+      "launch_slam": 4.732903003692627,
+      "check_params_runtime": 32.96819758415222,
+      "play_lidar": 89.41388654708862,
+      "stop_restore": 3.164445400238037
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.enable.blob": "<node not found>",
+        "slam.ke.input_sampling_ratio": "<node not found>",
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_densite_dextraction_de_KP/profil-leger": {
+    "steps": {
+      "override_yaml": 0.06300544738769531,
+      "record_bag": 3.000837564468384,
+      "launch_slam": 4.7581117153167725,
+      "check_params_runtime": 32.85826826095581,
+      "play_lidar": 89.06363844871521,
+      "stop_restore": 3.1813087463378906
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.enable.blob": "<node not found>",
+        "slam.ke.input_sampling_ratio": "<node not found>",
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_densite_dextraction_de_KP/profil-tres-leger": {
+    "steps": {
+      "override_yaml": 0.06293106079101562,
+      "record_bag": 3.0008440017700195,
+      "launch_slam": 4.746434211730957,
+      "check_params_runtime": 33.00870203971863,
+      "play_lidar": 88.96526765823364,
+      "stop_restore": 3.0994277000427246
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.enable.blob": "<node not found>",
+        "slam.ke.input_sampling_ratio": "<node not found>",
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_densite_dextraction_de_KP/profil-dense": {
+    "steps": {
+      "override_yaml": 0.06018567085266113,
+      "record_bag": 3.0007576942443848,
+      "launch_slam": 4.725341081619263,
+      "check_params_runtime": 33.06312608718872,
+      "play_lidar": 89.20960974693298,
+      "stop_restore": 3.7890219688415527
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.enable.blob": "<node not found>",
+        "slam.ke.input_sampling_ratio": "<node not found>",
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KE_densite_dextraction_de_KP/profil-tres-dense": {
+    "steps": {
+      "override_yaml": 0.0572504997253418,
+      "record_bag": 3.00081205368042,
+      "launch_slam": 4.72656512260437,
+      "check_params_runtime": 32.91564655303955,
+      "play_lidar": 89.04622173309326,
+      "stop_restore": 3.0880861282348633
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ke.enable.blob": "<node not found>",
+        "slam.ke.input_sampling_ratio": "<node not found>",
+        "slam.ke.downsampling.max_points": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ego_motion_mode/0": {
+    "steps": {
+      "override_yaml": 0.05649614334106445,
+      "record_bag": 3.000828742980957,
+      "launch_slam": 4.714206695556641,
+      "check_params_runtime": 32.97449851036072,
+      "play_lidar": 89.41641592979431,
+      "stop_restore": 3.0863471031188965
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ego_motion_mode/par-defaut-1": {
+    "steps": {
+      "override_yaml": 0.06209373474121094,
+      "record_bag": 3.000647783279419,
+      "launch_slam": 4.750374794006348,
+      "check_params_runtime": 33.08435010910034,
+      "play_lidar": 88.9579484462738,
+      "stop_restore": 3.1388046741485596
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ego_motion_mode/2": {
+    "steps": {
+      "override_yaml": 0.05997204780578613,
+      "record_bag": 3.0007948875427246,
+      "launch_slam": 4.74350380897522,
+      "check_params_runtime": 32.887818336486816,
+      "play_lidar": 88.97310757637024,
+      "stop_restore": 3.151092529296875
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ego_motion_mode/3": {
+    "steps": {
+      "override_yaml": 0.07013249397277832,
+      "record_bag": 3.0011186599731445,
+      "launch_slam": 4.746641159057617,
+      "check_params_runtime": 33.06918954849243,
+      "play_lidar": 89.63910627365112,
+      "stop_restore": 3.142540693283081
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ego_motion_mode/4": {
+    "steps": {
+      "override_yaml": 0.05891585350036621,
+      "record_bag": 3.0007238388061523,
+      "launch_slam": 4.725760459899902,
+      "check_params_runtime": 33.77323865890503,
+      "play_lidar": 89.01605749130249,
+      "stop_restore": 2.994063138961792
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ego_motion_mode/5": {
+    "steps": {
+      "override_yaml": 0.06277608871459961,
+      "record_bag": 3.0004560947418213,
+      "launch_slam": 4.818391799926758,
+      "check_params_runtime": 33.09463977813721,
+      "play_lidar": 89.10253763198853,
+      "stop_restore": 3.0969114303588867
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ICP_LM_Iter/fort-icp-lm-6-20": {
+    "steps": {
+      "override_yaml": 0.060102224349975586,
+      "record_bag": 3.0008857250213623,
+      "launch_slam": 4.756204843521118,
+      "check_params_runtime": 33.04553151130676,
+      "play_lidar": 89.11227679252625,
+      "stop_restore": 3.030085325241089
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.ICP_max_iter": "<node not found>",
+        "slam.ego_motion_registration.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ICP_LM_Iter/par-defaut-4-15": {
+    "steps": {
+      "override_yaml": 0.1643533706665039,
+      "record_bag": 3.0010948181152344,
+      "launch_slam": 4.783642530441284,
+      "check_params_runtime": 33.098769187927246,
+      "play_lidar": 89.54227805137634,
+      "stop_restore": 3.025132656097412
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.ICP_max_iter": "<node not found>",
+        "slam.ego_motion_registration.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ICP_LM_Iter/faibles-icp-lm-3-10": {
+    "steps": {
+      "override_yaml": 0.057816267013549805,
+      "record_bag": 3.0007898807525635,
+      "launch_slam": 4.766505718231201,
+      "check_params_runtime": 33.75767922401428,
+      "play_lidar": 89.20661282539368,
+      "stop_restore": 3.0427863597869873
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.ICP_max_iter": "<node not found>",
+        "slam.ego_motion_registration.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ICP_LM_Iter/icp-extreme-100": {
+    "steps": {
+      "override_yaml": 0.05783987045288086,
+      "record_bag": 3.000821113586426,
+      "launch_slam": 4.737166881561279,
+      "check_params_runtime": 32.8667254447937,
+      "play_lidar": 88.9133186340332,
+      "stop_restore": 3.0612823963165283
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.ICP_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ICP_LM_Iter/lm-extreme-100": {
+    "steps": {
+      "override_yaml": 0.05763983726501465,
+      "record_bag": 3.000683069229126,
+      "launch_slam": 4.743325233459473,
+      "check_params_runtime": 33.718820571899414,
+      "play_lidar": 89.17655682563782,
+      "stop_restore": 3.0842177867889404
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ICP_LM_Iter/icp-faible-2": {
+    "steps": {
+      "override_yaml": 0.062159061431884766,
+      "record_bag": 3.0008304119110107,
+      "launch_slam": 4.719459295272827,
+      "check_params_runtime": 33.708327531814575,
+      "play_lidar": 89.10859775543213,
+      "stop_restore": 3.156536340713501
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.ICP_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ICP_LM_Iter/lm-faible-10": {
+    "steps": {
+      "override_yaml": 0.0600438117980957,
+      "record_bag": 3.0008673667907715,
+      "launch_slam": 4.779269695281982,
+      "check_params_runtime": 33.06073617935181,
+      "play_lidar": 88.99661779403687,
+      "stop_restore": 2.9772121906280518
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_ICP_LM_Iter/icp-lm-extremes-100-100": {
+    "steps": {
+      "override_yaml": 0.5727708339691162,
+      "record_bag": 3.0015485286712646,
+      "launch_slam": 4.746512174606323,
+      "check_params_runtime": 33.02248239517212,
+      "play_lidar": 89.0523111820221,
+      "stop_restore": 3.1492762565612793
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.ICP_max_iter": "<node not found>",
+        "slam.ego_motion_registration.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_Optim_Saturation/par-defaut-5.0-1.0": {
+    "steps": {
+      "override_yaml": 0.05776405334472656,
+      "record_bag": 3.000788688659668,
+      "launch_slam": 4.763753175735474,
+      "check_params_runtime": 33.68700408935547,
+      "play_lidar": 88.96106028556824,
+      "stop_restore": 3.113687753677368
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.init_saturation_distance": "<node not found>",
+        "slam.ego_motion_registration.final_saturation_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_Optim_Saturation/strict-3.0-0.8": {
+    "steps": {
+      "override_yaml": 0.0568089485168457,
+      "record_bag": 3.0008082389831543,
+      "launch_slam": 4.755395174026489,
+      "check_params_runtime": 33.7302041053772,
+      "play_lidar": 89.05577778816223,
+      "stop_restore": 3.02410626411438
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.init_saturation_distance": "<node not found>",
+        "slam.ego_motion_registration.final_saturation_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_Optim_Saturation/tres-strict-2.0-0.5": {
+    "steps": {
+      "override_yaml": 0.05835151672363281,
+      "record_bag": 3.000844955444336,
+      "launch_slam": 4.7517781257629395,
+      "check_params_runtime": 32.98432517051697,
+      "play_lidar": 89.0433337688446,
+      "stop_restore": 3.1799352169036865
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.init_saturation_distance": "<node not found>",
+        "slam.ego_motion_registration.final_saturation_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_Optim_Saturation/tres-lache-7.0-1.5": {
+    "steps": {
+      "override_yaml": 1.244311809539795,
+      "record_bag": 3.001676559448242,
+      "launch_slam": 4.730504989624023,
+      "check_params_runtime": 33.01863479614258,
+      "play_lidar": 88.98008418083191,
+      "stop_restore": 3.0229885578155518
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.init_saturation_distance": "<node not found>",
+        "slam.ego_motion_registration.final_saturation_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_Optim_Saturation/ultra-lache-10-2.0": {
+    "steps": {
+      "override_yaml": 0.06150531768798828,
+      "record_bag": 3.0004899501800537,
+      "launch_slam": 4.75386905670166,
+      "check_params_runtime": 32.94960427284241,
+      "play_lidar": 88.98769068717957,
+      "stop_restore": 3.118084669113159
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.init_saturation_distance": "<node not found>",
+        "slam.ego_motion_registration.final_saturation_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_max_neighbors_distance/2": {
+    "steps": {
+      "override_yaml": 0.06273961067199707,
+      "record_bag": 3.0007503032684326,
+      "launch_slam": 4.733151912689209,
+      "check_params_runtime": 32.851494789123535,
+      "play_lidar": 88.99678683280945,
+      "stop_restore": 3.0863828659057617
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_max_neighbors_distance/3.5": {
+    "steps": {
+      "override_yaml": 0.05803394317626953,
+      "record_bag": 3.0005438327789307,
+      "launch_slam": 4.74640417098999,
+      "check_params_runtime": 33.01264977455139,
+      "play_lidar": 88.96542191505432,
+      "stop_restore": 3.145986318588257
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_max_neighbors_distance/par-defaut-5": {
+    "steps": {
+      "override_yaml": 1.172079086303711,
+      "record_bag": 3.001709461212158,
+      "launch_slam": 4.741929531097412,
+      "check_params_runtime": 33.04757857322693,
+      "play_lidar": 89.14912247657776,
+      "stop_restore": 3.001615524291992
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_max_neighbors_distance/7.5": {
+    "steps": {
+      "override_yaml": 0.06710052490234375,
+      "record_bag": 3.000826835632324,
+      "launch_slam": 4.721581220626831,
+      "check_params_runtime": 33.769333362579346,
+      "play_lidar": 89.02101111412048,
+      "stop_restore": 3.1009371280670166
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_max_neighbors_distance/10": {
+    "steps": {
+      "override_yaml": 0.05800604820251465,
+      "record_bag": 3.0008301734924316,
+      "launch_slam": 4.721888065338135,
+      "check_params_runtime": 32.92630743980408,
+      "play_lidar": 89.1361837387085,
+      "stop_restore": 3.14313006401062
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_max_neighbors_distance/30": {
+    "steps": {
+      "override_yaml": 0.05901694297790527,
+      "record_bag": 3.000739336013794,
+      "launch_slam": 4.732426881790161,
+      "check_params_runtime": 33.14304494857788,
+      "play_lidar": 89.3392424583435,
+      "stop_restore": 3.1678426265716553
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_point_to_edge_and_point_to_plane_matching/par-defaut": {
+    "steps": {
+      "override_yaml": 0.5398044586181641,
+      "record_bag": 3.001779794692993,
+      "launch_slam": 4.732898473739624,
+      "check_params_runtime": 32.97671866416931,
+      "play_lidar": 89.64683699607849,
+      "stop_restore": 3.209770679473877
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.edge_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_min_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_max_model_error": "<node not found>",
+        "slam.ego_motion_registration.plane_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.planarity_threshold": "<node not found>",
+        "slam.ego_motion_registration.plane_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_point_to_edge_and_point_to_plane_matching/permissif": {
+    "steps": {
+      "override_yaml": 0.06275010108947754,
+      "record_bag": 3.0008227825164795,
+      "launch_slam": 4.732309103012085,
+      "check_params_runtime": 32.889641761779785,
+      "play_lidar": 89.07010412216187,
+      "stop_restore": 2.9732017517089844
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.edge_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_min_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_max_model_error": "<node not found>",
+        "slam.ego_motion_registration.plane_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.planarity_threshold": "<node not found>",
+        "slam.ego_motion_registration.plane_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_point_to_edge_and_point_to_plane_matching/strict": {
+    "steps": {
+      "override_yaml": 0.06445908546447754,
+      "record_bag": 3.000519275665283,
+      "launch_slam": 4.721704959869385,
+      "check_params_runtime": 33.721904277801514,
+      "play_lidar": 89.11036705970764,
+      "stop_restore": 3.1521477699279785
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.edge_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_min_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_max_model_error": "<node not found>",
+        "slam.ego_motion_registration.plane_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.planarity_threshold": "<node not found>",
+        "slam.ego_motion_registration.plane_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_point_to_edge_and_point_to_plane_matching/tres-permissif": {
+    "steps": {
+      "override_yaml": 0.0584416389465332,
+      "record_bag": 3.0008373260498047,
+      "launch_slam": 4.736657381057739,
+      "check_params_runtime": 33.65168213844299,
+      "play_lidar": 88.95920300483704,
+      "stop_restore": 3.064772605895996
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.edge_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_min_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_max_model_error": "<node not found>",
+        "slam.ego_motion_registration.plane_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.planarity_threshold": "<node not found>",
+        "slam.ego_motion_registration.plane_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "ER_point_to_edge_and_point_to_plane_matching/tres-strict": {
+    "steps": {
+      "override_yaml": 0.05702805519104004,
+      "record_bag": 3.0008013248443604,
+      "launch_slam": 4.7463905811309814,
+      "check_params_runtime": 32.9626669883728,
+      "play_lidar": 89.21662497520447,
+      "stop_restore": 2.9192874431610107
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.ego_motion_registration.edge_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_min_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.edge_max_model_error": "<node not found>",
+        "slam.ego_motion_registration.plane_nb_neighbors": "<node not found>",
+        "slam.ego_motion_registration.planarity_threshold": "<node not found>",
+        "slam.ego_motion_registration.plane_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_max_neighbors_distance/2": {
+    "steps": {
+      "override_yaml": 0.05800223350524902,
+      "record_bag": 3.0008299350738525,
+      "launch_slam": 4.7399303913116455,
+      "check_params_runtime": 32.8936984539032,
+      "play_lidar": 88.95383477210999,
+      "stop_restore": 3.0979061126708984
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_max_neighbors_distance/3.5": {
+    "steps": {
+      "override_yaml": 0.06415939331054688,
+      "record_bag": 3.0006954669952393,
+      "launch_slam": 4.737160682678223,
+      "check_params_runtime": 32.92005896568298,
+      "play_lidar": 89.02843618392944,
+      "stop_restore": 3.084273338317871
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_max_neighbors_distance/par-defaut-5": {
+    "steps": {
+      "override_yaml": 0.057840585708618164,
+      "record_bag": 3.0008394718170166,
+      "launch_slam": 4.7365500926971436,
+      "check_params_runtime": 33.66816830635071,
+      "play_lidar": 89.00385737419128,
+      "stop_restore": 3.2058300971984863
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_max_neighbors_distance/7.5": {
+    "steps": {
+      "override_yaml": 0.060975074768066406,
+      "record_bag": 3.000666856765747,
+      "launch_slam": 4.723701000213623,
+      "check_params_runtime": 33.75292730331421,
+      "play_lidar": 88.97681498527527,
+      "stop_restore": 3.136324405670166
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_max_neighbors_distance/10": {
+    "steps": {
+      "override_yaml": 0.06213498115539551,
+      "record_bag": 3.0004897117614746,
+      "launch_slam": 4.725322484970093,
+      "check_params_runtime": 33.78934907913208,
+      "play_lidar": 89.00580549240112,
+      "stop_restore": 3.08231782913208
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_max_neighbors_distance/12.0": {
+    "steps": {
+      "override_yaml": 0.06221175193786621,
+      "record_bag": 3.0004618167877197,
+      "launch_slam": 4.7418811321258545,
+      "check_params_runtime": 32.94387674331665,
+      "play_lidar": 89.11352014541626,
+      "stop_restore": 3.0553665161132812
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_max_neighbors_distance/30": {
+    "steps": {
+      "override_yaml": 0.06401991844177246,
+      "record_bag": 3.0008416175842285,
+      "launch_slam": 4.716860294342041,
+      "check_params_runtime": 32.9144172668457,
+      "play_lidar": 88.96033215522766,
+      "stop_restore": 3.114025115966797
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.max_neighbors_distance": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_edge_match/par-defaut-9-5-0.2": {
+    "steps": {
+      "override_yaml": 0.05876731872558594,
+      "record_bag": 3.0008387565612793,
+      "launch_slam": 4.7377824783325195,
+      "check_params_runtime": 33.09863567352295,
+      "play_lidar": 89.28009176254272,
+      "stop_restore": 2.9817471504211426
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.edge_nb_neighbors": "<node not found>",
+        "slam.localization.edge_min_nb_neighbors": "<node not found>",
+        "slam.localization.edge_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_edge_match/strict-12-7-0.15": {
+    "steps": {
+      "override_yaml": 0.06090092658996582,
+      "record_bag": 3.000819444656372,
+      "launch_slam": 4.730586767196655,
+      "check_params_runtime": 33.14420175552368,
+      "play_lidar": 89.44928312301636,
+      "stop_restore": 3.0104706287384033
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.edge_nb_neighbors": "<node not found>",
+        "slam.localization.edge_min_nb_neighbors": "<node not found>",
+        "slam.localization.edge_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_edge_match/tres-strict-12-7-0.15": {
+    "steps": {
+      "override_yaml": 0.06411981582641602,
+      "record_bag": 3.0008292198181152,
+      "launch_slam": 4.7210533618927,
+      "check_params_runtime": 33.00606322288513,
+      "play_lidar": 89.09728074073792,
+      "stop_restore": 2.6125433444976807
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.edge_nb_neighbors": "<node not found>",
+        "slam.localization.edge_min_nb_neighbors": "<node not found>",
+        "slam.localization.edge_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_edge_match/permissif-7-3-0.3": {
+    "steps": {
+      "override_yaml": 0.06238126754760742,
+      "record_bag": 3.000795602798462,
+      "launch_slam": 4.7566540241241455,
+      "check_params_runtime": 32.97161602973938,
+      "play_lidar": 88.97238326072693,
+      "stop_restore": 2.9802498817443848
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.edge_nb_neighbors": "<node not found>",
+        "slam.localization.edge_min_nb_neighbors": "<node not found>",
+        "slam.localization.edge_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_edge_match/tres-permissif-5-2-0.4": {
+    "steps": {
+      "override_yaml": 0.830329179763794,
+      "record_bag": 3.001455307006836,
+      "launch_slam": 4.776079177856445,
+      "check_params_runtime": 33.029582500457764,
+      "play_lidar": 89.02907752990723,
+      "stop_restore": 2.9826180934906006
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.edge_nb_neighbors": "<node not found>",
+        "slam.localization.edge_min_nb_neighbors": "<node not found>",
+        "slam.localization.edge_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_plane_match/par-defaut-7-0.04-0.1": {
+    "steps": {
+      "override_yaml": 0.058685302734375,
+      "record_bag": 3.000805139541626,
+      "launch_slam": 4.714846849441528,
+      "check_params_runtime": 33.07474899291992,
+      "play_lidar": 89.6400830745697,
+      "stop_restore": 3.074517250061035
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.plane_nb_neighbors": "<node not found>",
+        "slam.localization.planarity_threshold": "<node not found>",
+        "slam.localization.plane_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_plane_match/strict-9-0.05-0.07": {
+    "steps": {
+      "override_yaml": 0.058310747146606445,
+      "record_bag": 3.000868082046509,
+      "launch_slam": 4.730991840362549,
+      "check_params_runtime": 33.72967076301575,
+      "play_lidar": 89.17099666595459,
+      "stop_restore": 3.0816800594329834
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.plane_nb_neighbors": "<node not found>",
+        "slam.localization.planarity_threshold": "<node not found>",
+        "slam.localization.plane_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_plane_match/tres-strict-12-0.08-0.05": {
+    "steps": {
+      "override_yaml": 0.05970358848571777,
+      "record_bag": 3.000751495361328,
+      "launch_slam": 4.724309206008911,
+      "check_params_runtime": 33.67772650718689,
+      "play_lidar": 89.11980509757996,
+      "stop_restore": 3.1440255641937256
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.plane_nb_neighbors": "<node not found>",
+        "slam.localization.planarity_threshold": "<node not found>",
+        "slam.localization.plane_max_model_error": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_plane_match/permissif-5-0.03-0.15": {
+    "steps": {
+      "override_yaml": 0.058164119720458984,
+      "record_bag": 3.0008115768432617,
+      "launch_slam": 4.729602813720703,
+      "check_params_runtime": 32.91434836387634,
+      "play_lidar": 89.15648150444031,
+      "stop_restore": 3.0415940284729004
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.plane_nb_neighbors": "<node not found>",
+        "slam.localization.plane_max_model_error": "<node not found>",
+        "slam.localization.planarity_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_point_to_plane_match/tres-permissif-4-0.02-0.2": {
+    "steps": {
+      "override_yaml": 0.06236124038696289,
+      "record_bag": 3.000821590423584,
+      "launch_slam": 4.732974529266357,
+      "check_params_runtime": 33.12610697746277,
+      "play_lidar": 89.49936985969543,
+      "stop_restore": 3.124119281768799
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.plane_nb_neighbors": "<node not found>",
+        "slam.localization.plane_max_model_error": "<node not found>",
+        "slam.localization.planarity_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_ICP_LM_Iter/fort-icp-lm-6-20": {
+    "steps": {
+      "override_yaml": 0.14432382583618164,
+      "record_bag": 3.001354217529297,
+      "launch_slam": 4.745728492736816,
+      "check_params_runtime": 33.653006076812744,
+      "play_lidar": 89.15467190742493,
+      "stop_restore": 2.9970405101776123
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.ICP_max_iter": "<node not found>",
+        "slam.localization.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_ICP_LM_Iter/par-defaut-4-15": {
+    "steps": {
+      "override_yaml": 0.05735015869140625,
+      "record_bag": 3.000828504562378,
+      "launch_slam": 4.743065595626831,
+      "check_params_runtime": 33.70962715148926,
+      "play_lidar": 89.00732326507568,
+      "stop_restore": 3.0421173572540283
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.ICP_max_iter": "<node not found>",
+        "slam.localization.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_ICP_LM_Iter/faibles-icp-lm-3-10": {
+    "steps": {
+      "override_yaml": 0.05998659133911133,
+      "record_bag": 3.000528335571289,
+      "launch_slam": 4.736306428909302,
+      "check_params_runtime": 33.73385453224182,
+      "play_lidar": 89.07234716415405,
+      "stop_restore": 3.0413787364959717
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.ICP_max_iter": "<node not found>",
+        "slam.localization.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_ICP_LM_Iter/icp-extreme-100": {
+    "steps": {
+      "override_yaml": 0.32494068145751953,
+      "record_bag": 3.0015881061553955,
+      "launch_slam": 4.759544610977173,
+      "check_params_runtime": 33.713486671447754,
+      "play_lidar": 88.97622489929199,
+      "stop_restore": 2.603351593017578
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.ICP_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_ICP_LM_Iter/lm-extreme-100": {
+    "steps": {
+      "override_yaml": 0.06347489356994629,
+      "record_bag": 3.000426769256592,
+      "launch_slam": 4.716665267944336,
+      "check_params_runtime": 33.09093117713928,
+      "play_lidar": 89.19743752479553,
+      "stop_restore": 3.1313672065734863
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_ICP_LM_Iter/icp-faible-2": {
+    "steps": {
+      "override_yaml": 0.06465005874633789,
+      "record_bag": 3.000504493713379,
+      "launch_slam": 4.72235107421875,
+      "check_params_runtime": 33.14897656440735,
+      "play_lidar": 89.02398896217346,
+      "stop_restore": 3.083875894546509
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.ICP_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_ICP_LM_Iter/lm-faible-10": {
+    "steps": {
+      "override_yaml": 0.06160473823547363,
+      "record_bag": 3.0004782676696777,
+      "launch_slam": 4.766406059265137,
+      "check_params_runtime": 33.06731915473938,
+      "play_lidar": 89.17946481704712,
+      "stop_restore": 2.9931211471557617
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "LOC_ICP_LM_Iter/icp-lm-extremes-100-100": {
+    "steps": {
+      "override_yaml": 0.06317138671875,
+      "record_bag": 3.0008316040039062,
+      "launch_slam": 4.747682332992554,
+      "check_params_runtime": 32.92903661727905,
+      "play_lidar": 89.01019072532654,
+      "stop_restore": 2.577531099319458
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.localization.ICP_max_iter": "<node not found>",
+        "slam.localization.LM_max_iter": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "SLAM_undistortion/0-aucun": {
+    "steps": {
+      "override_yaml": 0.06458783149719238,
+      "record_bag": 3.000838279724121,
+      "launch_slam": 4.747370958328247,
+      "check_params_runtime": 33.14118242263794,
+      "play_lidar": 89.43997740745544,
+      "stop_restore": 3.005854845046997
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.undistortion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "SLAM_undistortion/1-unique": {
+    "steps": {
+      "override_yaml": 0.06403589248657227,
+      "record_bag": 3.000826358795166,
+      "launch_slam": 4.724264621734619,
+      "check_params_runtime": 33.00855994224548,
+      "play_lidar": 88.97999882698059,
+      "stop_restore": 3.1889235973358154
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.undistortion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "SLAM_undistortion/par-defaut-2-rafine": {
+    "steps": {
+      "override_yaml": 0.3005681037902832,
+      "record_bag": 3.000901222229004,
+      "launch_slam": 4.737573623657227,
+      "check_params_runtime": 32.905744552612305,
+      "play_lidar": 89.07567739486694,
+      "stop_restore": 3.021148443222046
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.undistortion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "SLAM_undistortion/3-externe": {
+    "steps": {
+      "override_yaml": 0.05747365951538086,
+      "record_bag": 3.0004937648773193,
+      "launch_slam": 4.724206447601318,
+      "check_params_runtime": 32.99165201187134,
+      "play_lidar": 88.96503710746765,
+      "stop_restore": 3.093055009841919
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.undistortion": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "SLAM_interpolation_model/par-defaut-0-lineaire": {
+    "steps": {
+      "override_yaml": 0.7051563262939453,
+      "record_bag": 3.001417875289917,
+      "launch_slam": 4.758492708206177,
+      "check_params_runtime": 33.07133221626282,
+      "play_lidar": 89.5062255859375,
+      "stop_restore": 3.0405986309051514
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.interpolation_model": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "SLAM_interpolation_model/1-quadratique": {
+    "steps": {
+      "override_yaml": 0.6129612922668457,
+      "record_bag": 3.0015954971313477,
+      "launch_slam": 4.741016626358032,
+      "check_params_runtime": 33.06534266471863,
+      "play_lidar": 89.2244234085083,
+      "stop_restore": 3.0141890048980713
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.interpolation_model": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "SLAM_interpolation_model/2-cubique": {
+    "steps": {
+      "override_yaml": 0.06337237358093262,
+      "record_bag": 3.000869035720825,
+      "launch_slam": 4.730486631393433,
+      "check_params_runtime": 32.99363994598389,
+      "play_lidar": 89.1666214466095,
+      "stop_restore": 3.304485321044922
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.interpolation_model": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KF_thresholds/dense-0.05-3": {
+    "steps": {
+      "override_yaml": 0.06461572647094727,
+      "record_bag": 3.000814914703369,
+      "launch_slam": 4.749833822250366,
+      "check_params_runtime": 33.01536250114441,
+      "play_lidar": 88.92601704597473,
+      "stop_restore": 3.2108640670776367
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.keyframes.distance_threshold": "<node not found>",
+        "slam.keyframes.angle_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KF_thresholds/par-defaut-0.5-5": {
+    "steps": {
+      "override_yaml": 1.0525095462799072,
+      "record_bag": 3.0018155574798584,
+      "launch_slam": 4.7513837814331055,
+      "check_params_runtime": 33.016334772109985,
+      "play_lidar": 89.29486346244812,
+      "stop_restore": 3.0939998626708984
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.keyframes.distance_threshold": "<node not found>",
+        "slam.keyframes.angle_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KF_thresholds/leger-0.7-8": {
+    "steps": {
+      "override_yaml": 0.05849099159240723,
+      "record_bag": 3.000797986984253,
+      "launch_slam": 4.74212121963501,
+      "check_params_runtime": 33.15833401679993,
+      "play_lidar": 89.61731624603271,
+      "stop_restore": 3.092815399169922
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.keyframes.distance_threshold": "<node not found>",
+        "slam.keyframes.angle_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "KF_thresholds/tres-leger-1.0-10": {
+    "steps": {
+      "override_yaml": 0.06442975997924805,
+      "record_bag": 3.0007522106170654,
+      "launch_slam": 4.7357518672943115,
+      "check_params_runtime": 33.04340124130249,
+      "play_lidar": 89.01181125640869,
+      "stop_restore": 3.130798816680908
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.keyframes.distance_threshold": "<node not found>",
+        "slam.keyframes.angle_threshold": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_submaps_extraction_mode/par-defaut-0": {
+    "steps": {
+      "override_yaml": 0.21356415748596191,
+      "record_bag": 3.0015475749969482,
+      "launch_slam": 4.7374982833862305,
+      "check_params_runtime": 32.96377420425415,
+      "play_lidar": 88.94584512710571,
+      "stop_restore": 3.0644915103912354
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.submap_extraction_mode": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_submaps_extraction_mode/1": {
+    "steps": {
+      "override_yaml": 0.08051919937133789,
+      "record_bag": 3.0011725425720215,
+      "launch_slam": 4.738950729370117,
+      "check_params_runtime": 33.76349878311157,
+      "play_lidar": 88.97061491012573,
+      "stop_restore": 3.0255441665649414
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.submap_extraction_mode": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_size/par-defaut-50": {
+    "steps": {
+      "override_yaml": 0.09734439849853516,
+      "record_bag": 3.0007059574127197,
+      "launch_slam": 4.762888669967651,
+      "check_params_runtime": 33.06588625907898,
+      "play_lidar": 89.23441553115845,
+      "stop_restore": 3.159536600112915
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.size": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_size/40": {
+    "steps": {
+      "override_yaml": 0.1576988697052002,
+      "record_bag": 3.001359224319458,
+      "launch_slam": 4.72913670539856,
+      "check_params_runtime": 32.93011689186096,
+      "play_lidar": 88.97431254386902,
+      "stop_restore": 3.087458610534668
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.size": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_size/30": {
+    "steps": {
+      "override_yaml": 0.7801709175109863,
+      "record_bag": 3.001453161239624,
+      "launch_slam": 4.747822523117065,
+      "check_params_runtime": 33.79686689376831,
+      "play_lidar": 88.99707794189453,
+      "stop_restore": 3.1131696701049805
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.size": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_size/20": {
+    "steps": {
+      "override_yaml": 0.06147003173828125,
+      "record_bag": 3.0007331371307373,
+      "launch_slam": 4.736780881881714,
+      "check_params_runtime": 33.018845081329346,
+      "play_lidar": 89.05984997749329,
+      "stop_restore": 3.1213574409484863
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.size": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_size/70": {
+    "steps": {
+      "override_yaml": 0.058257102966308594,
+      "record_bag": 3.0005953311920166,
+      "launch_slam": 4.7390663623809814,
+      "check_params_runtime": 33.744943618774414,
+      "play_lidar": 88.9846625328064,
+      "stop_restore": 3.1220414638519287
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.size": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_size/90": {
+    "steps": {
+      "override_yaml": 0.05880594253540039,
+      "record_bag": 3.0008208751678467,
+      "launch_slam": 4.7166900634765625,
+      "check_params_runtime": 33.0763623714447,
+      "play_lidar": 89.12246251106262,
+      "stop_restore": 3.045607328414917
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.size": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_resolution/par-defaut-10": {
+    "steps": {
+      "override_yaml": 0.057299137115478516,
+      "record_bag": 3.000718593597412,
+      "launch_slam": 4.7342915534973145,
+      "check_params_runtime": 33.01233983039856,
+      "play_lidar": 88.94858765602112,
+      "stop_restore": 3.0901992321014404
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_resolution/8": {
+    "steps": {
+      "override_yaml": 0.05913829803466797,
+      "record_bag": 3.0008456707000732,
+      "launch_slam": 4.740206956863403,
+      "check_params_runtime": 33.77837038040161,
+      "play_lidar": 89.04040837287903,
+      "stop_restore": 3.0601918697357178
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_resolution/6": {
+    "steps": {
+      "override_yaml": 0.06808853149414062,
+      "record_bag": 3.0007994174957275,
+      "launch_slam": 4.720967054367065,
+      "check_params_runtime": 33.74475049972534,
+      "play_lidar": 88.97285151481628,
+      "stop_restore": 3.0595808029174805
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_resolution/4": {
+    "steps": {
+      "override_yaml": 0.06324028968811035,
+      "record_bag": 3.0007920265197754,
+      "launch_slam": 4.725478410720825,
+      "check_params_runtime": 33.01917910575867,
+      "play_lidar": 89.04266428947449,
+      "stop_restore": 3.0083534717559814
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_resolution/15": {
+    "steps": {
+      "override_yaml": 0.05913209915161133,
+      "record_bag": 3.000816583633423,
+      "launch_slam": 4.731681823730469,
+      "check_params_runtime": 33.75066947937012,
+      "play_lidar": 88.9477002620697,
+      "stop_restore": 3.144901752471924
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_resolution/25": {
+    "steps": {
+      "override_yaml": 0.058324337005615234,
+      "record_bag": 3.000824451446533,
+      "launch_slam": 4.73169732093811,
+      "check_params_runtime": 32.96651840209961,
+      "play_lidar": 89.10604596138,
+      "stop_restore": 3.083855390548706
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  },
+  "VOX_resolution/35": {
+    "steps": {
+      "override_yaml": 0.05775189399719238,
+      "record_bag": 3.0007987022399902,
+      "launch_slam": 4.726355791091919,
+      "check_params_runtime": 33.10217595100403,
+      "play_lidar": 89.81143569946289,
+      "stop_restore": 3.1069562435150146
+    },
+    "status": "ok",
+    "artefacts": {
+      "bag_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "slam_proc": "<Popen: returncode: 0 args: 'bash -lc \"cd ~/test_ws && if [ -f install/setup...>",
+      "effective_params": {
+        "slam.voxel_grid.resolution": "<node not found>"
+      },
+      "services_snapshot": "<none>"
+    }
+  }
+}
