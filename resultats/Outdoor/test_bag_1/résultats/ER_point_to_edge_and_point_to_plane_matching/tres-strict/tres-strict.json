@@ -1,0 +1,8 @@
+{
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.edge_nb_neighbors": 15,
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.edge_min_nb_neighbors": 8,
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.edge_max_model_error": 0.1,
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.plane_nb_neighbors": 12,
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.planarity_threshold": 0.1,
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.plane_max_model_error": 0.05
+}

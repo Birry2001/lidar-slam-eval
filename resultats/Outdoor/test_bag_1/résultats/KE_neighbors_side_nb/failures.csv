@@ -1,0 +1,4 @@
+test,config,reason,metric,value,threshold
+KE_neighbors_side_nb,2,overlap_unrealistic,overlap_mean,1.0,0.999
+KE_neighbors_side_nb,2,overlap_unrealistic,overlap_min,1.0,0.999
+KE_neighbors_side_nb,2,position_error_zero_mean,position_error_mean,0.0,0.0

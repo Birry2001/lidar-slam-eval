@@ -1,0 +1,4 @@
+{
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.init_saturation_distance": 3.0,
+  "/lidar_slam.ros__parameters.slam.ego_motion_registration.final_saturation_distance": 0.8
+}

@@ -1,0 +1,7 @@
+test,config,reason,metric,value,threshold
+KE_neighbors_side_nb,2,overlap_unrealistic,overlap_mean,1.0,0.999
+KE_neighbors_side_nb,2,overlap_unrealistic,overlap_min,1.0,0.999
+KE_neighbors_side_nb,2,position_error_zero_mean,position_error_mean,0.0,0.0
+LOC_ICP_LM_Iter,fort-icp-lm-6-20,APE_too_high,APE,73.546796,3.2104870000000068
+LOC_ICP_LM_Iter,icp-extreme-100,APE_too_high,APE,56.366442,3.2104870000000068
+LOC_ICP_LM_Iter,icp-lm-extremes-100-100,APE_too_high,APE,69.429053,3.2104870000000068

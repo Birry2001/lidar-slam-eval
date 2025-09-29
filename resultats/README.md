@@ -1,6 +1,6 @@
 # Résultats d’évaluation — Kitware LiDAR SLAM
 
-Ce dossier contient l’ensemble des **résultats expérimentaux** obtenus lors de l’évaluation de la librairie **LiDAR-SLAM de Kitware** (bag indoor et outdoor).  
+Ce dossier contient l’ensemble des **résultats expérimentaux** obtenus lors de l’évaluation de la librairie **LiDAR-SLAM de Kitware** .  
 Chaque sous-dossier correspond à une famille de tests définie dans les plans YAML (`plan_*.yaml`).
 
 ---
@@ -36,40 +36,5 @@ Un dossier de configuration contient généralement les sous-répertoires suivan
 
 ## Indoor vs Outdoor
 
-- **`indoor/`** : résultats sur le bag intérieur, avec une arborescence déjà normalisée (KE\_, ER\_, LOC\_, SLAM\_).
-- **`Outdoor/`** : résultats sur le bag extérieur, organisation similaire mais avec quelques variantes :
-  - sous-dossiers supplémentaires `graphes_confidence/` et `graphes_pose/` dans chaque test,
-  - jeux de paramètres plus larges pour ICP/LM (High/Low, extrêmes, légers),
-  - noms parfois abrégés (`HI-HP`, `LI-LP` pour high/low ICP/LM).
-
----
-
-## Lien avec les scripts
-
-Les scripts du dossier `scripts_de_test/` automatisent la production de ces résultats :
-
-- `slam_orchestrator.py` lit les plans YAML et orchestre les tests.
-- `extract_trajectories.py`, `extract_trajectory_plots.py` : extractions et tracés des trajectoires.
-- `collect_confidence_metrics.py`, `collect_summaries.py`, `summarize_by_metric.py` : consolidation des CSV et métriques.
-- `compute_evo_metrics_no_align_test.py` : calcul des ATE/RPE avec **evo**.
-- `run_plots_confiance.sh` : génération des graphes de confiance.
-
----
-
-## Utilisation
-
-1. Choisir une campagne (`indoor/` ou `Outdoor/`).
-2. Explorer les sous-dossiers correspondant au paramètre étudié (KE\_, ER\_, etc.).
-3. Ouvrir :
-   - les **CSV** (`fichiers_csv/`) pour les valeurs numériques,
-   - les **figures** (`evo/`, `graphes_*`) pour les visualisations,
-   - les **maps** (`maps/`) pour les reconstructions 3D.
-4. Se référer aux fichiers `summary/` et `metriques_*` pour les synthèses inter-tests.
-
----
-
-## Notes
-
-- Les dossiers `ros_bag/` contiennent des enregistrements lourds et sont exclus du suivi Git.
-- Les chemins et valeurs par défaut des tests sont documentés dans les fichiers `plan_*.yaml`.
-- Les résultats sont reproductibles via `slam_orchestrator.py` et les scripts annexes.
+- **`indoor/`** : résultats des tests avec des jeux de données indoor 
+- **`Outdoor/`** : résultats des tests avec des jeux de données indoor
