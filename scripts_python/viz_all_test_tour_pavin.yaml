@@ -1,0 +1,55 @@
+# viz_all.yaml — Configuration complète pour viz_all.py
+
+# Dossier où sont écrits/cherchés les impacts_*.csv
+csv_dir: /home/nochi/test_ws/Evaluation_SLAM_KITWARE/Tour_Pavin_test_1/TRAITEMENT_RESULTATS
+
+# Dossier de sortie pour les figures
+out_dir: /home/nochi/test_ws/Evaluation_SLAM_KITWARE/Tour_Pavin_test_1/TRAITEMENT_RESULTATS/figures
+overwrite_figs: true   # supprime les anciens PNG avant d’en générer de nouveaux
+
+# Fichier listant les tests (utilisé par detect_failures et analyse_impacts)
+dirs_file: /home/nochi/test_ws/Evaluation_SLAM_KITWARE/Tour_Pavin_test_1/dirs/Tour_Pavin_test_1.txt
+
+# -------------------------------------------------------------------------
+# 1) Détection d’échecs (optionnelle)
+failures:
+  enabled: true
+  detect_script: detect_failures.py   # chemin relatif (à côté de viz_all.py) ou absolu
+  dirs_file: /home/nochi/test_ws/Evaluation_SLAM_KITWARE/Tour_Pavin_test_1/dirs/Tour_Pavin_test_1.txt
+  out_csv:   /home/nochi/test_ws/Evaluation_SLAM_KITWARE/Tour_Pavin_test_1/TRAITEMENT_RESULTATS/global_failures.csv
+  std_cap: 0.15        # seuil dur (std_position_error_max)
+  k_mad: 3.0           # médiane + k*MAD
+  use_rmse: false      # utiliser RMSE si pas de *_max disponible
+  evo_cap: null        # seuil complémentaire sur APE/RPE max (optionnel)
+
+# -------------------------------------------------------------------------
+# 2) Extraction des impacts (optionnelle)
+extraction:
+  enabled: true
+  index_file: /home/nochi/test_ws/Evaluation_SLAM_KITWARE/Tour_Pavin_test_1/dirs/Tour_Pavin_test_1.txt
+  out_xlsx:  /home/nochi/test_ws/Evaluation_SLAM_KITWARE/Tour_Pavin_test_1/TRAITEMENT_RESULTATS/impacts_consolides.xlsx
+  no_overlap: false
+  overwrite: true
+
+# -------------------------------------------------------------------------
+# 3) Paramètres supplémentaires passés à analyse_impacts.py
+analyse_args:
+  failures_mode: tag   # exclude | tag | ignore
+
+# -------------------------------------------------------------------------
+# 4) Visualisations
+plots: [bar, radar, heatmap, pair, mindmap]
+topk: 12
+
+pairs:
+  - { metric: computation_time, param: KE_blob }
+  - { metric: ATE_RMSE,        param: EM_mode }
+
+categories: /home/nochi/test_ws/Evaluation_SLAM_KITWARE/categories.json
+include_metrics: [overlap, std_position_error, computation_time, ATE_RMSE, RPE_RMSE]
+exclude_metrics: []
+
+pairs_auto_topk: 5   # génère automatiquement les paires pour les top-5 paramètres
+auto_categories: true
+categories_merge: true
+

@@ -1,0 +1,4 @@
+{
+  "/lidar_slam.ros__parameters.slam.localization.blob_nb_neighbors": 4,
+  "/lidar_slam.ros__parameters.slam.ke.enable.blob": true
+}

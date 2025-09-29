@@ -1,0 +1,105 @@
+# plan.yaml — exécution unique: défaut vs ATE optimisé
+experiment: "Tour_Pavin_ATE_vs_default"
+lidar: "hesai"
+mode: "outdoor"
+
+bag: "/home/nochi/STAGE_M1_NOCHI/tour_pavin_sqlite3/tour_pavin_sqlite3_0.db3"
+ref_tum: "/home/nochi/test_ws/Evaluation_SLAM_KITWARE/Tests_tour_Pavin/Correction_de_ATE/ground_truth.tum"
+
+# YAML de base (défaut outdoor)
+base_config: "slam_config_outdoor.yaml"
+
+tests:
+  ATE_minimization:
+    configs:
+
+      # 1) Tous paramètres = valeurs par défaut outdoor
+      par-defaut:
+        /lidar_slam.ros__parameters.slam.ke.enable.blob: false
+        /lidar_slam.ros__parameters.slam.ke.min_beam_surface_angle: 10.0
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 2.0
+        /lidar_slam.ros__parameters.slam.ke.neighbors_radius: 0.10
+        /lidar_slam.ros__parameters.slam.ke.neighbors_side_nb: 5
+        /lidar_slam.ros__parameters.slam.ke.input_sampling_ratio: 1.0
+        /lidar_slam.ros__parameters.slam.ke.plane_angle_threshold: 150.0
+        /lidar_slam.ros__parameters.slam.ke.edge_angle_threshold: 120.0
+        /lidar_slam.ros__parameters.slam.ke.min_distance_to_sensor: 1.5
+        /lidar_slam.ros__parameters.slam.ke.max_distance_to_sensor: 200.0
+        /lidar_slam.ros__parameters.slam.ego_motion: 1
+        /lidar_slam.ros__parameters.slam.undistortion: 2
+        /lidar_slam.ros__parameters.slam.interpolation_model: 0
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.ICP_max_iter: 4
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.LM_max_iter: 15
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.max_neighbors_distance: 5.0
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.init_saturation_distance: 5.0
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.final_saturation_distance: 1.0
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_nb_neighbors: 8
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_min_nb_neighbors: 3
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_max_model_error: 0.2
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_nb_neighbors: 5
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.planarity_threshold: 0.04
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_max_model_error: 0.1
+        /lidar_slam.ros__parameters.slam.localization.edge_nb_neighbors: 9
+        /lidar_slam.ros__parameters.slam.localization.edge_min_nb_neighbors: 5
+        /lidar_slam.ros__parameters.slam.localization.edge_max_model_error: 0.2
+        /lidar_slam.ros__parameters.slam.localization.plane_nb_neighbors: 7
+        /lidar_slam.ros__parameters.slam.localization.planarity_threshold: 0.04
+        /lidar_slam.ros__parameters.slam.localization.plane_max_model_error: 0.1
+        /lidar_slam.ros__parameters.slam.localization.ICP_max_iter: 4
+        /lidar_slam.ros__parameters.slam.localization.LM_max_iter: 15
+        /lidar_slam.ros__parameters.slam.localization.max_neighbors_distance: 5.0
+        /lidar_slam.ros__parameters.slam.voxel_grid.resolution: 10.0
+        /lidar_slam.ros__parameters.slam.voxel_grid.submap_extraction_mode: 0
+        /lidar_slam.ros__parameters.slam.ke.edge_depth_gap_threshold: 1.0
+        /lidar_slam.ros__parameters.slam.ke.edge_nb_gap_points: 10
+        /lidar_slam.ros__parameters.slam.ke.edge_intensity_gap_threshold: 50.0
+
+      # 2) Config "ATE-friendly" (sans exploser le temps)
+      ape-optimise-sans-explosion-temps:
+        # KE (features)
+        /lidar_slam.ros__parameters.slam.ke.enable.blob: false            # APE ↓ significatif
+        /lidar_slam.ros__parameters.slam.ke.min_beam_surface_angle: 30.0 # APE ↓
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 2.0 # modéré (évite sur-rafraîchissement)
+        /lidar_slam.ros__parameters.slam.ke.neighbors_radius: 0.05       # APE ↓
+        /lidar_slam.ros__parameters.slam.ke.neighbors_side_nb: 10        # APE ↓
+        /lidar_slam.ros__parameters.slam.ke.input_sampling_ratio: 8.0    # APE ↓
+        /lidar_slam.ros__parameters.slam.ke.plane_angle_threshold: 130.0 # plus permissif
+        /lidar_slam.ros__parameters.slam.ke.edge_angle_threshold: 150.0
+        /lidar_slam.ros__parameters.slam.ke.min_distance_to_sensor: 0.5  # rapproché = APE ↓
+        /lidar_slam.ros__parameters.slam.ke.max_distance_to_sensor: 200.0
+        /lidar_slam.ros__parameters.slam.ke.edge_depth_gap_threshold: 0.75
+        /lidar_slam.ros__parameters.slam.ke.edge_nb_gap_points: 8
+        /lidar_slam.ros__parameters.slam.ke.edge_intensity_gap_threshold: 40.0
+
+        # ER (ego-motion)
+        /lidar_slam.ros__parameters.slam.ego_motion: 1
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.ICP_max_iter: 6   # 6-20 (meilleur APE côté ER)
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.LM_max_iter: 20
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.max_neighbors_distance: 3.5
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.init_saturation_distance: 3.0
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.final_saturation_distance: 0.8
+        # ER matching plus permissif
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_nb_neighbors: 6
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_min_nb_neighbors: 2
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_max_model_error: 0.4
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_nb_neighbors: 4
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.planarity_threshold: 0.03
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_max_model_error: 0.2
+
+        # LOC (localization) 
+        /lidar_slam.ros__parameters.slam.localization.edge_nb_neighbors: 7
+        /lidar_slam.ros__parameters.slam.localization.edge_min_nb_neighbors: 3
+        /lidar_slam.ros__parameters.slam.localization.edge_max_model_error: 0.3
+        /lidar_slam.ros__parameters.slam.localization.plane_nb_neighbors: 5
+        /lidar_slam.ros__parameters.slam.localization.planarity_threshold: 0.03
+        /lidar_slam.ros__parameters.slam.localization.plane_max_model_error: 0.15
+        /lidar_slam.ros__parameters.slam.localization.ICP_max_iter: 4     
+        /lidar_slam.ros__parameters.slam.localization.LM_max_iter: 10
+        /lidar_slam.ros__parameters.slam.localization.max_neighbors_distance: 2.0
+
+        # SLAM global
+        /lidar_slam.ros__parameters.slam.undistortion: 0                  # OFF = APE ↓ sur ce bag
+        /lidar_slam.ros__parameters.slam.interpolation_model: 1           # quadratique
+        /lidar_slam.ros__parameters.slam.voxel_grid.resolution: 25.0      # APE ↓
+        /lidar_slam.ros__parameters.slam.voxel_grid.submap_extraction_mode: 1
+

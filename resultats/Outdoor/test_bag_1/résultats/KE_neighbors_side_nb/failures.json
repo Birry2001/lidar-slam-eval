@@ -1,0 +1,26 @@
+[
+  {
+    "test":"KE_neighbors_side_nb",
+    "config":"2",
+    "reason":"overlap_unrealistic",
+    "metric":"overlap_mean",
+    "value":1.0,
+    "threshold":0.999
+  },
+  {
+    "test":"KE_neighbors_side_nb",
+    "config":"2",
+    "reason":"overlap_unrealistic",
+    "metric":"overlap_min",
+    "value":1.0,
+    "threshold":0.999
+  },
+  {
+    "test":"KE_neighbors_side_nb",
+    "config":"2",
+    "reason":"position_error_zero_mean",
+    "metric":"position_error_mean",
+    "value":0.0,
+    "threshold":0.0
+  }
+]

@@ -1,0 +1,4103 @@
+.
+├── checkpoints.json
+├── dirs
+│   ├── global_failures.csv
+│   └── Tour_Pavin_test_1.txt
+├── ER_ego_motion_mode
+│   ├── 0
+│   │   ├── 0.json
+│   │   ├── evo
+│   │   │   ├── 0_ape.log
+│   │   │   ├── 0_ape_map.png
+│   │   │   ├── 0_ape_raw.png
+│   │   │   ├── 0_rpe.log
+│   │   │   ├── 0_rpe_map.png
+│   │   │   ├── 0_rpe_raw.png
+│   │   │   └── 0.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.csv
+│   │   │   ├── nb_matches_0.csv
+│   │   │   ├── overlap_0.csv
+│   │   │   └── std_position_error_0.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 2
+│   │   ├── 2.json
+│   │   ├── evo
+│   │   │   ├── 2_ape.log
+│   │   │   ├── 2_ape_map.png
+│   │   │   ├── 2_ape_raw.png
+│   │   │   ├── 2_rpe.log
+│   │   │   ├── 2_rpe_map.png
+│   │   │   ├── 2_rpe_raw.png
+│   │   │   └── 2.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_2.csv
+│   │   │   ├── nb_matches_2.csv
+│   │   │   ├── overlap_2.csv
+│   │   │   └── std_position_error_2.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 3
+│   │   ├── 3.json
+│   │   ├── evo
+│   │   │   ├── 3_ape.log
+│   │   │   ├── 3_ape_map.png
+│   │   │   ├── 3_ape_raw.png
+│   │   │   ├── 3_rpe.log
+│   │   │   ├── 3_rpe_map.png
+│   │   │   ├── 3_rpe_raw.png
+│   │   │   └── 3.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_3.csv
+│   │   │   ├── nb_matches_3.csv
+│   │   │   ├── overlap_3.csv
+│   │   │   └── std_position_error_3.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 4
+│   │   ├── 4.json
+│   │   ├── evo
+│   │   │   ├── 4_ape.log
+│   │   │   ├── 4_ape_map.png
+│   │   │   ├── 4_ape_raw.png
+│   │   │   ├── 4_rpe.log
+│   │   │   ├── 4_rpe_map.png
+│   │   │   ├── 4_rpe_raw.png
+│   │   │   └── 4.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_4.csv
+│   │   │   ├── nb_matches_4.csv
+│   │   │   ├── overlap_4.csv
+│   │   │   └── std_position_error_4.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 5
+│   │   ├── 5.json
+│   │   ├── evo
+│   │   │   ├── 5_ape.log
+│   │   │   ├── 5_ape_map.png
+│   │   │   ├── 5_ape_raw.png
+│   │   │   ├── 5_rpe.log
+│   │   │   ├── 5_rpe_map.png
+│   │   │   ├── 5_rpe_raw.png
+│   │   │   └── 5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_5.csv
+│   │   │   ├── nb_matches_5.csv
+│   │   │   ├── overlap_5.csv
+│   │   │   └── std_position_error_5.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_0.csv
+│   │   ├── computation_time_2.csv
+│   │   ├── computation_time_3.csv
+│   │   ├── computation_time_4.csv
+│   │   ├── computation_time_5.csv
+│   │   ├── computation_time_par-defaut-1.csv
+│   │   ├── evo
+│   │   ├── nb_matches_0.csv
+│   │   ├── nb_matches_2.csv
+│   │   ├── nb_matches_3.csv
+│   │   ├── nb_matches_4.csv
+│   │   ├── nb_matches_5.csv
+│   │   ├── nb_matches_par-defaut-1.csv
+│   │   ├── overlap_0.csv
+│   │   ├── overlap_2.csv
+│   │   ├── overlap_3.csv
+│   │   ├── overlap_4.csv
+│   │   ├── overlap_5.csv
+│   │   ├── overlap_par-defaut-1.csv
+│   │   ├── std_position_error_0.csv
+│   │   ├── std_position_error_2.csv
+│   │   ├── std_position_error_3.csv
+│   │   ├── std_position_error_4.csv
+│   │   ├── std_position_error_5.csv
+│   │   └── std_position_error_par-defaut-1.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-1
+│   │   ├── evo
+│   │   │   ├── par-defaut-1_ape.log
+│   │   │   ├── par-defaut-1_ape_map.png
+│   │   │   ├── par-defaut-1_ape_raw.png
+│   │   │   ├── par-defaut-1_rpe.log
+│   │   │   ├── par-defaut-1_rpe_map.png
+│   │   │   ├── par-defaut-1_rpe_raw.png
+│   │   │   └── par-defaut-1.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-1.csv
+│   │   │   ├── nb_matches_par-defaut-1.csv
+│   │   │   ├── overlap_par-defaut-1.csv
+│   │   │   └── std_position_error_par-defaut-1.csv
+│   │   ├── maps
+│   │   ├── par-defaut-1.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── ER_ego_motion_mode_rpy.png
+│       ├── ER_ego_motion_mode_speeds.png
+│       ├── ER_ego_motion_mode_trajectories.png
+│       └── ER_ego_motion_mode_xyz.png
+├── ER_ICP_LM_Iter
+│   ├── faibles-icp-lm-3-10
+│   │   ├── evo
+│   │   │   ├── faibles-icp-lm-3-10_ape.log
+│   │   │   ├── faibles-icp-lm-3-10_ape_map.png
+│   │   │   ├── faibles-icp-lm-3-10_ape_raw.png
+│   │   │   ├── faibles-icp-lm-3-10_rpe.log
+│   │   │   ├── faibles-icp-lm-3-10_rpe_map.png
+│   │   │   ├── faibles-icp-lm-3-10_rpe_raw.png
+│   │   │   └── faibles-icp-lm-3-10.tum
+│   │   ├── faibles-icp-lm-3-10.json
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_faibles-icp-lm-3-10.csv
+│   │   │   ├── nb_matches_faibles-icp-lm-3-10.csv
+│   │   │   ├── overlap_faibles-icp-lm-3-10.csv
+│   │   │   └── std_position_error_faibles-icp-lm-3-10.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── fort-icp-lm-6-20
+│   │   ├── evo
+│   │   │   ├── fort-icp-lm-6-20_ape.log
+│   │   │   ├── fort-icp-lm-6-20_ape_map.png
+│   │   │   ├── fort-icp-lm-6-20_ape_raw.png
+│   │   │   ├── fort-icp-lm-6-20_rpe.log
+│   │   │   ├── fort-icp-lm-6-20_rpe_map.png
+│   │   │   ├── fort-icp-lm-6-20_rpe_raw.png
+│   │   │   └── fort-icp-lm-6-20.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_fort-icp-lm-6-20.csv
+│   │   │   ├── nb_matches_fort-icp-lm-6-20.csv
+│   │   │   ├── overlap_fort-icp-lm-6-20.csv
+│   │   │   └── std_position_error_fort-icp-lm-6-20.csv
+│   │   ├── fort-icp-lm-6-20.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── icp-extreme-100
+│   │   ├── evo
+│   │   │   ├── icp-extreme-100_ape.log
+│   │   │   ├── icp-extreme-100_ape_map.png
+│   │   │   ├── icp-extreme-100_ape_raw.png
+│   │   │   ├── icp-extreme-100_rpe.log
+│   │   │   ├── icp-extreme-100_rpe_map.png
+│   │   │   ├── icp-extreme-100_rpe_raw.png
+│   │   │   └── icp-extreme-100.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_icp-extreme-100.csv
+│   │   │   ├── nb_matches_icp-extreme-100.csv
+│   │   │   ├── overlap_icp-extreme-100.csv
+│   │   │   └── std_position_error_icp-extreme-100.csv
+│   │   ├── icp-extreme-100.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── icp-faible-2
+│   │   ├── evo
+│   │   │   ├── icp-faible-2_ape.log
+│   │   │   ├── icp-faible-2_ape_map.png
+│   │   │   ├── icp-faible-2_ape_raw.png
+│   │   │   ├── icp-faible-2_rpe.log
+│   │   │   ├── icp-faible-2_rpe_map.png
+│   │   │   ├── icp-faible-2_rpe_raw.png
+│   │   │   └── icp-faible-2.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_icp-faible-2.csv
+│   │   │   ├── nb_matches_icp-faible-2.csv
+│   │   │   ├── overlap_icp-faible-2.csv
+│   │   │   └── std_position_error_icp-faible-2.csv
+│   │   ├── icp-faible-2.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── icp-lm-extremes-100-100
+│   │   ├── evo
+│   │   │   ├── icp-lm-extremes-100-100_ape.log
+│   │   │   ├── icp-lm-extremes-100-100_ape_map.png
+│   │   │   ├── icp-lm-extremes-100-100_ape_raw.png
+│   │   │   ├── icp-lm-extremes-100-100_rpe.log
+│   │   │   ├── icp-lm-extremes-100-100_rpe_map.png
+│   │   │   ├── icp-lm-extremes-100-100_rpe_raw.png
+│   │   │   └── icp-lm-extremes-100-100.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_icp-lm-extremes-100-100.csv
+│   │   │   ├── nb_matches_icp-lm-extremes-100-100.csv
+│   │   │   ├── overlap_icp-lm-extremes-100-100.csv
+│   │   │   └── std_position_error_icp-lm-extremes-100-100.csv
+│   │   ├── icp-lm-extremes-100-100.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── lm-extreme-100
+│   │   ├── evo
+│   │   │   ├── lm-extreme-100_ape.log
+│   │   │   ├── lm-extreme-100_ape_map.png
+│   │   │   ├── lm-extreme-100_ape_raw.png
+│   │   │   ├── lm-extreme-100_rpe.log
+│   │   │   ├── lm-extreme-100_rpe_map.png
+│   │   │   ├── lm-extreme-100_rpe_raw.png
+│   │   │   └── lm-extreme-100.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_lm-extreme-100.csv
+│   │   │   ├── nb_matches_lm-extreme-100.csv
+│   │   │   ├── overlap_lm-extreme-100.csv
+│   │   │   └── std_position_error_lm-extreme-100.csv
+│   │   ├── lm-extreme-100.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── lm-faible-10
+│   │   ├── evo
+│   │   │   ├── lm-faible-10_ape.log
+│   │   │   ├── lm-faible-10_ape_map.png
+│   │   │   ├── lm-faible-10_ape_raw.png
+│   │   │   ├── lm-faible-10_rpe.log
+│   │   │   ├── lm-faible-10_rpe_map.png
+│   │   │   ├── lm-faible-10_rpe_raw.png
+│   │   │   └── lm-faible-10.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_lm-faible-10.csv
+│   │   │   ├── nb_matches_lm-faible-10.csv
+│   │   │   ├── overlap_lm-faible-10.csv
+│   │   │   └── std_position_error_lm-faible-10.csv
+│   │   ├── lm-faible-10.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── metriques_confidence
+│   │   ├── computation_time_faibles-icp-lm-3-10.csv
+│   │   ├── computation_time_fort-icp-lm-6-20.csv
+│   │   ├── computation_time_icp-extreme-100.csv
+│   │   ├── computation_time_icp-faible-2.csv
+│   │   ├── computation_time_icp-lm-extremes-100-100.csv
+│   │   ├── computation_time_lm-extreme-100.csv
+│   │   ├── computation_time_lm-faible-10.csv
+│   │   ├── computation_time_par-defaut-4-15.csv
+│   │   ├── evo
+│   │   ├── nb_matches_faibles-icp-lm-3-10.csv
+│   │   ├── nb_matches_fort-icp-lm-6-20.csv
+│   │   ├── nb_matches_icp-extreme-100.csv
+│   │   ├── nb_matches_icp-faible-2.csv
+│   │   ├── nb_matches_icp-lm-extremes-100-100.csv
+│   │   ├── nb_matches_lm-extreme-100.csv
+│   │   ├── nb_matches_lm-faible-10.csv
+│   │   ├── nb_matches_par-defaut-4-15.csv
+│   │   ├── overlap_faibles-icp-lm-3-10.csv
+│   │   ├── overlap_fort-icp-lm-6-20.csv
+│   │   ├── overlap_icp-extreme-100.csv
+│   │   ├── overlap_icp-faible-2.csv
+│   │   ├── overlap_icp-lm-extremes-100-100.csv
+│   │   ├── overlap_lm-extreme-100.csv
+│   │   ├── overlap_lm-faible-10.csv
+│   │   ├── overlap_par-defaut-4-15.csv
+│   │   ├── std_position_error_faibles-icp-lm-3-10.csv
+│   │   ├── std_position_error_fort-icp-lm-6-20.csv
+│   │   ├── std_position_error_icp-extreme-100.csv
+│   │   ├── std_position_error_icp-faible-2.csv
+│   │   ├── std_position_error_icp-lm-extremes-100-100.csv
+│   │   ├── std_position_error_lm-extreme-100.csv
+│   │   ├── std_position_error_lm-faible-10.csv
+│   │   └── std_position_error_par-defaut-4-15.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-4-15
+│   │   ├── evo
+│   │   │   ├── par-defaut-4-15_ape.log
+│   │   │   ├── par-defaut-4-15_ape_map.png
+│   │   │   ├── par-defaut-4-15_ape_raw.png
+│   │   │   ├── par-defaut-4-15_rpe.log
+│   │   │   ├── par-defaut-4-15_rpe_map.png
+│   │   │   ├── par-defaut-4-15_rpe_raw.png
+│   │   │   └── par-defaut-4-15.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-4-15.csv
+│   │   │   ├── nb_matches_par-defaut-4-15.csv
+│   │   │   ├── overlap_par-defaut-4-15.csv
+│   │   │   └── std_position_error_par-defaut-4-15.csv
+│   │   ├── maps
+│   │   ├── par-defaut-4-15.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── ER_ICP_LM_Iter_rpy.png
+│       ├── ER_ICP_LM_Iter_speeds.png
+│       ├── ER_ICP_LM_Iter_trajectories.png
+│       └── ER_ICP_LM_Iter_xyz.png
+├── ER_max_neighbors_distance
+│   ├── 10
+│   │   ├── 10.json
+│   │   ├── evo
+│   │   │   ├── 10_ape.log
+│   │   │   ├── 10_ape_map.png
+│   │   │   ├── 10_ape_raw.png
+│   │   │   ├── 10_rpe.log
+│   │   │   ├── 10_rpe_map.png
+│   │   │   ├── 10_rpe_raw.png
+│   │   │   └── 10.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_10.csv
+│   │   │   ├── nb_matches_10.csv
+│   │   │   ├── overlap_10.csv
+│   │   │   └── std_position_error_10.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 2
+│   │   ├── 2.json
+│   │   ├── evo
+│   │   │   ├── 2_ape.log
+│   │   │   ├── 2_ape_map.png
+│   │   │   ├── 2_ape_raw.png
+│   │   │   ├── 2_rpe.log
+│   │   │   ├── 2_rpe_map.png
+│   │   │   ├── 2_rpe_raw.png
+│   │   │   └── 2.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_2.csv
+│   │   │   ├── nb_matches_2.csv
+│   │   │   ├── overlap_2.csv
+│   │   │   └── std_position_error_2.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 30
+│   │   ├── 30.json
+│   │   ├── evo
+│   │   │   ├── 30_ape.log
+│   │   │   ├── 30_ape_map.png
+│   │   │   ├── 30_ape_raw.png
+│   │   │   ├── 30_rpe.log
+│   │   │   ├── 30_rpe_map.png
+│   │   │   ├── 30_rpe_raw.png
+│   │   │   └── 30.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_30.csv
+│   │   │   ├── nb_matches_30.csv
+│   │   │   ├── overlap_30.csv
+│   │   │   └── std_position_error_30.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 3.5
+│   │   ├── 3.5.json
+│   │   ├── evo
+│   │   │   ├── 3.5_ape.log
+│   │   │   ├── 3.5_ape_map.png
+│   │   │   ├── 3.5_ape_raw.png
+│   │   │   ├── 3.5_rpe.log
+│   │   │   ├── 3.5_rpe_map.png
+│   │   │   ├── 3.5_rpe_raw.png
+│   │   │   └── 3.5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_3.5.csv
+│   │   │   ├── nb_matches_3.5.csv
+│   │   │   ├── overlap_3.5.csv
+│   │   │   └── std_position_error_3.5.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 7.5
+│   │   ├── 7.5.json
+│   │   ├── evo
+│   │   │   ├── 7.5_ape.log
+│   │   │   ├── 7.5_ape_map.png
+│   │   │   ├── 7.5_ape_raw.png
+│   │   │   ├── 7.5_rpe.log
+│   │   │   ├── 7.5_rpe_map.png
+│   │   │   ├── 7.5_rpe_raw.png
+│   │   │   └── 7.5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_7.5.csv
+│   │   │   ├── nb_matches_7.5.csv
+│   │   │   ├── overlap_7.5.csv
+│   │   │   └── std_position_error_7.5.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_10.csv
+│   │   ├── computation_time_2.csv
+│   │   ├── computation_time_30.csv
+│   │   ├── computation_time_3.5.csv
+│   │   ├── computation_time_7.5.csv
+│   │   ├── computation_time_par-defaut-5.csv
+│   │   ├── evo
+│   │   ├── nb_matches_10.csv
+│   │   ├── nb_matches_2.csv
+│   │   ├── nb_matches_30.csv
+│   │   ├── nb_matches_3.5.csv
+│   │   ├── nb_matches_7.5.csv
+│   │   ├── nb_matches_par-defaut-5.csv
+│   │   ├── overlap_10.csv
+│   │   ├── overlap_2.csv
+│   │   ├── overlap_30.csv
+│   │   ├── overlap_3.5.csv
+│   │   ├── overlap_7.5.csv
+│   │   ├── overlap_par-defaut-5.csv
+│   │   ├── std_position_error_10.csv
+│   │   ├── std_position_error_2.csv
+│   │   ├── std_position_error_30.csv
+│   │   ├── std_position_error_3.5.csv
+│   │   ├── std_position_error_7.5.csv
+│   │   └── std_position_error_par-defaut-5.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-5
+│   │   ├── evo
+│   │   │   ├── par-defaut-5_ape.log
+│   │   │   ├── par-defaut-5_ape_map.png
+│   │   │   ├── par-defaut-5_ape_raw.png
+│   │   │   ├── par-defaut-5_rpe.log
+│   │   │   ├── par-defaut-5_rpe_map.png
+│   │   │   ├── par-defaut-5_rpe_raw.png
+│   │   │   └── par-defaut-5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-5.csv
+│   │   │   ├── nb_matches_par-defaut-5.csv
+│   │   │   ├── overlap_par-defaut-5.csv
+│   │   │   └── std_position_error_par-defaut-5.csv
+│   │   ├── maps
+│   │   ├── par-defaut-5.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── ER_max_neighbors_distance_rpy.png
+│       ├── ER_max_neighbors_distance_speeds.png
+│       ├── ER_max_neighbors_distance_trajectories.png
+│       └── ER_max_neighbors_distance_xyz.png
+├── ER_Optim_Saturation
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_par-defaut-5.0-1.0.csv
+│   │   ├── computation_time_strict-3.0-0.8.csv
+│   │   ├── computation_time_tres-lache-7.0-1.5.csv
+│   │   ├── computation_time_tres-strict-2.0-0.5.csv
+│   │   ├── computation_time_ultra-lache-10-2.0.csv
+│   │   ├── evo
+│   │   ├── nb_matches_par-defaut-5.0-1.0.csv
+│   │   ├── nb_matches_strict-3.0-0.8.csv
+│   │   ├── nb_matches_tres-lache-7.0-1.5.csv
+│   │   ├── nb_matches_tres-strict-2.0-0.5.csv
+│   │   ├── nb_matches_ultra-lache-10-2.0.csv
+│   │   ├── overlap_par-defaut-5.0-1.0.csv
+│   │   ├── overlap_strict-3.0-0.8.csv
+│   │   ├── overlap_tres-lache-7.0-1.5.csv
+│   │   ├── overlap_tres-strict-2.0-0.5.csv
+│   │   ├── overlap_ultra-lache-10-2.0.csv
+│   │   ├── std_position_error_par-defaut-5.0-1.0.csv
+│   │   ├── std_position_error_strict-3.0-0.8.csv
+│   │   ├── std_position_error_tres-lache-7.0-1.5.csv
+│   │   ├── std_position_error_tres-strict-2.0-0.5.csv
+│   │   └── std_position_error_ultra-lache-10-2.0.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-5.0-1.0
+│   │   ├── evo
+│   │   │   ├── par-defaut-5.0-1.0_ape.log
+│   │   │   ├── par-defaut-5.0-1.0_ape_map.png
+│   │   │   ├── par-defaut-5.0-1.0_ape_raw.png
+│   │   │   ├── par-defaut-5.0-1.0_rpe.log
+│   │   │   ├── par-defaut-5.0-1.0_rpe_map.png
+│   │   │   ├── par-defaut-5.0-1.0_rpe_raw.png
+│   │   │   └── par-defaut-5.0-1.0.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-5.0-1.0.csv
+│   │   │   ├── nb_matches_par-defaut-5.0-1.0.csv
+│   │   │   ├── overlap_par-defaut-5.0-1.0.csv
+│   │   │   └── std_position_error_par-defaut-5.0-1.0.csv
+│   │   ├── maps
+│   │   ├── par-defaut-5.0-1.0.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── strict-3.0-0.8
+│   │   ├── evo
+│   │   │   ├── strict-3.0-0.8_ape.log
+│   │   │   ├── strict-3.0-0.8_ape_map.png
+│   │   │   ├── strict-3.0-0.8_ape_raw.png
+│   │   │   ├── strict-3.0-0.8_rpe.log
+│   │   │   ├── strict-3.0-0.8_rpe_map.png
+│   │   │   ├── strict-3.0-0.8_rpe_raw.png
+│   │   │   └── strict-3.0-0.8.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_strict-3.0-0.8.csv
+│   │   │   ├── nb_matches_strict-3.0-0.8.csv
+│   │   │   ├── overlap_strict-3.0-0.8.csv
+│   │   │   └── std_position_error_strict-3.0-0.8.csv
+│   │   ├── maps
+│   │   ├── ros_bag
+│   │   │   └── all_bag
+│   │   │       ├── all_bag_0.db3
+│   │   │       └── metadata.yaml
+│   │   └── strict-3.0-0.8.json
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   ├── trajectoires
+│   │   ├── ER_Optim_Saturation_rpy.png
+│   │   ├── ER_Optim_Saturation_speeds.png
+│   │   ├── ER_Optim_Saturation_trajectories.png
+│   │   └── ER_Optim_Saturation_xyz.png
+│   ├── tres-lache-7.0-1.5
+│   │   ├── evo
+│   │   │   ├── tres-lache-7.0-1.5_ape.log
+│   │   │   ├── tres-lache-7.0-1.5_ape_map.png
+│   │   │   ├── tres-lache-7.0-1.5_ape_raw.png
+│   │   │   ├── tres-lache-7.0-1.5_rpe.log
+│   │   │   ├── tres-lache-7.0-1.5_rpe_map.png
+│   │   │   ├── tres-lache-7.0-1.5_rpe_raw.png
+│   │   │   └── tres-lache-7.0-1.5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_tres-lache-7.0-1.5.csv
+│   │   │   ├── nb_matches_tres-lache-7.0-1.5.csv
+│   │   │   ├── overlap_tres-lache-7.0-1.5.csv
+│   │   │   └── std_position_error_tres-lache-7.0-1.5.csv
+│   │   ├── maps
+│   │   ├── ros_bag
+│   │   │   └── all_bag
+│   │   │       ├── all_bag_0.db3
+│   │   │       └── metadata.yaml
+│   │   └── tres-lache-7.0-1.5.json
+│   ├── tres-strict-2.0-0.5
+│   │   ├── evo
+│   │   │   ├── tres-strict-2.0-0.5_ape.log
+│   │   │   ├── tres-strict-2.0-0.5_ape_map.png
+│   │   │   ├── tres-strict-2.0-0.5_ape_raw.png
+│   │   │   ├── tres-strict-2.0-0.5_rpe.log
+│   │   │   ├── tres-strict-2.0-0.5_rpe_map.png
+│   │   │   ├── tres-strict-2.0-0.5_rpe_raw.png
+│   │   │   └── tres-strict-2.0-0.5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_tres-strict-2.0-0.5.csv
+│   │   │   ├── nb_matches_tres-strict-2.0-0.5.csv
+│   │   │   ├── overlap_tres-strict-2.0-0.5.csv
+│   │   │   └── std_position_error_tres-strict-2.0-0.5.csv
+│   │   ├── maps
+│   │   ├── ros_bag
+│   │   │   └── all_bag
+│   │   │       ├── all_bag_0.db3
+│   │   │       └── metadata.yaml
+│   │   └── tres-strict-2.0-0.5.json
+│   └── ultra-lache-10-2.0
+│       ├── evo
+│       │   ├── ultra-lache-10-2.0_ape.log
+│       │   ├── ultra-lache-10-2.0_ape_map.png
+│       │   ├── ultra-lache-10-2.0_ape_raw.png
+│       │   ├── ultra-lache-10-2.0_rpe.log
+│       │   ├── ultra-lache-10-2.0_rpe_map.png
+│       │   ├── ultra-lache-10-2.0_rpe_raw.png
+│       │   └── ultra-lache-10-2.0.tum
+│       ├── fichiers_csv
+│       │   ├── computation_time_ultra-lache-10-2.0.csv
+│       │   ├── nb_matches_ultra-lache-10-2.0.csv
+│       │   ├── overlap_ultra-lache-10-2.0.csv
+│       │   └── std_position_error_ultra-lache-10-2.0.csv
+│       ├── maps
+│       ├── ros_bag
+│       │   └── all_bag
+│       │       ├── all_bag_0.db3
+│       │       └── metadata.yaml
+│       └── ultra-lache-10-2.0.json
+├── ER_point_to_edge_and_point_to_plane_matching
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_par-defaut.csv
+│   │   ├── computation_time_permissif.csv
+│   │   ├── computation_time_strict.csv
+│   │   ├── computation_time_tres-permissif.csv
+│   │   ├── computation_time_tres-strict.csv
+│   │   ├── evo
+│   │   ├── nb_matches_par-defaut.csv
+│   │   ├── nb_matches_permissif.csv
+│   │   ├── nb_matches_strict.csv
+│   │   ├── nb_matches_tres-permissif.csv
+│   │   ├── nb_matches_tres-strict.csv
+│   │   ├── overlap_par-defaut.csv
+│   │   ├── overlap_permissif.csv
+│   │   ├── overlap_strict.csv
+│   │   ├── overlap_tres-permissif.csv
+│   │   ├── overlap_tres-strict.csv
+│   │   ├── std_position_error_par-defaut.csv
+│   │   ├── std_position_error_permissif.csv
+│   │   ├── std_position_error_strict.csv
+│   │   ├── std_position_error_tres-permissif.csv
+│   │   └── std_position_error_tres-strict.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut
+│   │   ├── evo
+│   │   │   ├── par-defaut_ape.log
+│   │   │   ├── par-defaut_ape_map.png
+│   │   │   ├── par-defaut_ape_raw.png
+│   │   │   ├── par-defaut_rpe.log
+│   │   │   ├── par-defaut_rpe_map.png
+│   │   │   ├── par-defaut_rpe_raw.png
+│   │   │   └── par-defaut.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut.csv
+│   │   │   ├── nb_matches_par-defaut.csv
+│   │   │   ├── overlap_par-defaut.csv
+│   │   │   └── std_position_error_par-defaut.csv
+│   │   ├── maps
+│   │   ├── par-defaut.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── permissif
+│   │   ├── evo
+│   │   │   ├── permissif_ape.log
+│   │   │   ├── permissif_ape_map.png
+│   │   │   ├── permissif_ape_raw.png
+│   │   │   ├── permissif_rpe.log
+│   │   │   ├── permissif_rpe_map.png
+│   │   │   ├── permissif_rpe_raw.png
+│   │   │   └── permissif.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_permissif.csv
+│   │   │   ├── nb_matches_permissif.csv
+│   │   │   ├── overlap_permissif.csv
+│   │   │   └── std_position_error_permissif.csv
+│   │   ├── maps
+│   │   ├── permissif.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── strict
+│   │   ├── evo
+│   │   │   ├── strict_ape.log
+│   │   │   ├── strict_ape_map.png
+│   │   │   ├── strict_ape_raw.png
+│   │   │   ├── strict_rpe.log
+│   │   │   ├── strict_rpe_map.png
+│   │   │   ├── strict_rpe_raw.png
+│   │   │   └── strict.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_strict.csv
+│   │   │   ├── nb_matches_strict.csv
+│   │   │   ├── overlap_strict.csv
+│   │   │   └── std_position_error_strict.csv
+│   │   ├── maps
+│   │   ├── ros_bag
+│   │   │   └── all_bag
+│   │   │       ├── all_bag_0.db3
+│   │   │       └── metadata.yaml
+│   │   └── strict.json
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   ├── trajectoires
+│   │   ├── ER_point_to_edge_and_point_to_plane_matching_rpy.png
+│   │   ├── ER_point_to_edge_and_point_to_plane_matching_speeds.png
+│   │   ├── ER_point_to_edge_and_point_to_plane_matching_trajectories.png
+│   │   └── ER_point_to_edge_and_point_to_plane_matching_xyz.png
+│   ├── tres-permissif
+│   │   ├── evo
+│   │   │   ├── tres-permissif_ape.log
+│   │   │   ├── tres-permissif_ape_map.png
+│   │   │   ├── tres-permissif_ape_raw.png
+│   │   │   ├── tres-permissif_rpe.log
+│   │   │   ├── tres-permissif_rpe_map.png
+│   │   │   ├── tres-permissif_rpe_raw.png
+│   │   │   └── tres-permissif.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_tres-permissif.csv
+│   │   │   ├── nb_matches_tres-permissif.csv
+│   │   │   ├── overlap_tres-permissif.csv
+│   │   │   └── std_position_error_tres-permissif.csv
+│   │   ├── maps
+│   │   ├── ros_bag
+│   │   │   └── all_bag
+│   │   │       ├── all_bag_0.db3
+│   │   │       └── metadata.yaml
+│   │   └── tres-permissif.json
+│   └── tres-strict
+│       ├── evo
+│       │   ├── tres-strict_ape.log
+│       │   ├── tres-strict_ape_map.png
+│       │   ├── tres-strict_ape_raw.png
+│       │   ├── tres-strict_rpe.log
+│       │   ├── tres-strict_rpe_map.png
+│       │   ├── tres-strict_rpe_raw.png
+│       │   └── tres-strict.tum
+│       ├── fichiers_csv
+│       │   ├── computation_time_tres-strict.csv
+│       │   ├── nb_matches_tres-strict.csv
+│       │   ├── overlap_tres-strict.csv
+│       │   └── std_position_error_tres-strict.csv
+│       ├── maps
+│       ├── ros_bag
+│       │   └── all_bag
+│       │       ├── all_bag_0.db3
+│       │       └── metadata.yaml
+│       └── tres-strict.json
+├── KE_azimuth_angle
+│   ├── 135-135
+│   │   ├── 135-135.json
+│   │   ├── evo
+│   │   │   ├── 135-135_ape.log
+│   │   │   ├── 135-135_ape_map.png
+│   │   │   ├── 135-135_ape_raw.png
+│   │   │   ├── 135-135_rpe.log
+│   │   │   ├── 135-135_rpe_map.png
+│   │   │   ├── 135-135_rpe_raw.png
+│   │   │   └── 135-135.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_135-135.csv
+│   │   │   ├── nb_matches_135-135.csv
+│   │   │   ├── overlap_135-135.csv
+│   │   │   └── std_position_error_135-135.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 45-45
+│   │   ├── 45-45.json
+│   │   ├── evo
+│   │   │   ├── 45-45_ape.log
+│   │   │   ├── 45-45_ape_map.png
+│   │   │   ├── 45-45_ape_raw.png
+│   │   │   ├── 45-45_rpe.log
+│   │   │   ├── 45-45_rpe_map.png
+│   │   │   ├── 45-45_rpe_raw.png
+│   │   │   └── 45-45.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_45-45.csv
+│   │   │   ├── nb_matches_45-45.csv
+│   │   │   ├── overlap_45-45.csv
+│   │   │   └── std_position_error_45-45.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 90-90
+│   │   ├── 90-90.json
+│   │   ├── evo
+│   │   │   ├── 90-90_ape.log
+│   │   │   ├── 90-90_ape_map.png
+│   │   │   ├── 90-90_ape_raw.png
+│   │   │   ├── 90-90_rpe.log
+│   │   │   ├── 90-90_rpe_map.png
+│   │   │   ├── 90-90_rpe_raw.png
+│   │   │   └── 90-90.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_90-90.csv
+│   │   │   ├── nb_matches_90-90.csv
+│   │   │   ├── overlap_90-90.csv
+│   │   │   └── std_position_error_90-90.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_135-135.csv
+│   │   ├── computation_time_45-45.csv
+│   │   ├── computation_time_90-90.csv
+│   │   ├── computation_time_par-defaut-0-360.csv
+│   │   ├── evo
+│   │   ├── nb_matches_135-135.csv
+│   │   ├── nb_matches_45-45.csv
+│   │   ├── nb_matches_90-90.csv
+│   │   ├── nb_matches_par-defaut-0-360.csv
+│   │   ├── overlap_135-135.csv
+│   │   ├── overlap_45-45.csv
+│   │   ├── overlap_90-90.csv
+│   │   ├── overlap_par-defaut-0-360.csv
+│   │   ├── std_position_error_135-135.csv
+│   │   ├── std_position_error_45-45.csv
+│   │   ├── std_position_error_90-90.csv
+│   │   └── std_position_error_par-defaut-0-360.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-0-360
+│   │   ├── evo
+│   │   │   ├── par-defaut-0-360_ape.log
+│   │   │   ├── par-defaut-0-360_ape_map.png
+│   │   │   ├── par-defaut-0-360_ape_raw.png
+│   │   │   ├── par-defaut-0-360_rpe.log
+│   │   │   ├── par-defaut-0-360_rpe_map.png
+│   │   │   ├── par-defaut-0-360_rpe_raw.png
+│   │   │   └── par-defaut-0-360.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-0-360.csv
+│   │   │   ├── nb_matches_par-defaut-0-360.csv
+│   │   │   ├── overlap_par-defaut-0-360.csv
+│   │   │   └── std_position_error_par-defaut-0-360.csv
+│   │   ├── maps
+│   │   ├── par-defaut-0-360.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_azimuth_angle_rpy.png
+│       ├── KE_azimuth_angle_speeds.png
+│       ├── KE_azimuth_angle_trajectories.png
+│       └── KE_azimuth_angle_xyz.png
+├── KE_blob_enable
+│   ├── enabled
+│   │   ├── enabled.json
+│   │   ├── evo
+│   │   │   ├── enabled_ape.log
+│   │   │   ├── enabled_ape_map.png
+│   │   │   ├── enabled_ape_raw.png
+│   │   │   ├── enabled_rpe.log
+│   │   │   ├── enabled_rpe_map.png
+│   │   │   ├── enabled_rpe_raw.png
+│   │   │   └── enabled.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_enabled.csv
+│   │   │   ├── nb_matches_enabled.csv
+│   │   │   ├── overlap_enabled.csv
+│   │   │   └── std_position_error_enabled.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_enabled.csv
+│   │   ├── computation_time_par-defaut-disabled.csv
+│   │   ├── evo
+│   │   ├── nb_matches_enabled.csv
+│   │   ├── nb_matches_par-defaut-disabled.csv
+│   │   ├── overlap_enabled.csv
+│   │   ├── overlap_par-defaut-disabled.csv
+│   │   ├── std_position_error_enabled.csv
+│   │   └── std_position_error_par-defaut-disabled.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-disabled
+│   │   ├── evo
+│   │   │   ├── par-defaut-disabled_ape.log
+│   │   │   ├── par-defaut-disabled_ape_map.png
+│   │   │   ├── par-defaut-disabled_ape_raw.png
+│   │   │   ├── par-defaut-disabled_rpe.log
+│   │   │   ├── par-defaut-disabled_rpe_map.png
+│   │   │   ├── par-defaut-disabled_rpe_raw.png
+│   │   │   └── par-defaut-disabled.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-disabled.csv
+│   │   │   ├── nb_matches_par-defaut-disabled.csv
+│   │   │   ├── overlap_par-defaut-disabled.csv
+│   │   │   └── std_position_error_par-defaut-disabled.csv
+│   │   ├── maps
+│   │   ├── par-defaut-disabled.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_blob_enable_rpy.png
+│       ├── KE_blob_enable_speeds.png
+│       ├── KE_blob_enable_trajectories.png
+│       └── KE_blob_enable_xyz.png
+├── KE_densite_dextraction_de_KP
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_par-defaut.csv
+│   │   ├── computation_time_profil-dense.csv
+│   │   ├── computation_time_profil-leger.csv
+│   │   ├── computation_time_profil-tres-dense.csv
+│   │   ├── computation_time_profil-tres-leger.csv
+│   │   ├── evo
+│   │   ├── nb_matches_par-defaut.csv
+│   │   ├── nb_matches_profil-dense.csv
+│   │   ├── nb_matches_profil-leger.csv
+│   │   ├── nb_matches_profil-tres-dense.csv
+│   │   ├── nb_matches_profil-tres-leger.csv
+│   │   ├── overlap_par-defaut.csv
+│   │   ├── overlap_profil-dense.csv
+│   │   ├── overlap_profil-leger.csv
+│   │   ├── overlap_profil-tres-dense.csv
+│   │   ├── overlap_profil-tres-leger.csv
+│   │   ├── std_position_error_par-defaut.csv
+│   │   ├── std_position_error_profil-dense.csv
+│   │   ├── std_position_error_profil-leger.csv
+│   │   ├── std_position_error_profil-tres-dense.csv
+│   │   └── std_position_error_profil-tres-leger.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut
+│   │   ├── evo
+│   │   │   ├── par-defaut_ape.log
+│   │   │   ├── par-defaut_ape_map.png
+│   │   │   ├── par-defaut_ape_raw.png
+│   │   │   ├── par-defaut_rpe.log
+│   │   │   ├── par-defaut_rpe_map.png
+│   │   │   ├── par-defaut_rpe_raw.png
+│   │   │   └── par-defaut.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut.csv
+│   │   │   ├── nb_matches_par-defaut.csv
+│   │   │   ├── overlap_par-defaut.csv
+│   │   │   └── std_position_error_par-defaut.csv
+│   │   ├── maps
+│   │   ├── par-defaut.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── profil-dense
+│   │   ├── evo
+│   │   │   ├── profil-dense_ape.log
+│   │   │   ├── profil-dense_ape_map.png
+│   │   │   ├── profil-dense_ape_raw.png
+│   │   │   ├── profil-dense_rpe.log
+│   │   │   ├── profil-dense_rpe_map.png
+│   │   │   ├── profil-dense_rpe_raw.png
+│   │   │   └── profil-dense.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_profil-dense.csv
+│   │   │   ├── nb_matches_profil-dense.csv
+│   │   │   ├── overlap_profil-dense.csv
+│   │   │   └── std_position_error_profil-dense.csv
+│   │   ├── maps
+│   │   ├── profil-dense.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── profil-leger
+│   │   ├── evo
+│   │   │   ├── profil-leger_ape.log
+│   │   │   ├── profil-leger_ape_map.png
+│   │   │   ├── profil-leger_ape_raw.png
+│   │   │   ├── profil-leger_rpe.log
+│   │   │   ├── profil-leger_rpe_map.png
+│   │   │   ├── profil-leger_rpe_raw.png
+│   │   │   └── profil-leger.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_profil-leger.csv
+│   │   │   ├── nb_matches_profil-leger.csv
+│   │   │   ├── overlap_profil-leger.csv
+│   │   │   └── std_position_error_profil-leger.csv
+│   │   ├── maps
+│   │   ├── profil-leger.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── profil-tres-dense
+│   │   ├── evo
+│   │   │   ├── profil-tres-dense_ape.log
+│   │   │   ├── profil-tres-dense_ape_map.png
+│   │   │   ├── profil-tres-dense_ape_raw.png
+│   │   │   ├── profil-tres-dense_rpe.log
+│   │   │   ├── profil-tres-dense_rpe_map.png
+│   │   │   ├── profil-tres-dense_rpe_raw.png
+│   │   │   └── profil-tres-dense.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_profil-tres-dense.csv
+│   │   │   ├── nb_matches_profil-tres-dense.csv
+│   │   │   ├── overlap_profil-tres-dense.csv
+│   │   │   └── std_position_error_profil-tres-dense.csv
+│   │   ├── maps
+│   │   ├── profil-tres-dense.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── profil-tres-leger
+│   │   ├── evo
+│   │   │   ├── profil-tres-leger_ape.log
+│   │   │   ├── profil-tres-leger_ape_map.png
+│   │   │   ├── profil-tres-leger_ape_raw.png
+│   │   │   ├── profil-tres-leger_rpe.log
+│   │   │   ├── profil-tres-leger_rpe_map.png
+│   │   │   ├── profil-tres-leger_rpe_raw.png
+│   │   │   └── profil-tres-leger.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_profil-tres-leger.csv
+│   │   │   ├── nb_matches_profil-tres-leger.csv
+│   │   │   ├── overlap_profil-tres-leger.csv
+│   │   │   └── std_position_error_profil-tres-leger.csv
+│   │   ├── maps
+│   │   ├── profil-tres-leger.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_densite_dextraction_de_KP_rpy.png
+│       ├── KE_densite_dextraction_de_KP_speeds.png
+│       ├── KE_densite_dextraction_de_KP_trajectories.png
+│       └── KE_densite_dextraction_de_KP_xyz.png
+├── KE_distance_to_lidar
+│   ├── eloigne-1.5-300.0
+│   │   ├── eloigne-1.5-300.0.json
+│   │   ├── evo
+│   │   │   ├── eloigne-1.5-300.0_ape.log
+│   │   │   ├── eloigne-1.5-300.0_ape_map.png
+│   │   │   ├── eloigne-1.5-300.0_ape_raw.png
+│   │   │   ├── eloigne-1.5-300.0_rpe.log
+│   │   │   ├── eloigne-1.5-300.0_rpe_map.png
+│   │   │   ├── eloigne-1.5-300.0_rpe_raw.png
+│   │   │   └── eloigne-1.5-300.0.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_eloigne-1.5-300.0.csv
+│   │   │   ├── nb_matches_eloigne-1.5-300.0.csv
+│   │   │   ├── overlap_eloigne-1.5-300.0.csv
+│   │   │   └── std_position_error_eloigne-1.5-300.0.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── large-0.5-300
+│   │   ├── evo
+│   │   │   ├── large-0.5-300_ape.log
+│   │   │   ├── large-0.5-300_ape_map.png
+│   │   │   ├── large-0.5-300_ape_raw.png
+│   │   │   ├── large-0.5-300_rpe.log
+│   │   │   ├── large-0.5-300_rpe_map.png
+│   │   │   ├── large-0.5-300_rpe_raw.png
+│   │   │   └── large-0.5-300.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_large-0.5-300.csv
+│   │   │   ├── nb_matches_large-0.5-300.csv
+│   │   │   ├── overlap_large-0.5-300.csv
+│   │   │   └── std_position_error_large-0.5-300.csv
+│   │   ├── large-0.5-300.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── metriques_confidence
+│   │   ├── computation_time_eloigne-1.5-300.0.csv
+│   │   ├── computation_time_large-0.5-300.csv
+│   │   ├── computation_time_par-defaut-1.5-200.csv
+│   │   ├── computation_time_rapproche-0.5-200.0.csv
+│   │   ├── evo
+│   │   ├── nb_matches_eloigne-1.5-300.0.csv
+│   │   ├── nb_matches_large-0.5-300.csv
+│   │   ├── nb_matches_par-defaut-1.5-200.csv
+│   │   ├── nb_matches_rapproche-0.5-200.0.csv
+│   │   ├── overlap_eloigne-1.5-300.0.csv
+│   │   ├── overlap_large-0.5-300.csv
+│   │   ├── overlap_par-defaut-1.5-200.csv
+│   │   ├── overlap_rapproche-0.5-200.0.csv
+│   │   ├── std_position_error_eloigne-1.5-300.0.csv
+│   │   ├── std_position_error_large-0.5-300.csv
+│   │   ├── std_position_error_par-defaut-1.5-200.csv
+│   │   └── std_position_error_rapproche-0.5-200.0.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-1.5-200
+│   │   ├── evo
+│   │   │   ├── par-defaut-1.5-200_ape.log
+│   │   │   ├── par-defaut-1.5-200_ape_map.png
+│   │   │   ├── par-defaut-1.5-200_ape_raw.png
+│   │   │   ├── par-defaut-1.5-200_rpe.log
+│   │   │   ├── par-defaut-1.5-200_rpe_map.png
+│   │   │   ├── par-defaut-1.5-200_rpe_raw.png
+│   │   │   └── par-defaut-1.5-200.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-1.5-200.csv
+│   │   │   ├── nb_matches_par-defaut-1.5-200.csv
+│   │   │   ├── overlap_par-defaut-1.5-200.csv
+│   │   │   └── std_position_error_par-defaut-1.5-200.csv
+│   │   ├── maps
+│   │   ├── par-defaut-1.5-200.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── rapproche-0.5-200.0
+│   │   ├── evo
+│   │   │   ├── rapproche-0.5-200.0_ape.log
+│   │   │   ├── rapproche-0.5-200.0_ape_map.png
+│   │   │   ├── rapproche-0.5-200.0_ape_raw.png
+│   │   │   ├── rapproche-0.5-200.0_rpe.log
+│   │   │   ├── rapproche-0.5-200.0_rpe_map.png
+│   │   │   ├── rapproche-0.5-200.0_rpe_raw.png
+│   │   │   └── rapproche-0.5-200.0.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_rapproche-0.5-200.0.csv
+│   │   │   ├── nb_matches_rapproche-0.5-200.0.csv
+│   │   │   ├── overlap_rapproche-0.5-200.0.csv
+│   │   │   └── std_position_error_rapproche-0.5-200.0.csv
+│   │   ├── maps
+│   │   ├── rapproche-0.5-200.0.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_distance_to_lidar_rpy.png
+│       ├── KE_distance_to_lidar_speeds.png
+│       ├── KE_distance_to_lidar_trajectories.png
+│       └── KE_distance_to_lidar_xyz.png
+├── KE_downsampling_max_points
+│   ├── 1500
+│   │   ├── 1500.json
+│   │   ├── evo
+│   │   │   ├── 1500_ape.log
+│   │   │   ├── 1500_ape_map.png
+│   │   │   ├── 1500_ape_raw.png
+│   │   │   ├── 1500_rpe.log
+│   │   │   ├── 1500_rpe_map.png
+│   │   │   ├── 1500_rpe_raw.png
+│   │   │   └── 1500.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_1500.csv
+│   │   │   ├── nb_matches_1500.csv
+│   │   │   ├── overlap_1500.csv
+│   │   │   └── std_position_error_1500.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 200
+│   │   ├── 200.json
+│   │   ├── evo
+│   │   │   ├── 200_ape.log
+│   │   │   ├── 200_ape_map.png
+│   │   │   ├── 200_ape_raw.png
+│   │   │   ├── 200_rpe.log
+│   │   │   ├── 200_rpe_map.png
+│   │   │   ├── 200_rpe_raw.png
+│   │   │   └── 200.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_200.csv
+│   │   │   ├── nb_matches_200.csv
+│   │   │   ├── overlap_200.csv
+│   │   │   └── std_position_error_200.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 2000
+│   │   ├── 2000.json
+│   │   ├── evo
+│   │   │   ├── 2000_ape.log
+│   │   │   ├── 2000_ape_map.png
+│   │   │   ├── 2000_ape_raw.png
+│   │   │   ├── 2000_rpe.log
+│   │   │   ├── 2000_rpe_map.png
+│   │   │   ├── 2000_rpe_raw.png
+│   │   │   └── 2000.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_2000.csv
+│   │   │   ├── nb_matches_2000.csv
+│   │   │   ├── overlap_2000.csv
+│   │   │   └── std_position_error_2000.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 500
+│   │   ├── 500.json
+│   │   ├── evo
+│   │   │   ├── 500_ape.log
+│   │   │   ├── 500_ape_map.png
+│   │   │   ├── 500_ape_raw.png
+│   │   │   ├── 500_rpe.log
+│   │   │   ├── 500_rpe_map.png
+│   │   │   ├── 500_rpe_raw.png
+│   │   │   └── 500.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_500.csv
+│   │   │   ├── nb_matches_500.csv
+│   │   │   ├── overlap_500.csv
+│   │   │   └── std_position_error_500.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 5000
+│   │   ├── 5000.json
+│   │   ├── evo
+│   │   │   ├── 5000_ape.log
+│   │   │   ├── 5000_ape_map.png
+│   │   │   ├── 5000_ape_raw.png
+│   │   │   ├── 5000_rpe.log
+│   │   │   ├── 5000_rpe_map.png
+│   │   │   ├── 5000_rpe_raw.png
+│   │   │   └── 5000.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_5000.csv
+│   │   │   ├── nb_matches_5000.csv
+│   │   │   ├── overlap_5000.csv
+│   │   │   └── std_position_error_5000.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_1500.csv
+│   │   ├── computation_time_2000.csv
+│   │   ├── computation_time_200.csv
+│   │   ├── computation_time_5000.csv
+│   │   ├── computation_time_500.csv
+│   │   ├── computation_time_par-defaut-1000.csv
+│   │   ├── evo
+│   │   ├── nb_matches_1500.csv
+│   │   ├── nb_matches_2000.csv
+│   │   ├── nb_matches_200.csv
+│   │   ├── nb_matches_5000.csv
+│   │   ├── nb_matches_500.csv
+│   │   ├── nb_matches_par-defaut-1000.csv
+│   │   ├── overlap_1500.csv
+│   │   ├── overlap_2000.csv
+│   │   ├── overlap_200.csv
+│   │   ├── overlap_5000.csv
+│   │   ├── overlap_500.csv
+│   │   ├── overlap_par-defaut-1000.csv
+│   │   ├── std_position_error_1500.csv
+│   │   ├── std_position_error_2000.csv
+│   │   ├── std_position_error_200.csv
+│   │   ├── std_position_error_5000.csv
+│   │   ├── std_position_error_500.csv
+│   │   └── std_position_error_par-defaut-1000.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-1000
+│   │   ├── evo
+│   │   │   ├── par-defaut-1000_ape.log
+│   │   │   ├── par-defaut-1000_ape_map.png
+│   │   │   ├── par-defaut-1000_ape_raw.png
+│   │   │   ├── par-defaut-1000_rpe.log
+│   │   │   ├── par-defaut-1000_rpe_map.png
+│   │   │   ├── par-defaut-1000_rpe_raw.png
+│   │   │   └── par-defaut-1000.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-1000.csv
+│   │   │   ├── nb_matches_par-defaut-1000.csv
+│   │   │   ├── overlap_par-defaut-1000.csv
+│   │   │   └── std_position_error_par-defaut-1000.csv
+│   │   ├── maps
+│   │   ├── par-defaut-1000.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_downsampling_max_points_rpy.png
+│       ├── KE_downsampling_max_points_speeds.png
+│       ├── KE_downsampling_max_points_trajectories.png
+│       └── KE_downsampling_max_points_xyz.png
+├── KE_downsampling_voxel_grid_resolution
+│   ├── 0.2-extremement-fine
+│   │   ├── 0.2-extremement-fine.json
+│   │   ├── evo
+│   │   │   ├── 0.2-extremement-fine_ape.log
+│   │   │   ├── 0.2-extremement-fine_ape_map.png
+│   │   │   ├── 0.2-extremement-fine_ape_raw.png
+│   │   │   ├── 0.2-extremement-fine_rpe.log
+│   │   │   ├── 0.2-extremement-fine_rpe_map.png
+│   │   │   ├── 0.2-extremement-fine_rpe_raw.png
+│   │   │   └── 0.2-extremement-fine.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.2-extremement-fine.csv
+│   │   │   ├── nb_matches_0.2-extremement-fine.csv
+│   │   │   ├── overlap_0.2-extremement-fine.csv
+│   │   │   └── std_position_error_0.2-extremement-fine.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 0.5-tres-fine
+│   │   ├── 0.5-tres-fine.json
+│   │   ├── evo
+│   │   │   ├── 0.5-tres-fine_ape.log
+│   │   │   ├── 0.5-tres-fine_ape_map.png
+│   │   │   ├── 0.5-tres-fine_ape_raw.png
+│   │   │   ├── 0.5-tres-fine_rpe.log
+│   │   │   ├── 0.5-tres-fine_rpe_map.png
+│   │   │   ├── 0.5-tres-fine_rpe_raw.png
+│   │   │   └── 0.5-tres-fine.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.5-tres-fine.csv
+│   │   │   ├── nb_matches_0.5-tres-fine.csv
+│   │   │   ├── overlap_0.5-tres-fine.csv
+│   │   │   └── std_position_error_0.5-tres-fine.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 1.0-fine
+│   │   ├── 1.0-fine.json
+│   │   ├── evo
+│   │   │   ├── 1.0-fine_ape.log
+│   │   │   ├── 1.0-fine_ape_map.png
+│   │   │   ├── 1.0-fine_ape_raw.png
+│   │   │   ├── 1.0-fine_rpe.log
+│   │   │   ├── 1.0-fine_rpe_map.png
+│   │   │   ├── 1.0-fine_rpe_raw.png
+│   │   │   └── 1.0-fine.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_1.0-fine.csv
+│   │   │   ├── nb_matches_1.0-fine.csv
+│   │   │   ├── overlap_1.0-fine.csv
+│   │   │   └── std_position_error_1.0-fine.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 5.0-large
+│   │   ├── 5.0-large.json
+│   │   ├── evo
+│   │   │   ├── 5.0-large_ape.log
+│   │   │   ├── 5.0-large_ape_map.png
+│   │   │   ├── 5.0-large_ape_raw.png
+│   │   │   ├── 5.0-large_rpe.log
+│   │   │   ├── 5.0-large_rpe_map.png
+│   │   │   ├── 5.0-large_rpe_raw.png
+│   │   │   └── 5.0-large.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_5.0-large.csv
+│   │   │   ├── nb_matches_5.0-large.csv
+│   │   │   ├── overlap_5.0-large.csv
+│   │   │   └── std_position_error_5.0-large.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 7.0-tres-large
+│   │   ├── 7.0-tres-large.json
+│   │   ├── evo
+│   │   │   ├── 7.0-tres-large_ape.log
+│   │   │   ├── 7.0-tres-large_ape_map.png
+│   │   │   ├── 7.0-tres-large_ape_raw.png
+│   │   │   ├── 7.0-tres-large_rpe.log
+│   │   │   ├── 7.0-tres-large_rpe_map.png
+│   │   │   ├── 7.0-tres-large_rpe_raw.png
+│   │   │   └── 7.0-tres-large.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_7.0-tres-large.csv
+│   │   │   ├── nb_matches_7.0-tres-large.csv
+│   │   │   ├── overlap_7.0-tres-large.csv
+│   │   │   └── std_position_error_7.0-tres-large.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_0.2-extremement-fine.csv
+│   │   ├── computation_time_0.5-tres-fine.csv
+│   │   ├── computation_time_1.0-fine.csv
+│   │   ├── computation_time_5.0-large.csv
+│   │   ├── computation_time_7.0-tres-large.csv
+│   │   ├── computation_time_par-defaut-2.0.csv
+│   │   ├── evo
+│   │   ├── nb_matches_0.2-extremement-fine.csv
+│   │   ├── nb_matches_0.5-tres-fine.csv
+│   │   ├── nb_matches_1.0-fine.csv
+│   │   ├── nb_matches_5.0-large.csv
+│   │   ├── nb_matches_7.0-tres-large.csv
+│   │   ├── nb_matches_par-defaut-2.0.csv
+│   │   ├── overlap_0.2-extremement-fine.csv
+│   │   ├── overlap_0.5-tres-fine.csv
+│   │   ├── overlap_1.0-fine.csv
+│   │   ├── overlap_5.0-large.csv
+│   │   ├── overlap_7.0-tres-large.csv
+│   │   ├── overlap_par-defaut-2.0.csv
+│   │   ├── std_position_error_0.2-extremement-fine.csv
+│   │   ├── std_position_error_0.5-tres-fine.csv
+│   │   ├── std_position_error_1.0-fine.csv
+│   │   ├── std_position_error_5.0-large.csv
+│   │   ├── std_position_error_7.0-tres-large.csv
+│   │   └── std_position_error_par-defaut-2.0.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-2.0
+│   │   ├── evo
+│   │   │   ├── par-defaut-2.0_ape.log
+│   │   │   ├── par-defaut-2.0_ape_map.png
+│   │   │   ├── par-defaut-2.0_ape_raw.png
+│   │   │   ├── par-defaut-2.0_rpe.log
+│   │   │   ├── par-defaut-2.0_rpe_map.png
+│   │   │   ├── par-defaut-2.0_rpe_raw.png
+│   │   │   └── par-defaut-2.0.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-2.0.csv
+│   │   │   ├── nb_matches_par-defaut-2.0.csv
+│   │   │   ├── overlap_par-defaut-2.0.csv
+│   │   │   └── std_position_error_par-defaut-2.0.csv
+│   │   ├── maps
+│   │   ├── par-defaut-2.0.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_downsampling_voxel_grid_resolution_rpy.png
+│       ├── KE_downsampling_voxel_grid_resolution_speeds.png
+│       ├── KE_downsampling_voxel_grid_resolution_trajectories.png
+│       └── KE_downsampling_voxel_grid_resolution_xyz.png
+├── KE_edge_gaps
+│   ├── 0.5-5-25-plus-permissif
+│   │   ├── 0.5-5-25-plus-permissif.json
+│   │   ├── evo
+│   │   │   ├── 0.5-5-25-plus-permissif_ape.log
+│   │   │   ├── 0.5-5-25-plus-permissif_ape_map.png
+│   │   │   ├── 0.5-5-25-plus-permissif_ape_raw.png
+│   │   │   ├── 0.5-5-25-plus-permissif_rpe.log
+│   │   │   ├── 0.5-5-25-plus-permissif_rpe_map.png
+│   │   │   ├── 0.5-5-25-plus-permissif_rpe_raw.png
+│   │   │   └── 0.5-5-25-plus-permissif.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.5-5-25-plus-permissif.csv
+│   │   │   ├── nb_matches_0.5-5-25-plus-permissif.csv
+│   │   │   ├── overlap_0.5-5-25-plus-permissif.csv
+│   │   │   └── std_position_error_0.5-5-25-plus-permissif.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 0.75-8-40-permissif
+│   │   ├── 0.75-8-40-permissif.json
+│   │   ├── evo
+│   │   │   ├── 0.75-8-40-permissif_ape.log
+│   │   │   ├── 0.75-8-40-permissif_ape_map.png
+│   │   │   ├── 0.75-8-40-permissif_ape_raw.png
+│   │   │   ├── 0.75-8-40-permissif_rpe.log
+│   │   │   ├── 0.75-8-40-permissif_rpe_map.png
+│   │   │   ├── 0.75-8-40-permissif_rpe_raw.png
+│   │   │   └── 0.75-8-40-permissif.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.75-8-40-permissif.csv
+│   │   │   ├── nb_matches_0.75-8-40-permissif.csv
+│   │   │   ├── overlap_0.75-8-40-permissif.csv
+│   │   │   └── std_position_error_0.75-8-40-permissif.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 1.5-15-75-strict
+│   │   ├── 1.5-15-75-strict.json
+│   │   ├── evo
+│   │   │   ├── 1.5-15-75-strict_ape.log
+│   │   │   ├── 1.5-15-75-strict_ape_map.png
+│   │   │   ├── 1.5-15-75-strict_ape_raw.png
+│   │   │   ├── 1.5-15-75-strict_rpe.log
+│   │   │   ├── 1.5-15-75-strict_rpe_map.png
+│   │   │   ├── 1.5-15-75-strict_rpe_raw.png
+│   │   │   └── 1.5-15-75-strict.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_1.5-15-75-strict.csv
+│   │   │   ├── nb_matches_1.5-15-75-strict.csv
+│   │   │   ├── overlap_1.5-15-75-strict.csv
+│   │   │   └── std_position_error_1.5-15-75-strict.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 2.0-20-100-tres-strict
+│   │   ├── 2.0-20-100-tres-strict.json
+│   │   ├── evo
+│   │   │   ├── 2.0-20-100-tres-strict_ape.log
+│   │   │   ├── 2.0-20-100-tres-strict_ape_map.png
+│   │   │   ├── 2.0-20-100-tres-strict_ape_raw.png
+│   │   │   ├── 2.0-20-100-tres-strict_rpe.log
+│   │   │   ├── 2.0-20-100-tres-strict_rpe_map.png
+│   │   │   ├── 2.0-20-100-tres-strict_rpe_raw.png
+│   │   │   └── 2.0-20-100-tres-strict.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_2.0-20-100-tres-strict.csv
+│   │   │   ├── nb_matches_2.0-20-100-tres-strict.csv
+│   │   │   ├── overlap_2.0-20-100-tres-strict.csv
+│   │   │   └── std_position_error_2.0-20-100-tres-strict.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_0.5-5-25-plus-permissif.csv
+│   │   ├── computation_time_0.75-8-40-permissif.csv
+│   │   ├── computation_time_1.5-15-75-strict.csv
+│   │   ├── computation_time_2.0-20-100-tres-strict.csv
+│   │   ├── computation_time_par-defaut-1-10-50.csv
+│   │   ├── evo
+│   │   ├── nb_matches_0.5-5-25-plus-permissif.csv
+│   │   ├── nb_matches_0.75-8-40-permissif.csv
+│   │   ├── nb_matches_1.5-15-75-strict.csv
+│   │   ├── nb_matches_2.0-20-100-tres-strict.csv
+│   │   ├── nb_matches_par-defaut-1-10-50.csv
+│   │   ├── overlap_0.5-5-25-plus-permissif.csv
+│   │   ├── overlap_0.75-8-40-permissif.csv
+│   │   ├── overlap_1.5-15-75-strict.csv
+│   │   ├── overlap_2.0-20-100-tres-strict.csv
+│   │   ├── overlap_par-defaut-1-10-50.csv
+│   │   ├── std_position_error_0.5-5-25-plus-permissif.csv
+│   │   ├── std_position_error_0.75-8-40-permissif.csv
+│   │   ├── std_position_error_1.5-15-75-strict.csv
+│   │   ├── std_position_error_2.0-20-100-tres-strict.csv
+│   │   └── std_position_error_par-defaut-1-10-50.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-1-10-50
+│   │   ├── evo
+│   │   │   ├── par-defaut-1-10-50_ape.log
+│   │   │   ├── par-defaut-1-10-50_ape_map.png
+│   │   │   ├── par-defaut-1-10-50_ape_raw.png
+│   │   │   ├── par-defaut-1-10-50_rpe.log
+│   │   │   ├── par-defaut-1-10-50_rpe_map.png
+│   │   │   ├── par-defaut-1-10-50_rpe_raw.png
+│   │   │   └── par-defaut-1-10-50.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-1-10-50.csv
+│   │   │   ├── nb_matches_par-defaut-1-10-50.csv
+│   │   │   ├── overlap_par-defaut-1-10-50.csv
+│   │   │   └── std_position_error_par-defaut-1-10-50.csv
+│   │   ├── maps
+│   │   ├── par-defaut-1-10-50.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_edge_gaps_rpy.png
+│       ├── KE_edge_gaps_speeds.png
+│       ├── KE_edge_gaps_trajectories.png
+│       └── KE_edge_gaps_xyz.png
+├── KE_input_sampling_ratio
+│   ├── 0.2
+│   │   ├── 0.2.json
+│   │   ├── evo
+│   │   │   ├── 0.2_ape.log
+│   │   │   ├── 0.2_ape_map.png
+│   │   │   ├── 0.2_ape_raw.png
+│   │   │   ├── 0.2_rpe.log
+│   │   │   ├── 0.2_rpe_map.png
+│   │   │   ├── 0.2_rpe_raw.png
+│   │   │   └── 0.2.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.2.csv
+│   │   │   ├── nb_matches_0.2.csv
+│   │   │   ├── overlap_0.2.csv
+│   │   │   └── std_position_error_0.2.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 0.4
+│   │   ├── 0.4.json
+│   │   ├── evo
+│   │   │   ├── 0.4_ape.log
+│   │   │   ├── 0.4_ape_map.png
+│   │   │   ├── 0.4_ape_raw.png
+│   │   │   ├── 0.4_rpe.log
+│   │   │   ├── 0.4_rpe_map.png
+│   │   │   ├── 0.4_rpe_raw.png
+│   │   │   └── 0.4.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.4.csv
+│   │   │   ├── nb_matches_0.4.csv
+│   │   │   ├── overlap_0.4.csv
+│   │   │   └── std_position_error_0.4.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 0.6
+│   │   ├── 0.6.json
+│   │   ├── evo
+│   │   │   ├── 0.6_ape.log
+│   │   │   ├── 0.6_ape_map.png
+│   │   │   ├── 0.6_ape_raw.png
+│   │   │   ├── 0.6_rpe.log
+│   │   │   ├── 0.6_rpe_map.png
+│   │   │   ├── 0.6_rpe_raw.png
+│   │   │   └── 0.6.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.6.csv
+│   │   │   ├── nb_matches_0.6.csv
+│   │   │   ├── overlap_0.6.csv
+│   │   │   └── std_position_error_0.6.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 0.8
+│   │   ├── 0.8.json
+│   │   ├── evo
+│   │   │   ├── 0.8_ape.log
+│   │   │   ├── 0.8_ape_map.png
+│   │   │   ├── 0.8_ape_raw.png
+│   │   │   ├── 0.8_rpe.log
+│   │   │   ├── 0.8_rpe_map.png
+│   │   │   ├── 0.8_rpe_raw.png
+│   │   │   └── 0.8.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.8.csv
+│   │   │   ├── nb_matches_0.8.csv
+│   │   │   ├── overlap_0.8.csv
+│   │   │   └── std_position_error_0.8.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_0.2.csv
+│   │   ├── computation_time_0.4.csv
+│   │   ├── computation_time_0.6.csv
+│   │   ├── computation_time_0.8.csv
+│   │   ├── computation_time_par-defaut-1.0.csv
+│   │   ├── evo
+│   │   ├── nb_matches_0.2.csv
+│   │   ├── nb_matches_0.4.csv
+│   │   ├── nb_matches_0.6.csv
+│   │   ├── nb_matches_0.8.csv
+│   │   ├── nb_matches_par-defaut-1.0.csv
+│   │   ├── overlap_0.2.csv
+│   │   ├── overlap_0.4.csv
+│   │   ├── overlap_0.6.csv
+│   │   ├── overlap_0.8.csv
+│   │   ├── overlap_par-defaut-1.0.csv
+│   │   ├── std_position_error_0.2.csv
+│   │   ├── std_position_error_0.4.csv
+│   │   ├── std_position_error_0.6.csv
+│   │   ├── std_position_error_0.8.csv
+│   │   └── std_position_error_par-defaut-1.0.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-1.0
+│   │   ├── evo
+│   │   │   ├── par-defaut-1.0_ape.log
+│   │   │   ├── par-defaut-1.0_ape_map.png
+│   │   │   ├── par-defaut-1.0_ape_raw.png
+│   │   │   ├── par-defaut-1.0_rpe.log
+│   │   │   ├── par-defaut-1.0_rpe_map.png
+│   │   │   ├── par-defaut-1.0_rpe_raw.png
+│   │   │   └── par-defaut-1.0.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-1.0.csv
+│   │   │   ├── nb_matches_par-defaut-1.0.csv
+│   │   │   ├── overlap_par-defaut-1.0.csv
+│   │   │   └── std_position_error_par-defaut-1.0.csv
+│   │   ├── maps
+│   │   ├── par-defaut-1.0.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_input_sampling_ratio_rpy.png
+│       ├── KE_input_sampling_ratio_speeds.png
+│       ├── KE_input_sampling_ratio_trajectories.png
+│       └── KE_input_sampling_ratio_xyz.png
+├── KE_min_beam_surface_angle
+│   ├── 0
+│   │   ├── 0.json
+│   │   ├── evo
+│   │   │   ├── 0_ape.log
+│   │   │   ├── 0_ape_map.png
+│   │   │   ├── 0_ape_raw.png
+│   │   │   ├── 0_rpe.log
+│   │   │   ├── 0_rpe_map.png
+│   │   │   ├── 0_rpe_raw.png
+│   │   │   └── 0.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.csv
+│   │   │   ├── nb_matches_0.csv
+│   │   │   ├── overlap_0.csv
+│   │   │   └── std_position_error_0.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 20
+│   │   ├── 20.json
+│   │   ├── evo
+│   │   │   ├── 20_ape.log
+│   │   │   ├── 20_ape_map.png
+│   │   │   ├── 20_ape_raw.png
+│   │   │   ├── 20_rpe.log
+│   │   │   ├── 20_rpe_map.png
+│   │   │   ├── 20_rpe_raw.png
+│   │   │   └── 20.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_20.csv
+│   │   │   ├── nb_matches_20.csv
+│   │   │   ├── overlap_20.csv
+│   │   │   └── std_position_error_20.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 30
+│   │   ├── 30.json
+│   │   ├── evo
+│   │   │   ├── 30_ape.log
+│   │   │   ├── 30_ape_map.png
+│   │   │   ├── 30_ape_raw.png
+│   │   │   ├── 30_rpe.log
+│   │   │   ├── 30_rpe_map.png
+│   │   │   ├── 30_rpe_raw.png
+│   │   │   └── 30.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_30.csv
+│   │   │   ├── nb_matches_30.csv
+│   │   │   ├── overlap_30.csv
+│   │   │   └── std_position_error_30.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 5
+│   │   ├── 5.json
+│   │   ├── evo
+│   │   │   ├── 5_ape.log
+│   │   │   ├── 5_ape_map.png
+│   │   │   ├── 5_ape_raw.png
+│   │   │   ├── 5_rpe.log
+│   │   │   ├── 5_rpe_map.png
+│   │   │   ├── 5_rpe_raw.png
+│   │   │   └── 5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_5.csv
+│   │   │   ├── nb_matches_5.csv
+│   │   │   ├── overlap_5.csv
+│   │   │   └── std_position_error_5.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_0.csv
+│   │   ├── computation_time_20.csv
+│   │   ├── computation_time_30.csv
+│   │   ├── computation_time_5.csv
+│   │   ├── computation_time_par-defaut-10.csv
+│   │   ├── evo
+│   │   ├── nb_matches_0.csv
+│   │   ├── nb_matches_20.csv
+│   │   ├── nb_matches_30.csv
+│   │   ├── nb_matches_5.csv
+│   │   ├── nb_matches_par-defaut-10.csv
+│   │   ├── overlap_0.csv
+│   │   ├── overlap_20.csv
+│   │   ├── overlap_30.csv
+│   │   ├── overlap_5.csv
+│   │   ├── overlap_par-defaut-10.csv
+│   │   ├── std_position_error_0.csv
+│   │   ├── std_position_error_20.csv
+│   │   ├── std_position_error_30.csv
+│   │   ├── std_position_error_5.csv
+│   │   └── std_position_error_par-defaut-10.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-10
+│   │   ├── evo
+│   │   │   ├── par-defaut-10_ape.log
+│   │   │   ├── par-defaut-10_ape_map.png
+│   │   │   ├── par-defaut-10_ape_raw.png
+│   │   │   ├── par-defaut-10_rpe.log
+│   │   │   ├── par-defaut-10_rpe_map.png
+│   │   │   ├── par-defaut-10_rpe_raw.png
+│   │   │   └── par-defaut-10.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-10.csv
+│   │   │   ├── nb_matches_par-defaut-10.csv
+│   │   │   ├── overlap_par-defaut-10.csv
+│   │   │   └── std_position_error_par-defaut-10.csv
+│   │   ├── maps
+│   │   ├── par-defaut-10.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_min_beam_surface_angle_rpy.png
+│       ├── KE_min_beam_surface_angle_speeds.png
+│       ├── KE_min_beam_surface_angle_trajectories.png
+│       └── KE_min_beam_surface_angle_xyz.png
+├── KE_neighbors_radius
+│   ├── 0.05
+│   │   ├── 0.05.json
+│   │   ├── evo
+│   │   │   ├── 0.05_ape.log
+│   │   │   ├── 0.05_ape_map.png
+│   │   │   ├── 0.05_ape_raw.png
+│   │   │   ├── 0.05_rpe.log
+│   │   │   ├── 0.05_rpe_map.png
+│   │   │   ├── 0.05_rpe_raw.png
+│   │   │   └── 0.05.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.05.csv
+│   │   │   ├── nb_matches_0.05.csv
+│   │   │   ├── overlap_0.05.csv
+│   │   │   └── std_position_error_0.05.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 0.15
+│   │   ├── 0.15.json
+│   │   ├── evo
+│   │   │   ├── 0.15_ape.log
+│   │   │   ├── 0.15_ape_map.png
+│   │   │   ├── 0.15_ape_raw.png
+│   │   │   ├── 0.15_rpe.log
+│   │   │   ├── 0.15_rpe_map.png
+│   │   │   ├── 0.15_rpe_raw.png
+│   │   │   └── 0.15.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.15.csv
+│   │   │   ├── nb_matches_0.15.csv
+│   │   │   ├── overlap_0.15.csv
+│   │   │   └── std_position_error_0.15.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 0.25
+│   │   ├── 0.25.json
+│   │   ├── evo
+│   │   │   ├── 0.25_ape.log
+│   │   │   ├── 0.25_ape_map.png
+│   │   │   ├── 0.25_ape_raw.png
+│   │   │   ├── 0.25_rpe.log
+│   │   │   ├── 0.25_rpe_map.png
+│   │   │   ├── 0.25_rpe_raw.png
+│   │   │   └── 0.25.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.25.csv
+│   │   │   ├── nb_matches_0.25.csv
+│   │   │   ├── overlap_0.25.csv
+│   │   │   └── std_position_error_0.25.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 0.50
+│   │   ├── 0.50.json
+│   │   ├── evo
+│   │   │   ├── 0.50_ape.log
+│   │   │   ├── 0.50_ape_map.png
+│   │   │   ├── 0.50_ape_raw.png
+│   │   │   ├── 0.50_rpe.log
+│   │   │   ├── 0.50_rpe_map.png
+│   │   │   ├── 0.50_rpe_raw.png
+│   │   │   └── 0.50.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0.50.csv
+│   │   │   ├── nb_matches_0.50.csv
+│   │   │   ├── overlap_0.50.csv
+│   │   │   └── std_position_error_0.50.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_0.05.csv
+│   │   ├── computation_time_0.15.csv
+│   │   ├── computation_time_0.25.csv
+│   │   ├── computation_time_0.50.csv
+│   │   ├── computation_time_par-defaut-0.10.csv
+│   │   ├── evo
+│   │   ├── nb_matches_0.05.csv
+│   │   ├── nb_matches_0.15.csv
+│   │   ├── nb_matches_0.25.csv
+│   │   ├── nb_matches_0.50.csv
+│   │   ├── nb_matches_par-defaut-0.10.csv
+│   │   ├── overlap_0.05.csv
+│   │   ├── overlap_0.15.csv
+│   │   ├── overlap_0.25.csv
+│   │   ├── overlap_0.50.csv
+│   │   ├── overlap_par-defaut-0.10.csv
+│   │   ├── std_position_error_0.05.csv
+│   │   ├── std_position_error_0.15.csv
+│   │   ├── std_position_error_0.25.csv
+│   │   ├── std_position_error_0.50.csv
+│   │   └── std_position_error_par-defaut-0.10.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-0.10
+│   │   ├── evo
+│   │   │   ├── par-defaut-0.10_ape.log
+│   │   │   ├── par-defaut-0.10_ape_map.png
+│   │   │   ├── par-defaut-0.10_ape_raw.png
+│   │   │   ├── par-defaut-0.10_rpe.log
+│   │   │   ├── par-defaut-0.10_rpe_map.png
+│   │   │   ├── par-defaut-0.10_rpe_raw.png
+│   │   │   └── par-defaut-0.10.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-0.10.csv
+│   │   │   ├── nb_matches_par-defaut-0.10.csv
+│   │   │   ├── overlap_par-defaut-0.10.csv
+│   │   │   └── std_position_error_par-defaut-0.10.csv
+│   │   ├── maps
+│   │   ├── par-defaut-0.10.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_neighbors_radius_rpy.png
+│       ├── KE_neighbors_radius_speeds.png
+│       ├── KE_neighbors_radius_trajectories.png
+│       └── KE_neighbors_radius_xyz.png
+├── KE_neighbors_side_nb
+│   ├── 10
+│   │   ├── 10.json
+│   │   ├── evo
+│   │   │   ├── 10_ape.log
+│   │   │   ├── 10_ape_map.png
+│   │   │   ├── 10_ape_raw.png
+│   │   │   ├── 10_rpe.log
+│   │   │   ├── 10_rpe_map.png
+│   │   │   ├── 10_rpe_raw.png
+│   │   │   └── 10.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_10.csv
+│   │   │   ├── nb_matches_10.csv
+│   │   │   ├── overlap_10.csv
+│   │   │   └── std_position_error_10.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 2
+│   │   ├── 2.json
+│   │   ├── evo
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_2.csv
+│   │   │   ├── nb_matches_2.csv
+│   │   │   ├── overlap_2.csv
+│   │   │   └── std_position_error_2.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 20
+│   │   ├── 20.json
+│   │   ├── evo
+│   │   │   ├── 20_ape.log
+│   │   │   ├── 20_ape_map.png
+│   │   │   ├── 20_ape_raw.png
+│   │   │   ├── 20_rpe.log
+│   │   │   ├── 20_rpe_map.png
+│   │   │   ├── 20_rpe_raw.png
+│   │   │   └── 20.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_20.csv
+│   │   │   ├── nb_matches_20.csv
+│   │   │   ├── overlap_20.csv
+│   │   │   └── std_position_error_20.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 3
+│   │   ├── 3.json
+│   │   ├── evo
+│   │   │   ├── 3_ape.log
+│   │   │   ├── 3_ape_map.png
+│   │   │   ├── 3_ape_raw.png
+│   │   │   ├── 3_rpe.log
+│   │   │   ├── 3_rpe_map.png
+│   │   │   ├── 3_rpe_raw.png
+│   │   │   └── 3.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_3.csv
+│   │   │   ├── nb_matches_3.csv
+│   │   │   ├── overlap_3.csv
+│   │   │   └── std_position_error_3.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 50
+│   │   ├── 50.json
+│   │   ├── evo
+│   │   │   ├── 50_ape.log
+│   │   │   ├── 50_ape_map.png
+│   │   │   ├── 50_ape_raw.png
+│   │   │   ├── 50_rpe.log
+│   │   │   ├── 50_rpe_map.png
+│   │   │   ├── 50_rpe_raw.png
+│   │   │   └── 50.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_50.csv
+│   │   │   ├── nb_matches_50.csv
+│   │   │   ├── overlap_50.csv
+│   │   │   └── std_position_error_50.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_10.csv
+│   │   ├── computation_time_20.csv
+│   │   ├── computation_time_2.csv
+│   │   ├── computation_time_3.csv
+│   │   ├── computation_time_50.csv
+│   │   ├── computation_time_par-defaut-5.csv
+│   │   ├── evo
+│   │   ├── nb_matches_10.csv
+│   │   ├── nb_matches_20.csv
+│   │   ├── nb_matches_2.csv
+│   │   ├── nb_matches_3.csv
+│   │   ├── nb_matches_50.csv
+│   │   ├── nb_matches_par-defaut-5.csv
+│   │   ├── overlap_10.csv
+│   │   ├── overlap_20.csv
+│   │   ├── overlap_2.csv
+│   │   ├── overlap_3.csv
+│   │   ├── overlap_50.csv
+│   │   ├── overlap_par-defaut-5.csv
+│   │   ├── std_position_error_10.csv
+│   │   ├── std_position_error_20.csv
+│   │   ├── std_position_error_2.csv
+│   │   ├── std_position_error_3.csv
+│   │   ├── std_position_error_50.csv
+│   │   └── std_position_error_par-defaut-5.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-5
+│   │   ├── evo
+│   │   │   ├── par-defaut-5_ape.log
+│   │   │   ├── par-defaut-5_ape_map.png
+│   │   │   ├── par-defaut-5_ape_raw.png
+│   │   │   ├── par-defaut-5_rpe.log
+│   │   │   ├── par-defaut-5_rpe_map.png
+│   │   │   ├── par-defaut-5_rpe_raw.png
+│   │   │   └── par-defaut-5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-5.csv
+│   │   │   ├── nb_matches_par-defaut-5.csv
+│   │   │   ├── overlap_par-defaut-5.csv
+│   │   │   └── std_position_error_par-defaut-5.csv
+│   │   ├── maps
+│   │   ├── par-defaut-5.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_neighbors_side_nb_rpy.png
+│       ├── KE_neighbors_side_nb_speeds.png
+│       ├── KE_neighbors_side_nb_trajectories.png
+│       └── KE_neighbors_side_nb_xyz.png
+├── KE_plane_edge_angle_thresholds
+│   ├── 130-150-tres-permissif
+│   │   ├── 130-150-tres-permissif.json
+│   │   ├── evo
+│   │   │   ├── 130-150-tres-permissif_ape.log
+│   │   │   ├── 130-150-tres-permissif_ape_map.png
+│   │   │   ├── 130-150-tres-permissif_ape_raw.png
+│   │   │   ├── 130-150-tres-permissif_rpe.log
+│   │   │   ├── 130-150-tres-permissif_rpe_map.png
+│   │   │   ├── 130-150-tres-permissif_rpe_raw.png
+│   │   │   └── 130-150-tres-permissif.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_130-150-tres-permissif.csv
+│   │   │   ├── nb_matches_130-150-tres-permissif.csv
+│   │   │   ├── overlap_130-150-tres-permissif.csv
+│   │   │   └── std_position_error_130-150-tres-permissif.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 140-135-permissif
+│   │   ├── 140-135-permissif.json
+│   │   ├── evo
+│   │   │   ├── 140-135-permissif_ape.log
+│   │   │   ├── 140-135-permissif_ape_map.png
+│   │   │   ├── 140-135-permissif_ape_raw.png
+│   │   │   ├── 140-135-permissif_rpe.log
+│   │   │   ├── 140-135-permissif_rpe_map.png
+│   │   │   ├── 140-135-permissif_rpe_raw.png
+│   │   │   └── 140-135-permissif.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_140-135-permissif.csv
+│   │   │   ├── nb_matches_140-135-permissif.csv
+│   │   │   ├── overlap_140-135-permissif.csv
+│   │   │   └── std_position_error_140-135-permissif.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 165-105-strict
+│   │   ├── 165-105-strict.json
+│   │   ├── evo
+│   │   │   ├── 165-105-strict_ape.log
+│   │   │   ├── 165-105-strict_ape_map.png
+│   │   │   ├── 165-105-strict_ape_raw.png
+│   │   │   ├── 165-105-strict_rpe.log
+│   │   │   ├── 165-105-strict_rpe_map.png
+│   │   │   ├── 165-105-strict_rpe_raw.png
+│   │   │   └── 165-105-strict.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_165-105-strict.csv
+│   │   │   ├── nb_matches_165-105-strict.csv
+│   │   │   ├── overlap_165-105-strict.csv
+│   │   │   └── std_position_error_165-105-strict.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 175-95-tres-strict
+│   │   ├── 175-95-tres-strict.json
+│   │   ├── evo
+│   │   │   ├── 175-95-tres-strict_ape.log
+│   │   │   ├── 175-95-tres-strict_ape_map.png
+│   │   │   ├── 175-95-tres-strict_ape_raw.png
+│   │   │   ├── 175-95-tres-strict_rpe.log
+│   │   │   ├── 175-95-tres-strict_rpe_map.png
+│   │   │   ├── 175-95-tres-strict_rpe_raw.png
+│   │   │   └── 175-95-tres-strict.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_175-95-tres-strict.csv
+│   │   │   ├── nb_matches_175-95-tres-strict.csv
+│   │   │   ├── overlap_175-95-tres-strict.csv
+│   │   │   └── std_position_error_175-95-tres-strict.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_130-150-tres-permissif.csv
+│   │   ├── computation_time_140-135-permissif.csv
+│   │   ├── computation_time_165-105-strict.csv
+│   │   ├── computation_time_175-95-tres-strict.csv
+│   │   ├── computation_time_par-defaut-150-120.csv
+│   │   ├── evo
+│   │   ├── nb_matches_130-150-tres-permissif.csv
+│   │   ├── nb_matches_140-135-permissif.csv
+│   │   ├── nb_matches_165-105-strict.csv
+│   │   ├── nb_matches_175-95-tres-strict.csv
+│   │   ├── nb_matches_par-defaut-150-120.csv
+│   │   ├── overlap_130-150-tres-permissif.csv
+│   │   ├── overlap_140-135-permissif.csv
+│   │   ├── overlap_165-105-strict.csv
+│   │   ├── overlap_175-95-tres-strict.csv
+│   │   ├── overlap_par-defaut-150-120.csv
+│   │   ├── std_position_error_130-150-tres-permissif.csv
+│   │   ├── std_position_error_140-135-permissif.csv
+│   │   ├── std_position_error_165-105-strict.csv
+│   │   ├── std_position_error_175-95-tres-strict.csv
+│   │   └── std_position_error_par-defaut-150-120.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-150-120
+│   │   ├── evo
+│   │   │   ├── par-defaut-150-120_ape.log
+│   │   │   ├── par-defaut-150-120_ape_map.png
+│   │   │   ├── par-defaut-150-120_ape_raw.png
+│   │   │   ├── par-defaut-150-120_rpe.log
+│   │   │   ├── par-defaut-150-120_rpe_map.png
+│   │   │   ├── par-defaut-150-120_rpe_raw.png
+│   │   │   └── par-defaut-150-120.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-150-120.csv
+│   │   │   ├── nb_matches_par-defaut-150-120.csv
+│   │   │   ├── overlap_par-defaut-150-120.csv
+│   │   │   └── std_position_error_par-defaut-150-120.csv
+│   │   ├── maps
+│   │   ├── par-defaut-150-120.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── KE_plane_edge_angle_thresholds_rpy.png
+│       ├── KE_plane_edge_angle_thresholds_speeds.png
+│       ├── KE_plane_edge_angle_thresholds_trajectories.png
+│       └── KE_plane_edge_angle_thresholds_xyz.png
+├── KF_thresholds
+│   ├── dense-0.05-3
+│   │   ├── dense-0.05-3.json
+│   │   ├── evo
+│   │   │   ├── dense-0.05-3_ape.log
+│   │   │   ├── dense-0.05-3_ape_map.png
+│   │   │   ├── dense-0.05-3_ape_raw.png
+│   │   │   ├── dense-0.05-3_rpe.log
+│   │   │   ├── dense-0.05-3_rpe_map.png
+│   │   │   ├── dense-0.05-3_rpe_raw.png
+│   │   │   └── dense-0.05-3.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_dense-0.05-3.csv
+│   │   │   ├── nb_matches_dense-0.05-3.csv
+│   │   │   ├── overlap_dense-0.05-3.csv
+│   │   │   └── std_position_error_dense-0.05-3.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── leger-0.7-8
+│   │   ├── evo
+│   │   │   ├── leger-0.7-8_ape.log
+│   │   │   ├── leger-0.7-8_ape_map.png
+│   │   │   ├── leger-0.7-8_ape_raw.png
+│   │   │   ├── leger-0.7-8_rpe.log
+│   │   │   ├── leger-0.7-8_rpe_map.png
+│   │   │   ├── leger-0.7-8_rpe_raw.png
+│   │   │   └── leger-0.7-8.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_leger-0.7-8.csv
+│   │   │   ├── nb_matches_leger-0.7-8.csv
+│   │   │   ├── overlap_leger-0.7-8.csv
+│   │   │   └── std_position_error_leger-0.7-8.csv
+│   │   ├── leger-0.7-8.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── metriques_confidence
+│   │   ├── computation_time_dense-0.05-3.csv
+│   │   ├── computation_time_leger-0.7-8.csv
+│   │   ├── computation_time_par-defaut-0.5-5.csv
+│   │   ├── computation_time_tres-leger-1.0-10.csv
+│   │   ├── evo
+│   │   ├── nb_matches_dense-0.05-3.csv
+│   │   ├── nb_matches_leger-0.7-8.csv
+│   │   ├── nb_matches_par-defaut-0.5-5.csv
+│   │   ├── nb_matches_tres-leger-1.0-10.csv
+│   │   ├── overlap_dense-0.05-3.csv
+│   │   ├── overlap_leger-0.7-8.csv
+│   │   ├── overlap_par-defaut-0.5-5.csv
+│   │   ├── overlap_tres-leger-1.0-10.csv
+│   │   ├── std_position_error_dense-0.05-3.csv
+│   │   ├── std_position_error_leger-0.7-8.csv
+│   │   ├── std_position_error_par-defaut-0.5-5.csv
+│   │   └── std_position_error_tres-leger-1.0-10.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-0.5-5
+│   │   ├── evo
+│   │   │   ├── par-defaut-0.5-5_ape.log
+│   │   │   ├── par-defaut-0.5-5_ape_map.png
+│   │   │   ├── par-defaut-0.5-5_ape_raw.png
+│   │   │   ├── par-defaut-0.5-5_rpe.log
+│   │   │   ├── par-defaut-0.5-5_rpe_map.png
+│   │   │   ├── par-defaut-0.5-5_rpe_raw.png
+│   │   │   └── par-defaut-0.5-5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-0.5-5.csv
+│   │   │   ├── nb_matches_par-defaut-0.5-5.csv
+│   │   │   ├── overlap_par-defaut-0.5-5.csv
+│   │   │   └── std_position_error_par-defaut-0.5-5.csv
+│   │   ├── maps
+│   │   ├── par-defaut-0.5-5.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   ├── trajectoires
+│   │   ├── KF_thresholds_rpy.png
+│   │   ├── KF_thresholds_speeds.png
+│   │   ├── KF_thresholds_trajectories.png
+│   │   └── KF_thresholds_xyz.png
+│   └── tres-leger-1.0-10
+│       ├── evo
+│       │   ├── tres-leger-1.0-10_ape.log
+│       │   ├── tres-leger-1.0-10_ape_map.png
+│       │   ├── tres-leger-1.0-10_ape_raw.png
+│       │   ├── tres-leger-1.0-10_rpe.log
+│       │   ├── tres-leger-1.0-10_rpe_map.png
+│       │   ├── tres-leger-1.0-10_rpe_raw.png
+│       │   └── tres-leger-1.0-10.tum
+│       ├── fichiers_csv
+│       │   ├── computation_time_tres-leger-1.0-10.csv
+│       │   ├── nb_matches_tres-leger-1.0-10.csv
+│       │   ├── overlap_tres-leger-1.0-10.csv
+│       │   └── std_position_error_tres-leger-1.0-10.csv
+│       ├── maps
+│       ├── ros_bag
+│       │   └── all_bag
+│       │       ├── all_bag_0.db3
+│       │       └── metadata.yaml
+│       └── tres-leger-1.0-10.json
+├── LOC_ICP_LM_Iter
+│   ├── faibles-icp-lm-3-10
+│   │   ├── evo
+│   │   │   ├── faibles-icp-lm-3-10_ape.log
+│   │   │   ├── faibles-icp-lm-3-10_ape_map.png
+│   │   │   ├── faibles-icp-lm-3-10_ape_raw.png
+│   │   │   ├── faibles-icp-lm-3-10_rpe.log
+│   │   │   ├── faibles-icp-lm-3-10_rpe_map.png
+│   │   │   ├── faibles-icp-lm-3-10_rpe_raw.png
+│   │   │   └── faibles-icp-lm-3-10.tum
+│   │   ├── faibles-icp-lm-3-10.json
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_faibles-icp-lm-3-10.csv
+│   │   │   ├── nb_matches_faibles-icp-lm-3-10.csv
+│   │   │   ├── overlap_faibles-icp-lm-3-10.csv
+│   │   │   └── std_position_error_faibles-icp-lm-3-10.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── fort-icp-lm-6-20
+│   │   ├── evo
+│   │   │   ├── fort-icp-lm-6-20_ape.log
+│   │   │   ├── fort-icp-lm-6-20_ape_map.png
+│   │   │   ├── fort-icp-lm-6-20_ape_raw.png
+│   │   │   ├── fort-icp-lm-6-20_rpe.log
+│   │   │   ├── fort-icp-lm-6-20_rpe_map.png
+│   │   │   ├── fort-icp-lm-6-20_rpe_raw.png
+│   │   │   └── fort-icp-lm-6-20.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_fort-icp-lm-6-20.csv
+│   │   │   ├── nb_matches_fort-icp-lm-6-20.csv
+│   │   │   ├── overlap_fort-icp-lm-6-20.csv
+│   │   │   └── std_position_error_fort-icp-lm-6-20.csv
+│   │   ├── fort-icp-lm-6-20.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── icp-extreme-100
+│   │   ├── evo
+│   │   │   ├── icp-extreme-100_ape.log
+│   │   │   ├── icp-extreme-100_ape_map.png
+│   │   │   ├── icp-extreme-100_ape_raw.png
+│   │   │   ├── icp-extreme-100_rpe.log
+│   │   │   ├── icp-extreme-100_rpe_map.png
+│   │   │   ├── icp-extreme-100_rpe_raw.png
+│   │   │   └── icp-extreme-100.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_icp-extreme-100.csv
+│   │   │   ├── nb_matches_icp-extreme-100.csv
+│   │   │   ├── overlap_icp-extreme-100.csv
+│   │   │   └── std_position_error_icp-extreme-100.csv
+│   │   ├── icp-extreme-100.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── icp-faible-2
+│   │   ├── evo
+│   │   │   ├── icp-faible-2_ape.log
+│   │   │   ├── icp-faible-2_ape_map.png
+│   │   │   ├── icp-faible-2_ape_raw.png
+│   │   │   ├── icp-faible-2_rpe.log
+│   │   │   ├── icp-faible-2_rpe_map.png
+│   │   │   ├── icp-faible-2_rpe_raw.png
+│   │   │   └── icp-faible-2.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_icp-faible-2.csv
+│   │   │   ├── nb_matches_icp-faible-2.csv
+│   │   │   ├── overlap_icp-faible-2.csv
+│   │   │   └── std_position_error_icp-faible-2.csv
+│   │   ├── icp-faible-2.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── icp-lm-extremes-100-100
+│   │   ├── evo
+│   │   │   ├── icp-lm-extremes-100-100_ape.log
+│   │   │   ├── icp-lm-extremes-100-100_ape_map.png
+│   │   │   ├── icp-lm-extremes-100-100_ape_raw.png
+│   │   │   ├── icp-lm-extremes-100-100_rpe.log
+│   │   │   ├── icp-lm-extremes-100-100_rpe_map.png
+│   │   │   ├── icp-lm-extremes-100-100_rpe_raw.png
+│   │   │   └── icp-lm-extremes-100-100.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_icp-lm-extremes-100-100.csv
+│   │   │   ├── nb_matches_icp-lm-extremes-100-100.csv
+│   │   │   ├── overlap_icp-lm-extremes-100-100.csv
+│   │   │   └── std_position_error_icp-lm-extremes-100-100.csv
+│   │   ├── icp-lm-extremes-100-100.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── lm-extreme-100
+│   │   ├── evo
+│   │   │   ├── lm-extreme-100_ape.log
+│   │   │   ├── lm-extreme-100_ape_map.png
+│   │   │   ├── lm-extreme-100_ape_raw.png
+│   │   │   ├── lm-extreme-100_rpe.log
+│   │   │   ├── lm-extreme-100_rpe_map.png
+│   │   │   ├── lm-extreme-100_rpe_raw.png
+│   │   │   └── lm-extreme-100.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_lm-extreme-100.csv
+│   │   │   ├── nb_matches_lm-extreme-100.csv
+│   │   │   ├── overlap_lm-extreme-100.csv
+│   │   │   └── std_position_error_lm-extreme-100.csv
+│   │   ├── lm-extreme-100.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── lm-faible-10
+│   │   ├── evo
+│   │   │   ├── lm-faible-10_ape.log
+│   │   │   ├── lm-faible-10_ape_map.png
+│   │   │   ├── lm-faible-10_ape_raw.png
+│   │   │   ├── lm-faible-10_rpe.log
+│   │   │   ├── lm-faible-10_rpe_map.png
+│   │   │   ├── lm-faible-10_rpe_raw.png
+│   │   │   └── lm-faible-10.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_lm-faible-10.csv
+│   │   │   ├── nb_matches_lm-faible-10.csv
+│   │   │   ├── overlap_lm-faible-10.csv
+│   │   │   └── std_position_error_lm-faible-10.csv
+│   │   ├── lm-faible-10.json
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── metriques_confidence
+│   │   ├── computation_time_faibles-icp-lm-3-10.csv
+│   │   ├── computation_time_fort-icp-lm-6-20.csv
+│   │   ├── computation_time_icp-extreme-100.csv
+│   │   ├── computation_time_icp-faible-2.csv
+│   │   ├── computation_time_icp-lm-extremes-100-100.csv
+│   │   ├── computation_time_lm-extreme-100.csv
+│   │   ├── computation_time_lm-faible-10.csv
+│   │   ├── computation_time_par-defaut-4-15.csv
+│   │   ├── evo
+│   │   ├── nb_matches_faibles-icp-lm-3-10.csv
+│   │   ├── nb_matches_fort-icp-lm-6-20.csv
+│   │   ├── nb_matches_icp-extreme-100.csv
+│   │   ├── nb_matches_icp-faible-2.csv
+│   │   ├── nb_matches_icp-lm-extremes-100-100.csv
+│   │   ├── nb_matches_lm-extreme-100.csv
+│   │   ├── nb_matches_lm-faible-10.csv
+│   │   ├── nb_matches_par-defaut-4-15.csv
+│   │   ├── overlap_faibles-icp-lm-3-10.csv
+│   │   ├── overlap_fort-icp-lm-6-20.csv
+│   │   ├── overlap_icp-extreme-100.csv
+│   │   ├── overlap_icp-faible-2.csv
+│   │   ├── overlap_icp-lm-extremes-100-100.csv
+│   │   ├── overlap_lm-extreme-100.csv
+│   │   ├── overlap_lm-faible-10.csv
+│   │   ├── overlap_par-defaut-4-15.csv
+│   │   ├── std_position_error_faibles-icp-lm-3-10.csv
+│   │   ├── std_position_error_fort-icp-lm-6-20.csv
+│   │   ├── std_position_error_icp-extreme-100.csv
+│   │   ├── std_position_error_icp-faible-2.csv
+│   │   ├── std_position_error_icp-lm-extremes-100-100.csv
+│   │   ├── std_position_error_lm-extreme-100.csv
+│   │   ├── std_position_error_lm-faible-10.csv
+│   │   └── std_position_error_par-defaut-4-15.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-4-15
+│   │   ├── evo
+│   │   │   ├── par-defaut-4-15_ape.log
+│   │   │   ├── par-defaut-4-15_ape_map.png
+│   │   │   ├── par-defaut-4-15_ape_raw.png
+│   │   │   ├── par-defaut-4-15_rpe.log
+│   │   │   ├── par-defaut-4-15_rpe_map.png
+│   │   │   ├── par-defaut-4-15_rpe_raw.png
+│   │   │   └── par-defaut-4-15.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-4-15.csv
+│   │   │   ├── nb_matches_par-defaut-4-15.csv
+│   │   │   ├── overlap_par-defaut-4-15.csv
+│   │   │   └── std_position_error_par-defaut-4-15.csv
+│   │   ├── maps
+│   │   ├── par-defaut-4-15.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── LOC_ICP_LM_Iter_rpy.png
+│       ├── LOC_ICP_LM_Iter_speeds.png
+│       ├── LOC_ICP_LM_Iter_trajectories.png
+│       └── LOC_ICP_LM_Iter_xyz.png
+├── LOC_max_neighbors_distance
+│   ├── 10
+│   │   ├── 10.json
+│   │   ├── evo
+│   │   │   ├── 10_ape.log
+│   │   │   ├── 10_ape_map.png
+│   │   │   ├── 10_ape_raw.png
+│   │   │   ├── 10_rpe.log
+│   │   │   ├── 10_rpe_map.png
+│   │   │   ├── 10_rpe_raw.png
+│   │   │   └── 10.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_10.csv
+│   │   │   ├── nb_matches_10.csv
+│   │   │   ├── overlap_10.csv
+│   │   │   └── std_position_error_10.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 12.0
+│   │   ├── 12.0.json
+│   │   ├── evo
+│   │   │   ├── 12.0_ape.log
+│   │   │   ├── 12.0_ape_map.png
+│   │   │   ├── 12.0_ape_raw.png
+│   │   │   ├── 12.0_rpe.log
+│   │   │   ├── 12.0_rpe_map.png
+│   │   │   ├── 12.0_rpe_raw.png
+│   │   │   └── 12.0.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_12.0.csv
+│   │   │   ├── nb_matches_12.0.csv
+│   │   │   ├── overlap_12.0.csv
+│   │   │   └── std_position_error_12.0.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 2
+│   │   ├── 2.json
+│   │   ├── evo
+│   │   │   ├── 2_ape.log
+│   │   │   ├── 2_ape_map.png
+│   │   │   ├── 2_ape_raw.png
+│   │   │   ├── 2_rpe.log
+│   │   │   ├── 2_rpe_map.png
+│   │   │   ├── 2_rpe_raw.png
+│   │   │   └── 2.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_2.csv
+│   │   │   ├── nb_matches_2.csv
+│   │   │   ├── overlap_2.csv
+│   │   │   └── std_position_error_2.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 30
+│   │   ├── 30.json
+│   │   ├── evo
+│   │   │   ├── 30_ape.log
+│   │   │   ├── 30_ape_map.png
+│   │   │   ├── 30_ape_raw.png
+│   │   │   ├── 30_rpe.log
+│   │   │   ├── 30_rpe_map.png
+│   │   │   ├── 30_rpe_raw.png
+│   │   │   └── 30.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_30.csv
+│   │   │   ├── nb_matches_30.csv
+│   │   │   ├── overlap_30.csv
+│   │   │   └── std_position_error_30.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 3.5
+│   │   ├── 3.5.json
+│   │   ├── evo
+│   │   │   ├── 3.5_ape.log
+│   │   │   ├── 3.5_ape_map.png
+│   │   │   ├── 3.5_ape_raw.png
+│   │   │   ├── 3.5_rpe.log
+│   │   │   ├── 3.5_rpe_map.png
+│   │   │   ├── 3.5_rpe_raw.png
+│   │   │   └── 3.5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_3.5.csv
+│   │   │   ├── nb_matches_3.5.csv
+│   │   │   ├── overlap_3.5.csv
+│   │   │   └── std_position_error_3.5.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 7.5
+│   │   ├── 7.5.json
+│   │   ├── evo
+│   │   │   ├── 7.5_ape.log
+│   │   │   ├── 7.5_ape_map.png
+│   │   │   ├── 7.5_ape_raw.png
+│   │   │   ├── 7.5_rpe.log
+│   │   │   ├── 7.5_rpe_map.png
+│   │   │   ├── 7.5_rpe_raw.png
+│   │   │   └── 7.5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_7.5.csv
+│   │   │   ├── nb_matches_7.5.csv
+│   │   │   ├── overlap_7.5.csv
+│   │   │   └── std_position_error_7.5.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_10.csv
+│   │   ├── computation_time_12.0.csv
+│   │   ├── computation_time_2.csv
+│   │   ├── computation_time_30.csv
+│   │   ├── computation_time_3.5.csv
+│   │   ├── computation_time_7.5.csv
+│   │   ├── computation_time_par-defaut-5.csv
+│   │   ├── evo
+│   │   ├── nb_matches_10.csv
+│   │   ├── nb_matches_12.0.csv
+│   │   ├── nb_matches_2.csv
+│   │   ├── nb_matches_30.csv
+│   │   ├── nb_matches_3.5.csv
+│   │   ├── nb_matches_7.5.csv
+│   │   ├── nb_matches_par-defaut-5.csv
+│   │   ├── overlap_10.csv
+│   │   ├── overlap_12.0.csv
+│   │   ├── overlap_2.csv
+│   │   ├── overlap_30.csv
+│   │   ├── overlap_3.5.csv
+│   │   ├── overlap_7.5.csv
+│   │   ├── overlap_par-defaut-5.csv
+│   │   ├── std_position_error_10.csv
+│   │   ├── std_position_error_12.0.csv
+│   │   ├── std_position_error_2.csv
+│   │   ├── std_position_error_30.csv
+│   │   ├── std_position_error_3.5.csv
+│   │   ├── std_position_error_7.5.csv
+│   │   └── std_position_error_par-defaut-5.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-5
+│   │   ├── evo
+│   │   │   ├── par-defaut-5_ape.log
+│   │   │   ├── par-defaut-5_ape_map.png
+│   │   │   ├── par-defaut-5_ape_raw.png
+│   │   │   ├── par-defaut-5_rpe.log
+│   │   │   ├── par-defaut-5_rpe_map.png
+│   │   │   ├── par-defaut-5_rpe_raw.png
+│   │   │   └── par-defaut-5.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-5.csv
+│   │   │   ├── nb_matches_par-defaut-5.csv
+│   │   │   ├── overlap_par-defaut-5.csv
+│   │   │   └── std_position_error_par-defaut-5.csv
+│   │   ├── maps
+│   │   ├── par-defaut-5.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── LOC_max_neighbors_distance_rpy.png
+│       ├── LOC_max_neighbors_distance_speeds.png
+│       ├── LOC_max_neighbors_distance_trajectories.png
+│       └── LOC_max_neighbors_distance_xyz.png
+├── LOC_point_to_blob_match
+│   ├── 15
+│   │   ├── 15.json
+│   │   ├── evo
+│   │   │   ├── 15_ape.log
+│   │   │   ├── 15_ape_map.png
+│   │   │   ├── 15_ape_raw.png
+│   │   │   ├── 15_rpe.log
+│   │   │   ├── 15_rpe_map.png
+│   │   │   ├── 15_rpe_raw.png
+│   │   │   └── 15.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_15.csv
+│   │   │   ├── nb_matches_15.csv
+│   │   │   ├── overlap_15.csv
+│   │   │   └── std_position_error_15.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 25
+│   │   ├── 25.json
+│   │   ├── evo
+│   │   │   ├── 25_ape.log
+│   │   │   ├── 25_ape_map.png
+│   │   │   ├── 25_ape_raw.png
+│   │   │   ├── 25_rpe.log
+│   │   │   ├── 25_rpe_map.png
+│   │   │   ├── 25_rpe_raw.png
+│   │   │   └── 25.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_25.csv
+│   │   │   ├── nb_matches_25.csv
+│   │   │   ├── overlap_25.csv
+│   │   │   └── std_position_error_25.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 4
+│   │   ├── 4.json
+│   │   ├── evo
+│   │   │   ├── 4_ape.log
+│   │   │   ├── 4_ape_map.png
+│   │   │   ├── 4_ape_raw.png
+│   │   │   ├── 4_rpe.log
+│   │   │   ├── 4_rpe_map.png
+│   │   │   ├── 4_rpe_raw.png
+│   │   │   └── 4.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_4.csv
+│   │   │   ├── nb_matches_4.csv
+│   │   │   ├── overlap_4.csv
+│   │   │   └── std_position_error_4.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 7
+│   │   ├── 7.json
+│   │   ├── evo
+│   │   │   ├── 7_ape.log
+│   │   │   ├── 7_ape_map.png
+│   │   │   ├── 7_ape_raw.png
+│   │   │   ├── 7_rpe.log
+│   │   │   ├── 7_rpe_map.png
+│   │   │   ├── 7_rpe_raw.png
+│   │   │   └── 7.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_7.csv
+│   │   │   ├── nb_matches_7.csv
+│   │   │   ├── overlap_7.csv
+│   │   │   └── std_position_error_7.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_15.csv
+│   │   ├── computation_time_25.csv
+│   │   ├── computation_time_4.csv
+│   │   ├── computation_time_7.csv
+│   │   ├── computation_time_par-defaut-10.csv
+│   │   ├── evo
+│   │   ├── nb_matches_15.csv
+│   │   ├── nb_matches_25.csv
+│   │   ├── nb_matches_4.csv
+│   │   ├── nb_matches_7.csv
+│   │   ├── nb_matches_par-defaut-10.csv
+│   │   ├── overlap_15.csv
+│   │   ├── overlap_25.csv
+│   │   ├── overlap_4.csv
+│   │   ├── overlap_7.csv
+│   │   ├── overlap_par-defaut-10.csv
+│   │   ├── std_position_error_15.csv
+│   │   ├── std_position_error_25.csv
+│   │   ├── std_position_error_4.csv
+│   │   ├── std_position_error_7.csv
+│   │   └── std_position_error_par-defaut-10.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-10
+│   │   ├── evo
+│   │   │   ├── par-defaut-10_ape.log
+│   │   │   ├── par-defaut-10_ape_map.png
+│   │   │   ├── par-defaut-10_ape_raw.png
+│   │   │   ├── par-defaut-10_rpe.log
+│   │   │   ├── par-defaut-10_rpe_map.png
+│   │   │   ├── par-defaut-10_rpe_raw.png
+│   │   │   └── par-defaut-10.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-10.csv
+│   │   │   ├── nb_matches_par-defaut-10.csv
+│   │   │   ├── overlap_par-defaut-10.csv
+│   │   │   └── std_position_error_par-defaut-10.csv
+│   │   ├── maps
+│   │   ├── par-defaut-10.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── LOC_point_to_blob_match_rpy.png
+│       ├── LOC_point_to_blob_match_speeds.png
+│       ├── LOC_point_to_blob_match_trajectories.png
+│       └── LOC_point_to_blob_match_xyz.png
+├── LOC_point_to_edge_match
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_par-defaut-9-5-0.2.csv
+│   │   ├── computation_time_permissif-7-3-0.3.csv
+│   │   ├── computation_time_strict-12-7-0.15.csv
+│   │   ├── computation_time_tres-permissif-5-2-0.4.csv
+│   │   ├── computation_time_tres-strict-12-7-0.15.csv
+│   │   ├── evo
+│   │   ├── nb_matches_par-defaut-9-5-0.2.csv
+│   │   ├── nb_matches_permissif-7-3-0.3.csv
+│   │   ├── nb_matches_strict-12-7-0.15.csv
+│   │   ├── nb_matches_tres-permissif-5-2-0.4.csv
+│   │   ├── nb_matches_tres-strict-12-7-0.15.csv
+│   │   ├── overlap_par-defaut-9-5-0.2.csv
+│   │   ├── overlap_permissif-7-3-0.3.csv
+│   │   ├── overlap_strict-12-7-0.15.csv
+│   │   ├── overlap_tres-permissif-5-2-0.4.csv
+│   │   ├── overlap_tres-strict-12-7-0.15.csv
+│   │   ├── std_position_error_par-defaut-9-5-0.2.csv
+│   │   ├── std_position_error_permissif-7-3-0.3.csv
+│   │   ├── std_position_error_strict-12-7-0.15.csv
+│   │   ├── std_position_error_tres-permissif-5-2-0.4.csv
+│   │   └── std_position_error_tres-strict-12-7-0.15.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-9-5-0.2
+│   │   ├── evo
+│   │   │   ├── par-defaut-9-5-0.2_ape.log
+│   │   │   ├── par-defaut-9-5-0.2_ape_map.png
+│   │   │   ├── par-defaut-9-5-0.2_ape_raw.png
+│   │   │   ├── par-defaut-9-5-0.2_rpe.log
+│   │   │   ├── par-defaut-9-5-0.2_rpe_map.png
+│   │   │   ├── par-defaut-9-5-0.2_rpe_raw.png
+│   │   │   └── par-defaut-9-5-0.2.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-9-5-0.2.csv
+│   │   │   ├── nb_matches_par-defaut-9-5-0.2.csv
+│   │   │   ├── overlap_par-defaut-9-5-0.2.csv
+│   │   │   └── std_position_error_par-defaut-9-5-0.2.csv
+│   │   ├── maps
+│   │   ├── par-defaut-9-5-0.2.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── permissif-7-3-0.3
+│   │   ├── evo
+│   │   │   ├── permissif-7-3-0.3_ape.log
+│   │   │   ├── permissif-7-3-0.3_ape_map.png
+│   │   │   ├── permissif-7-3-0.3_ape_raw.png
+│   │   │   ├── permissif-7-3-0.3_rpe.log
+│   │   │   ├── permissif-7-3-0.3_rpe_map.png
+│   │   │   ├── permissif-7-3-0.3_rpe_raw.png
+│   │   │   └── permissif-7-3-0.3.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_permissif-7-3-0.3.csv
+│   │   │   ├── nb_matches_permissif-7-3-0.3.csv
+│   │   │   ├── overlap_permissif-7-3-0.3.csv
+│   │   │   └── std_position_error_permissif-7-3-0.3.csv
+│   │   ├── maps
+│   │   ├── permissif-7-3-0.3.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── strict-12-7-0.15
+│   │   ├── evo
+│   │   │   ├── strict-12-7-0.15_ape.log
+│   │   │   ├── strict-12-7-0.15_ape_map.png
+│   │   │   ├── strict-12-7-0.15_ape_raw.png
+│   │   │   ├── strict-12-7-0.15_rpe.log
+│   │   │   ├── strict-12-7-0.15_rpe_map.png
+│   │   │   ├── strict-12-7-0.15_rpe_raw.png
+│   │   │   └── strict-12-7-0.15.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_strict-12-7-0.15.csv
+│   │   │   ├── nb_matches_strict-12-7-0.15.csv
+│   │   │   ├── overlap_strict-12-7-0.15.csv
+│   │   │   └── std_position_error_strict-12-7-0.15.csv
+│   │   ├── maps
+│   │   ├── ros_bag
+│   │   │   └── all_bag
+│   │   │       ├── all_bag_0.db3
+│   │   │       └── metadata.yaml
+│   │   └── strict-12-7-0.15.json
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   ├── trajectoires
+│   │   ├── LOC_point_to_edge_match_rpy.png
+│   │   ├── LOC_point_to_edge_match_speeds.png
+│   │   ├── LOC_point_to_edge_match_trajectories.png
+│   │   └── LOC_point_to_edge_match_xyz.png
+│   ├── tres-permissif-5-2-0.4
+│   │   ├── evo
+│   │   │   ├── tres-permissif-5-2-0.4_ape.log
+│   │   │   ├── tres-permissif-5-2-0.4_ape_map.png
+│   │   │   ├── tres-permissif-5-2-0.4_ape_raw.png
+│   │   │   ├── tres-permissif-5-2-0.4_rpe.log
+│   │   │   ├── tres-permissif-5-2-0.4_rpe_map.png
+│   │   │   ├── tres-permissif-5-2-0.4_rpe_raw.png
+│   │   │   └── tres-permissif-5-2-0.4.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_tres-permissif-5-2-0.4.csv
+│   │   │   ├── nb_matches_tres-permissif-5-2-0.4.csv
+│   │   │   ├── overlap_tres-permissif-5-2-0.4.csv
+│   │   │   └── std_position_error_tres-permissif-5-2-0.4.csv
+│   │   ├── maps
+│   │   ├── ros_bag
+│   │   │   └── all_bag
+│   │   │       ├── all_bag_0.db3
+│   │   │       └── metadata.yaml
+│   │   └── tres-permissif-5-2-0.4.json
+│   └── tres-strict-12-7-0.15
+│       ├── evo
+│       │   ├── tres-strict-12-7-0.15_ape.log
+│       │   ├── tres-strict-12-7-0.15_rpe.log
+│       │   └── tres-strict-12-7-0.15.tum
+│       ├── fichiers_csv
+│       │   ├── computation_time_tres-strict-12-7-0.15.csv
+│       │   ├── nb_matches_tres-strict-12-7-0.15.csv
+│       │   ├── overlap_tres-strict-12-7-0.15.csv
+│       │   └── std_position_error_tres-strict-12-7-0.15.csv
+│       ├── maps
+│       ├── ros_bag
+│       │   └── all_bag
+│       │       ├── all_bag_0.db3
+│       │       └── metadata.yaml
+│       └── tres-strict-12-7-0.15.json
+├── LOC_point_to_plane_match
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_par-defaut-7-0.04-0.1.csv
+│   │   ├── computation_time_permissif-5-0.03-0.15.csv
+│   │   ├── computation_time_strict-9-0.05-0.07.csv
+│   │   ├── computation_time_tres-permissif-4-0.02-0.2.csv
+│   │   ├── computation_time_tres-strict-12-0.08-0.05.csv
+│   │   ├── evo
+│   │   ├── nb_matches_par-defaut-7-0.04-0.1.csv
+│   │   ├── nb_matches_permissif-5-0.03-0.15.csv
+│   │   ├── nb_matches_strict-9-0.05-0.07.csv
+│   │   ├── nb_matches_tres-permissif-4-0.02-0.2.csv
+│   │   ├── nb_matches_tres-strict-12-0.08-0.05.csv
+│   │   ├── overlap_par-defaut-7-0.04-0.1.csv
+│   │   ├── overlap_permissif-5-0.03-0.15.csv
+│   │   ├── overlap_strict-9-0.05-0.07.csv
+│   │   ├── overlap_tres-permissif-4-0.02-0.2.csv
+│   │   ├── overlap_tres-strict-12-0.08-0.05.csv
+│   │   ├── std_position_error_par-defaut-7-0.04-0.1.csv
+│   │   ├── std_position_error_permissif-5-0.03-0.15.csv
+│   │   ├── std_position_error_strict-9-0.05-0.07.csv
+│   │   ├── std_position_error_tres-permissif-4-0.02-0.2.csv
+│   │   └── std_position_error_tres-strict-12-0.08-0.05.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-7-0.04-0.1
+│   │   ├── evo
+│   │   │   ├── par-defaut-7-0.04-0.1_ape.log
+│   │   │   ├── par-defaut-7-0.04-0.1_ape_map.png
+│   │   │   ├── par-defaut-7-0.04-0.1_ape_raw.png
+│   │   │   ├── par-defaut-7-0.04-0.1_rpe.log
+│   │   │   ├── par-defaut-7-0.04-0.1_rpe_map.png
+│   │   │   ├── par-defaut-7-0.04-0.1_rpe_raw.png
+│   │   │   └── par-defaut-7-0.04-0.1.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-7-0.04-0.1.csv
+│   │   │   ├── nb_matches_par-defaut-7-0.04-0.1.csv
+│   │   │   ├── overlap_par-defaut-7-0.04-0.1.csv
+│   │   │   └── std_position_error_par-defaut-7-0.04-0.1.csv
+│   │   ├── maps
+│   │   ├── par-defaut-7-0.04-0.1.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── permissif-5-0.03-0.15
+│   │   ├── evo
+│   │   │   ├── permissif-5-0.03-0.15_ape.log
+│   │   │   ├── permissif-5-0.03-0.15_ape_map.png
+│   │   │   ├── permissif-5-0.03-0.15_ape_raw.png
+│   │   │   ├── permissif-5-0.03-0.15_rpe.log
+│   │   │   ├── permissif-5-0.03-0.15_rpe_map.png
+│   │   │   ├── permissif-5-0.03-0.15_rpe_raw.png
+│   │   │   └── permissif-5-0.03-0.15.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_permissif-5-0.03-0.15.csv
+│   │   │   ├── nb_matches_permissif-5-0.03-0.15.csv
+│   │   │   ├── overlap_permissif-5-0.03-0.15.csv
+│   │   │   └── std_position_error_permissif-5-0.03-0.15.csv
+│   │   ├── maps
+│   │   ├── permissif-5-0.03-0.15.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── strict-9-0.05-0.07
+│   │   ├── evo
+│   │   │   ├── strict-9-0.05-0.07_ape.log
+│   │   │   ├── strict-9-0.05-0.07_ape_map.png
+│   │   │   ├── strict-9-0.05-0.07_ape_raw.png
+│   │   │   ├── strict-9-0.05-0.07_rpe.log
+│   │   │   ├── strict-9-0.05-0.07_rpe_map.png
+│   │   │   ├── strict-9-0.05-0.07_rpe_raw.png
+│   │   │   └── strict-9-0.05-0.07.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_strict-9-0.05-0.07.csv
+│   │   │   ├── nb_matches_strict-9-0.05-0.07.csv
+│   │   │   ├── overlap_strict-9-0.05-0.07.csv
+│   │   │   └── std_position_error_strict-9-0.05-0.07.csv
+│   │   ├── maps
+│   │   ├── ros_bag
+│   │   │   └── all_bag
+│   │   │       ├── all_bag_0.db3
+│   │   │       └── metadata.yaml
+│   │   └── strict-9-0.05-0.07.json
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   ├── trajectoires
+│   │   ├── LOC_point_to_plane_match_rpy.png
+│   │   ├── LOC_point_to_plane_match_speeds.png
+│   │   ├── LOC_point_to_plane_match_trajectories.png
+│   │   └── LOC_point_to_plane_match_xyz.png
+│   ├── tres-permissif-4-0.02-0.2
+│   │   ├── evo
+│   │   │   ├── tres-permissif-4-0.02-0.2_ape.log
+│   │   │   ├── tres-permissif-4-0.02-0.2_ape_map.png
+│   │   │   ├── tres-permissif-4-0.02-0.2_ape_raw.png
+│   │   │   ├── tres-permissif-4-0.02-0.2_rpe.log
+│   │   │   ├── tres-permissif-4-0.02-0.2_rpe_map.png
+│   │   │   ├── tres-permissif-4-0.02-0.2_rpe_raw.png
+│   │   │   └── tres-permissif-4-0.02-0.2.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_tres-permissif-4-0.02-0.2.csv
+│   │   │   ├── nb_matches_tres-permissif-4-0.02-0.2.csv
+│   │   │   ├── overlap_tres-permissif-4-0.02-0.2.csv
+│   │   │   └── std_position_error_tres-permissif-4-0.02-0.2.csv
+│   │   ├── maps
+│   │   ├── ros_bag
+│   │   │   └── all_bag
+│   │   │       ├── all_bag_0.db3
+│   │   │       └── metadata.yaml
+│   │   └── tres-permissif-4-0.02-0.2.json
+│   └── tres-strict-12-0.08-0.05
+│       ├── evo
+│       │   ├── tres-strict-12-0.08-0.05_ape.log
+│       │   ├── tres-strict-12-0.08-0.05_ape_map.png
+│       │   ├── tres-strict-12-0.08-0.05_ape_raw.png
+│       │   ├── tres-strict-12-0.08-0.05_rpe.log
+│       │   ├── tres-strict-12-0.08-0.05_rpe_map.png
+│       │   ├── tres-strict-12-0.08-0.05_rpe_raw.png
+│       │   └── tres-strict-12-0.08-0.05.tum
+│       ├── fichiers_csv
+│       │   ├── computation_time_tres-strict-12-0.08-0.05.csv
+│       │   ├── nb_matches_tres-strict-12-0.08-0.05.csv
+│       │   ├── overlap_tres-strict-12-0.08-0.05.csv
+│       │   └── std_position_error_tres-strict-12-0.08-0.05.csv
+│       ├── maps
+│       ├── ros_bag
+│       │   └── all_bag
+│       │       ├── all_bag_0.db3
+│       │       └── metadata.yaml
+│       └── tres-strict-12-0.08-0.05.json
+├── report.html
+├── report.json
+├── SLAM_interpolation_model
+│   ├── 1-quadratique
+│   │   ├── 1-quadratique.json
+│   │   ├── evo
+│   │   │   ├── 1-quadratique_ape.log
+│   │   │   ├── 1-quadratique_ape_map.png
+│   │   │   ├── 1-quadratique_ape_raw.png
+│   │   │   ├── 1-quadratique_rpe.log
+│   │   │   ├── 1-quadratique_rpe_map.png
+│   │   │   ├── 1-quadratique_rpe_raw.png
+│   │   │   └── 1-quadratique.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_1-quadratique.csv
+│   │   │   ├── nb_matches_1-quadratique.csv
+│   │   │   ├── overlap_1-quadratique.csv
+│   │   │   └── std_position_error_1-quadratique.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 2-cubique
+│   │   ├── 2-cubique.json
+│   │   ├── evo
+│   │   │   ├── 2-cubique_ape.log
+│   │   │   ├── 2-cubique_ape_map.png
+│   │   │   ├── 2-cubique_ape_raw.png
+│   │   │   ├── 2-cubique_rpe.log
+│   │   │   ├── 2-cubique_rpe_map.png
+│   │   │   ├── 2-cubique_rpe_raw.png
+│   │   │   └── 2-cubique.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_2-cubique.csv
+│   │   │   ├── nb_matches_2-cubique.csv
+│   │   │   ├── overlap_2-cubique.csv
+│   │   │   └── std_position_error_2-cubique.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_1-quadratique.csv
+│   │   ├── computation_time_2-cubique.csv
+│   │   ├── computation_time_par-defaut-0-lineaire.csv
+│   │   ├── evo
+│   │   ├── nb_matches_1-quadratique.csv
+│   │   ├── nb_matches_2-cubique.csv
+│   │   ├── nb_matches_par-defaut-0-lineaire.csv
+│   │   ├── overlap_1-quadratique.csv
+│   │   ├── overlap_2-cubique.csv
+│   │   ├── overlap_par-defaut-0-lineaire.csv
+│   │   ├── std_position_error_1-quadratique.csv
+│   │   ├── std_position_error_2-cubique.csv
+│   │   └── std_position_error_par-defaut-0-lineaire.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-0-lineaire
+│   │   ├── evo
+│   │   │   ├── par-defaut-0-lineaire_ape.log
+│   │   │   ├── par-defaut-0-lineaire_ape_map.png
+│   │   │   ├── par-defaut-0-lineaire_ape_raw.png
+│   │   │   ├── par-defaut-0-lineaire_rpe.log
+│   │   │   ├── par-defaut-0-lineaire_rpe_map.png
+│   │   │   ├── par-defaut-0-lineaire_rpe_raw.png
+│   │   │   └── par-defaut-0-lineaire.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-0-lineaire.csv
+│   │   │   ├── nb_matches_par-defaut-0-lineaire.csv
+│   │   │   ├── overlap_par-defaut-0-lineaire.csv
+│   │   │   └── std_position_error_par-defaut-0-lineaire.csv
+│   │   ├── maps
+│   │   ├── par-defaut-0-lineaire.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── SLAM_interpolation_model_rpy.png
+│       ├── SLAM_interpolation_model_speeds.png
+│       ├── SLAM_interpolation_model_trajectories.png
+│       └── SLAM_interpolation_model_xyz.png
+├── SLAM_undistortion
+│   ├── 0-aucun
+│   │   ├── 0-aucun.json
+│   │   ├── evo
+│   │   │   ├── 0-aucun_ape.log
+│   │   │   ├── 0-aucun_ape_map.png
+│   │   │   ├── 0-aucun_ape_raw.png
+│   │   │   ├── 0-aucun_rpe.log
+│   │   │   ├── 0-aucun_rpe_map.png
+│   │   │   ├── 0-aucun_rpe_raw.png
+│   │   │   └── 0-aucun.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_0-aucun.csv
+│   │   │   ├── nb_matches_0-aucun.csv
+│   │   │   ├── overlap_0-aucun.csv
+│   │   │   └── std_position_error_0-aucun.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 1-unique
+│   │   ├── 1-unique.json
+│   │   ├── evo
+│   │   │   ├── 1-unique_ape.log
+│   │   │   ├── 1-unique_ape_map.png
+│   │   │   ├── 1-unique_ape_raw.png
+│   │   │   ├── 1-unique_rpe.log
+│   │   │   ├── 1-unique_rpe_map.png
+│   │   │   ├── 1-unique_rpe_raw.png
+│   │   │   └── 1-unique.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_1-unique.csv
+│   │   │   ├── nb_matches_1-unique.csv
+│   │   │   ├── overlap_1-unique.csv
+│   │   │   └── std_position_error_1-unique.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 3-externe
+│   │   ├── 3-externe.json
+│   │   ├── evo
+│   │   │   ├── 3-externe_ape.log
+│   │   │   ├── 3-externe_ape_map.png
+│   │   │   ├── 3-externe_ape_raw.png
+│   │   │   ├── 3-externe_rpe.log
+│   │   │   ├── 3-externe_rpe_map.png
+│   │   │   ├── 3-externe_rpe_raw.png
+│   │   │   └── 3-externe.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_3-externe.csv
+│   │   │   ├── nb_matches_3-externe.csv
+│   │   │   ├── overlap_3-externe.csv
+│   │   │   └── std_position_error_3-externe.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_0-aucun.csv
+│   │   ├── computation_time_1-unique.csv
+│   │   ├── computation_time_3-externe.csv
+│   │   ├── computation_time_par-defaut-2-rafine.csv
+│   │   ├── evo
+│   │   ├── nb_matches_0-aucun.csv
+│   │   ├── nb_matches_1-unique.csv
+│   │   ├── nb_matches_3-externe.csv
+│   │   ├── nb_matches_par-defaut-2-rafine.csv
+│   │   ├── overlap_0-aucun.csv
+│   │   ├── overlap_1-unique.csv
+│   │   ├── overlap_3-externe.csv
+│   │   ├── overlap_par-defaut-2-rafine.csv
+│   │   ├── std_position_error_0-aucun.csv
+│   │   ├── std_position_error_1-unique.csv
+│   │   ├── std_position_error_3-externe.csv
+│   │   └── std_position_error_par-defaut-2-rafine.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-2-rafine
+│   │   ├── evo
+│   │   │   ├── par-defaut-2-rafine_ape.log
+│   │   │   ├── par-defaut-2-rafine_ape_map.png
+│   │   │   ├── par-defaut-2-rafine_ape_raw.png
+│   │   │   ├── par-defaut-2-rafine_rpe.log
+│   │   │   ├── par-defaut-2-rafine_rpe_map.png
+│   │   │   ├── par-defaut-2-rafine_rpe_raw.png
+│   │   │   └── par-defaut-2-rafine.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-2-rafine.csv
+│   │   │   ├── nb_matches_par-defaut-2-rafine.csv
+│   │   │   ├── overlap_par-defaut-2-rafine.csv
+│   │   │   └── std_position_error_par-defaut-2-rafine.csv
+│   │   ├── maps
+│   │   ├── par-defaut-2-rafine.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── SLAM_undistortion_rpy.png
+│       ├── SLAM_undistortion_speeds.png
+│       ├── SLAM_undistortion_trajectories.png
+│       └── SLAM_undistortion_xyz.png
+├── summary
+├── TRAITEMENT_RESULTATS
+│   └── figures
+│       └── categories_auto.json
+├── tree.txt
+├── VOX_resolution
+│   ├── 15
+│   │   ├── 15.json
+│   │   ├── evo
+│   │   │   ├── 15_ape.log
+│   │   │   ├── 15_ape_map.png
+│   │   │   ├── 15_ape_raw.png
+│   │   │   ├── 15_rpe.log
+│   │   │   ├── 15_rpe_map.png
+│   │   │   ├── 15_rpe_raw.png
+│   │   │   └── 15.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_15.csv
+│   │   │   ├── nb_matches_15.csv
+│   │   │   ├── overlap_15.csv
+│   │   │   └── std_position_error_15.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 25
+│   │   ├── 25.json
+│   │   ├── evo
+│   │   │   ├── 25_ape.log
+│   │   │   ├── 25_ape_map.png
+│   │   │   ├── 25_ape_raw.png
+│   │   │   ├── 25_rpe.log
+│   │   │   ├── 25_rpe_map.png
+│   │   │   ├── 25_rpe_raw.png
+│   │   │   └── 25.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_25.csv
+│   │   │   ├── nb_matches_25.csv
+│   │   │   ├── overlap_25.csv
+│   │   │   └── std_position_error_25.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 35
+│   │   ├── 35.json
+│   │   ├── evo
+│   │   │   ├── 35_ape.log
+│   │   │   ├── 35_ape_map.png
+│   │   │   ├── 35_ape_raw.png
+│   │   │   ├── 35_rpe.log
+│   │   │   ├── 35_rpe_map.png
+│   │   │   ├── 35_rpe_raw.png
+│   │   │   └── 35.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_35.csv
+│   │   │   ├── nb_matches_35.csv
+│   │   │   ├── overlap_35.csv
+│   │   │   └── std_position_error_35.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 4
+│   │   ├── 4.json
+│   │   ├── evo
+│   │   │   ├── 4_ape.log
+│   │   │   ├── 4_ape_map.png
+│   │   │   ├── 4_ape_raw.png
+│   │   │   ├── 4_rpe.log
+│   │   │   ├── 4_rpe_map.png
+│   │   │   ├── 4_rpe_raw.png
+│   │   │   └── 4.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_4.csv
+│   │   │   ├── nb_matches_4.csv
+│   │   │   ├── overlap_4.csv
+│   │   │   └── std_position_error_4.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 6
+│   │   ├── 6.json
+│   │   ├── evo
+│   │   │   ├── 6_ape.log
+│   │   │   ├── 6_ape_map.png
+│   │   │   ├── 6_ape_raw.png
+│   │   │   ├── 6_rpe.log
+│   │   │   ├── 6_rpe_map.png
+│   │   │   ├── 6_rpe_raw.png
+│   │   │   └── 6.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_6.csv
+│   │   │   ├── nb_matches_6.csv
+│   │   │   ├── overlap_6.csv
+│   │   │   └── std_position_error_6.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 8
+│   │   ├── 8.json
+│   │   ├── evo
+│   │   │   ├── 8_ape.log
+│   │   │   ├── 8_ape_map.png
+│   │   │   ├── 8_ape_raw.png
+│   │   │   ├── 8_rpe.log
+│   │   │   ├── 8_rpe_map.png
+│   │   │   ├── 8_rpe_raw.png
+│   │   │   └── 8.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_8.csv
+│   │   │   ├── nb_matches_8.csv
+│   │   │   ├── overlap_8.csv
+│   │   │   └── std_position_error_8.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_15.csv
+│   │   ├── computation_time_25.csv
+│   │   ├── computation_time_35.csv
+│   │   ├── computation_time_4.csv
+│   │   ├── computation_time_6.csv
+│   │   ├── computation_time_8.csv
+│   │   ├── computation_time_par-defaut-10.csv
+│   │   ├── evo
+│   │   ├── nb_matches_15.csv
+│   │   ├── nb_matches_25.csv
+│   │   ├── nb_matches_35.csv
+│   │   ├── nb_matches_4.csv
+│   │   ├── nb_matches_6.csv
+│   │   ├── nb_matches_8.csv
+│   │   ├── nb_matches_par-defaut-10.csv
+│   │   ├── overlap_15.csv
+│   │   ├── overlap_25.csv
+│   │   ├── overlap_35.csv
+│   │   ├── overlap_4.csv
+│   │   ├── overlap_6.csv
+│   │   ├── overlap_8.csv
+│   │   ├── overlap_par-defaut-10.csv
+│   │   ├── std_position_error_15.csv
+│   │   ├── std_position_error_25.csv
+│   │   ├── std_position_error_35.csv
+│   │   ├── std_position_error_4.csv
+│   │   ├── std_position_error_6.csv
+│   │   ├── std_position_error_8.csv
+│   │   └── std_position_error_par-defaut-10.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-10
+│   │   ├── evo
+│   │   │   ├── par-defaut-10_ape.log
+│   │   │   ├── par-defaut-10_ape_map.png
+│   │   │   ├── par-defaut-10_ape_raw.png
+│   │   │   ├── par-defaut-10_rpe.log
+│   │   │   ├── par-defaut-10_rpe_map.png
+│   │   │   ├── par-defaut-10_rpe_raw.png
+│   │   │   └── par-defaut-10.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-10.csv
+│   │   │   ├── nb_matches_par-defaut-10.csv
+│   │   │   ├── overlap_par-defaut-10.csv
+│   │   │   └── std_position_error_par-defaut-10.csv
+│   │   ├── maps
+│   │   ├── par-defaut-10.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── VOX_resolution_rpy.png
+│       ├── VOX_resolution_speeds.png
+│       ├── VOX_resolution_trajectories.png
+│       └── VOX_resolution_xyz.png
+├── VOX_size
+│   ├── 20
+│   │   ├── 20.json
+│   │   ├── evo
+│   │   │   ├── 20_ape.log
+│   │   │   ├── 20_ape_map.png
+│   │   │   ├── 20_ape_raw.png
+│   │   │   ├── 20_rpe.log
+│   │   │   ├── 20_rpe_map.png
+│   │   │   ├── 20_rpe_raw.png
+│   │   │   └── 20.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_20.csv
+│   │   │   ├── nb_matches_20.csv
+│   │   │   ├── overlap_20.csv
+│   │   │   └── std_position_error_20.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 30
+│   │   ├── 30.json
+│   │   ├── evo
+│   │   │   ├── 30_ape.log
+│   │   │   ├── 30_ape_map.png
+│   │   │   ├── 30_ape_raw.png
+│   │   │   ├── 30_rpe.log
+│   │   │   ├── 30_rpe_map.png
+│   │   │   ├── 30_rpe_raw.png
+│   │   │   └── 30.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_30.csv
+│   │   │   ├── nb_matches_30.csv
+│   │   │   ├── overlap_30.csv
+│   │   │   └── std_position_error_30.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 40
+│   │   ├── 40.json
+│   │   ├── evo
+│   │   │   ├── 40_ape.log
+│   │   │   ├── 40_ape_map.png
+│   │   │   ├── 40_ape_raw.png
+│   │   │   ├── 40_rpe.log
+│   │   │   ├── 40_rpe_map.png
+│   │   │   ├── 40_rpe_raw.png
+│   │   │   └── 40.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_40.csv
+│   │   │   ├── nb_matches_40.csv
+│   │   │   ├── overlap_40.csv
+│   │   │   └── std_position_error_40.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 70
+│   │   ├── 70.json
+│   │   ├── evo
+│   │   │   ├── 70_ape.log
+│   │   │   ├── 70_ape_map.png
+│   │   │   ├── 70_ape_raw.png
+│   │   │   ├── 70_rpe.log
+│   │   │   ├── 70_rpe_map.png
+│   │   │   ├── 70_rpe_raw.png
+│   │   │   └── 70.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_70.csv
+│   │   │   ├── nb_matches_70.csv
+│   │   │   ├── overlap_70.csv
+│   │   │   └── std_position_error_70.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── 90
+│   │   ├── 90.json
+│   │   ├── evo
+│   │   │   ├── 90_ape.log
+│   │   │   ├── 90_ape_map.png
+│   │   │   ├── 90_ape_raw.png
+│   │   │   ├── 90_rpe.log
+│   │   │   ├── 90_rpe_map.png
+│   │   │   ├── 90_rpe_raw.png
+│   │   │   └── 90.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_90.csv
+│   │   │   ├── nb_matches_90.csv
+│   │   │   ├── overlap_90.csv
+│   │   │   └── std_position_error_90.csv
+│   │   ├── maps
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── failures.csv
+│   ├── failures.json
+│   ├── graphe_metriques_confiance
+│   │   ├── comparaison_computation_time.png
+│   │   ├── comparaison_nb_matches.png
+│   │   ├── comparaison_overlap.png
+│   │   ├── comparaison_std_position_error.png
+│   │   └── evo
+│   ├── metriques_confidence
+│   │   ├── computation_time_20.csv
+│   │   ├── computation_time_30.csv
+│   │   ├── computation_time_40.csv
+│   │   ├── computation_time_70.csv
+│   │   ├── computation_time_90.csv
+│   │   ├── computation_time_par-defaut-50.csv
+│   │   ├── evo
+│   │   ├── nb_matches_20.csv
+│   │   ├── nb_matches_30.csv
+│   │   ├── nb_matches_40.csv
+│   │   ├── nb_matches_70.csv
+│   │   ├── nb_matches_90.csv
+│   │   ├── nb_matches_par-defaut-50.csv
+│   │   ├── overlap_20.csv
+│   │   ├── overlap_30.csv
+│   │   ├── overlap_40.csv
+│   │   ├── overlap_70.csv
+│   │   ├── overlap_90.csv
+│   │   ├── overlap_par-defaut-50.csv
+│   │   ├── std_position_error_20.csv
+│   │   ├── std_position_error_30.csv
+│   │   ├── std_position_error_40.csv
+│   │   ├── std_position_error_70.csv
+│   │   ├── std_position_error_90.csv
+│   │   └── std_position_error_par-defaut-50.csv
+│   ├── metriques_evo
+│   │   └── metrics_local.xlsx
+│   ├── par-defaut-50
+│   │   ├── evo
+│   │   │   ├── par-defaut-50_ape.log
+│   │   │   ├── par-defaut-50_ape_map.png
+│   │   │   ├── par-defaut-50_ape_raw.png
+│   │   │   ├── par-defaut-50_rpe.log
+│   │   │   ├── par-defaut-50_rpe_map.png
+│   │   │   ├── par-defaut-50_rpe_raw.png
+│   │   │   └── par-defaut-50.tum
+│   │   ├── fichiers_csv
+│   │   │   ├── computation_time_par-defaut-50.csv
+│   │   │   ├── nb_matches_par-defaut-50.csv
+│   │   │   ├── overlap_par-defaut-50.csv
+│   │   │   └── std_position_error_par-defaut-50.csv
+│   │   ├── maps
+│   │   ├── par-defaut-50.json
+│   │   └── ros_bag
+│   │       └── all_bag
+│   │           ├── all_bag_0.db3
+│   │           └── metadata.yaml
+│   ├── summary
+│   │   ├── evo
+│   │   └── summary_by_metric.xlsx
+│   ├── trajectoire
+│   │   └── evo
+│   └── trajectoires
+│       ├── VOX_size_rpy.png
+│       ├── VOX_size_speeds.png
+│       ├── VOX_size_trajectories.png
+│       └── VOX_size_xyz.png
+└── VOX_submaps_extraction_mode
+    ├── 1
+    │   ├── 1.json
+    │   ├── evo
+    │   │   ├── 1_ape.log
+    │   │   ├── 1_ape_map.png
+    │   │   ├── 1_ape_raw.png
+    │   │   ├── 1_rpe.log
+    │   │   ├── 1_rpe_map.png
+    │   │   ├── 1_rpe_raw.png
+    │   │   └── 1.tum
+    │   ├── fichiers_csv
+    │   │   ├── computation_time_1.csv
+    │   │   ├── nb_matches_1.csv
+    │   │   ├── overlap_1.csv
+    │   │   └── std_position_error_1.csv
+    │   ├── maps
+    │   └── ros_bag
+    │       └── all_bag
+    │           ├── all_bag_0.db3
+    │           └── metadata.yaml
+    ├── failures.csv
+    ├── failures.json
+    ├── graphe_metriques_confiance
+    │   ├── comparaison_computation_time.png
+    │   ├── comparaison_nb_matches.png
+    │   ├── comparaison_overlap.png
+    │   ├── comparaison_std_position_error.png
+    │   └── evo
+    ├── metriques_confidence
+    │   ├── computation_time_1.csv
+    │   ├── computation_time_par-defaut-0.csv
+    │   ├── evo
+    │   ├── nb_matches_1.csv
+    │   ├── nb_matches_par-defaut-0.csv
+    │   ├── overlap_1.csv
+    │   ├── overlap_par-defaut-0.csv
+    │   ├── std_position_error_1.csv
+    │   └── std_position_error_par-defaut-0.csv
+    ├── metriques_evo
+    │   └── metrics_local.xlsx
+    ├── par-defaut-0
+    │   ├── evo
+    │   │   ├── par-defaut-0_ape.log
+    │   │   ├── par-defaut-0_ape_map.png
+    │   │   ├── par-defaut-0_ape_raw.png
+    │   │   ├── par-defaut-0_rpe.log
+    │   │   ├── par-defaut-0_rpe_map.png
+    │   │   ├── par-defaut-0_rpe_raw.png
+    │   │   └── par-defaut-0.tum
+    │   ├── fichiers_csv
+    │   │   ├── computation_time_par-defaut-0.csv
+    │   │   ├── nb_matches_par-defaut-0.csv
+    │   │   ├── overlap_par-defaut-0.csv
+    │   │   └── std_position_error_par-defaut-0.csv
+    │   ├── maps
+    │   ├── par-defaut-0.json
+    │   └── ros_bag
+    │       └── all_bag
+    │           ├── all_bag_0.db3
+    │           └── metadata.yaml
+    ├── summary
+    │   ├── evo
+    │   └── summary_by_metric.xlsx
+    ├── trajectoire
+    │   └── evo
+    └── trajectoires
+        ├── VOX_submaps_extraction_mode_rpy.png
+        ├── VOX_submaps_extraction_mode_speeds.png
+        ├── VOX_submaps_extraction_mode_trajectories.png
+        └── VOX_submaps_extraction_mode_xyz.png
+
+1177 directories, 2924 files

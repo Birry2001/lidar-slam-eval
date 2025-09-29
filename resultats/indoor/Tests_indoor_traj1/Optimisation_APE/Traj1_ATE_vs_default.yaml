@@ -1,0 +1,71 @@
+# plan.yaml — défaut vs config ATE-optimisée (Tour Pavin)
+experiment: "Traj1_ATE_vs_default"
+lidar: "ouster"
+mode: "indoor"
+
+bag: "/home/nochi/STAGE_M1_NOCHI/Trayectory1/rosbag2_2024_05_23-15_43_25_0.db3"
+ref_tum: "/home/nochi/test_ws/Evaluation_SLAM_KITWARE/Tests_indoor_traj1/ground_truth.tum"
+
+base_config: "slam_config_indoor.yaml"
+
+tests:
+  ATE_minimization:
+    configs:
+
+      # 2) Config orientée ATE (équilibrée pour ne pas “exploser” le temps)
+      ate-optim:
+        # --- KE (features) ---
+        /lidar_slam.ros__parameters.slam.ke.enable.blob: true                 # ATE ↓ (garde OFF)
+        /lidar_slam.ros__parameters.slam.ke.neighbors_side_nb: 3               # ATE ↓ fort
+        /lidar_slam.ros__parameters.slam.ke.neighbors_radius: 0.15             # ATE ↓
+        /lidar_slam.ros__parameters.slam.ke.input_sampling_ratio: 1          # ATE ↓, coût modéré
+        /lidar_slam.ros__parameters.slam.ke.min_beam_surface_angle: 10.0        # ATE ↓
+        /lidar_slam.ros__parameters.slam.ke.downsampling.max_points: 1000      # ATE ↓ (coût ↑ modéré)
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 1.0  # ATE ↓ vs 0.5
+        /lidar_slam.ros__parameters.slam.ke.plane_angle_threshold: 165.0       # plus strict (ATE ↓)
+        /lidar_slam.ros__parameters.slam.ke.edge_angle_threshold: 105.0
+        /lidar_slam.ros__parameters.slam.ke.edge_depth_gap_threshold: 0.75     # gaps +permissifs (ATE ↓)
+        /lidar_slam.ros__parameters.slam.ke.edge_nb_gap_points: 8
+        /lidar_slam.ros__parameters.slam.ke.edge_intensity_gap_threshold: 40.0
+        /lidar_slam.ros__parameters.slam.ke.min_distance_to_sensor: 1.5        # garde défaut (ATE meilleur que 0.5–300)
+        /lidar_slam.ros__parameters.slam.ke.max_distance_to_sensor: 200.0
+        /lidar_slam.ros__parameters.slam.ke.min_azimuth: 0.0                   # 0–360 (éviter 45–45)
+        /lidar_slam.ros__parameters.slam.ke.max_azimuth: 360.0
+
+        # --- ER (ego-motion) ---
+        /lidar_slam.ros__parameters.slam.ego_motion: 1                         # ATE ↓
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.ICP_max_iter: 4   # ATE best ~ défaut
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.LM_max_iter: 15
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.max_neighbors_distance: 10.0 # ATE ↓
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.init_saturation_distance: 5.0 # défaut (meilleur que strict)
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.final_saturation_distance: 1.0
+        # Matching ER = défaut (meilleur que très strict)
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_nb_neighbors: 8
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_min_nb_neighbors: 3
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_max_model_error: 0.2
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_nb_neighbors: 5
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.planarity_threshold: 0.04
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_max_model_error: 0.1
+
+        # --- LOC (localization) ---
+        /lidar_slam.ros__parameters.slam.localization.ICP_max_iter: 3          # imposé : 4 / 10
+        /lidar_slam.ros__parameters.slam.localization.LM_max_iter: 15
+        /lidar_slam.ros__parameters.slam.localization.max_neighbors_distance: 3.5   # ATE ↓
+        /lidar_slam.ros__parameters.slam.localization.edge_nb_neighbors: 7         # matching plus strict (ATE ↓)
+        /lidar_slam.ros__parameters.slam.localization.edge_min_nb_neighbors: 3
+        /lidar_slam.ros__parameters.slam.localization.edge_max_model_error: 0.3
+        /lidar_slam.ros__parameters.slam.localization.plane_nb_neighbors: 9         # plane plus strict (ATE ↓)
+        /lidar_slam.ros__parameters.slam.localization.planarity_threshold: 0.05
+        /lidar_slam.ros__parameters.slam.localization.plane_max_model_error: 0.07
+
+        # --- SLAM global / carte ---
+        /lidar_slam.ros__parameters.slam.undistortion: 0                      # OFF (ATE ↓ et coût ↓)
+        /lidar_slam.ros__parameters.slam.interpolation_model: 1               # quadratique (petit gain ATE)
+        /lidar_slam.ros__parameters.slam.voxel_grid.submap_extraction_mode: 0 # défaut (meilleur ATE que 1)
+        /lidar_slam.ros__parameters.slam.voxel_grid.resolution: 35.0          # ATE ↓ (surveiller coût)
+        /lidar_slam.ros__parameters.slam.voxel_grid.size: 50                  # garder défaut (ATE meilleur que 20)
+
+      # 1) Référence : aucune surcharge, valeurs du base_config
+      par-defaut: {}
+
+

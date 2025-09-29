@@ -1,0 +1,34 @@
+[
+  {
+    "test":"LOC_point_to_edge_match",
+    "config":"tres-strict-12-7-0.15",
+    "reason":"overlap_unrealistic",
+    "metric":"overlap_mean",
+    "value":1.0,
+    "threshold":0.999
+  },
+  {
+    "test":"LOC_point_to_edge_match",
+    "config":"tres-strict-12-7-0.15",
+    "reason":"overlap_unrealistic",
+    "metric":"overlap_min",
+    "value":1.0,
+    "threshold":0.999
+  },
+  {
+    "test":"LOC_point_to_edge_match",
+    "config":"tres-strict-12-7-0.15",
+    "reason":"position_error_zero_mean",
+    "metric":"position_error_mean",
+    "value":0.0,
+    "threshold":0.0
+  },
+  {
+    "test":"LOC_point_to_edge_match",
+    "config":"strict-12-7-0.15",
+    "reason":"APE_too_high",
+    "metric":"APE",
+    "value":42.335667,
+    "threshold":3.397525
+  }
+]

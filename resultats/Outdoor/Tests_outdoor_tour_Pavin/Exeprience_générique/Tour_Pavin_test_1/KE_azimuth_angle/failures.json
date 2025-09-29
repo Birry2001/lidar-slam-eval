@@ -1,0 +1,10 @@
+[
+  {
+    "test":"KE_azimuth_angle",
+    "config":"45-45",
+    "reason":"APE_too_high",
+    "metric":"APE",
+    "value":24.591571,
+    "threshold":2.9763345
+  }
+]

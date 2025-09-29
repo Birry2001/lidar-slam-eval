@@ -1,0 +1,10 @@
+[
+  {
+    "test":"LOC_point_to_blob_match",
+    "config":"4",
+    "reason":"APE_too_high",
+    "metric":"APE",
+    "value":10.966947,
+    "threshold":4.959309
+  }
+]

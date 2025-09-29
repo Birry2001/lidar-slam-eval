@@ -1,0 +1,10 @@
+[
+  {
+    "test":"KF_thresholds",
+    "config":"leger-0.7-8",
+    "reason":"APE_too_high",
+    "metric":"APE",
+    "value":2.003648,
+    "threshold":1.9988965
+  }
+]

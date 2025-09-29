@@ -1,0 +1,18 @@
+[
+  {
+    "test":"KE_densite_dextraction_de_KP",
+    "config":"profil-dense",
+    "reason":"APE_too_high",
+    "metric":"APE",
+    "value":10.9281,
+    "threshold":2.06468
+  },
+  {
+    "test":"KE_densite_dextraction_de_KP",
+    "config":"profil-tres-dense",
+    "reason":"APE_too_high",
+    "metric":"APE",
+    "value":21.417238,
+    "threshold":2.06468
+  }
+]

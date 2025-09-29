@@ -1,0 +1,3 @@
+test,config,reason,metric,value,threshold
+KE_densite_dextraction_de_KP,profil-dense,APE_too_high,APE,10.9281,2.06468
+KE_densite_dextraction_de_KP,profil-tres-dense,APE_too_high,APE,21.417238,2.06468

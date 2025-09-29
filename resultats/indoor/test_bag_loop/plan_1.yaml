@@ -1,0 +1,381 @@
+# plan.yaml — plan d'exécution pour slam_orchestrator.py
+# Règles de nommage:
+
+# - Le nom de config contient les valeurs des paramètres testés, séparées par des tirets.
+# - L'ordre des valeurs dans le nom suit l'ordre listé dans "NOTE:" de chaque test.
+
+experiment: "INDOOR_nouv"
+lidar: "velodyne"          # hesai | livox | ouster | velodyne
+mode: "indoor"             # indoor | outdoor
+
+bag: "/home/nochi/STAGE_M1_NOCHI/bag2_loop"     # ex: "/home/nochi/STAGE_M1_NOCHI/bag2_loop"
+ref_tum: "/home/nochi/test_ws/Evaluation_SLAM_KITWARE/traj_bag_exo_6/slam_odom.tum"      # ex: "/home/nochi/test_ws/Evaluation_SLAM_KITWARE/truth/reference.tum"
+
+tests:
+
+  ##########################################################################
+  # 1) Sélection du mode d’ego-motion (entier 0..5) — déjà dans ton plan   #
+  ##########################################################################
+  ego_motion:
+    # NOTE: nom = "<valeur>"
+    configs:
+      "par-defaut-1":
+        /lidar_slam.ros__parameters.slam.ego_motion: 1
+      "0":
+        /lidar_slam.ros__parameters.slam.ego_motion: 0
+      "2":
+        /lidar_slam.ros__parameters.slam.ego_motion: 2
+      "3":
+        /lidar_slam.ros__parameters.slam.ego_motion: 3
+      "4":
+        /lidar_slam.ros__parameters.slam.ego_motion: 4
+      "5":
+        /lidar_slam.ros__parameters.slam.ego_motion: 5
+
+  ##########################################################################
+  # 2) ER_*  — paramètres de slam.ego_motion_registration                   #
+  ##########################################################################
+
+  # ------------------------------------------------------------------
+  # ER_max_neighbors_distance — slam.ego_motion_registration.max_neighbors_distance [m]
+  # Défaut indoor: 3.0
+  # ------------------------------------------------------------------
+  ER_max_neighbors_distance:
+    # NOTE: ordre du nom = max_neighbors_distance
+    configs:
+      "par-defaut-3.0":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.max_neighbors_distance: 3.0
+      "2.0":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.max_neighbors_distance: 2.0
+      "4.0":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.max_neighbors_distance: 4.0
+      "8.0":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.max_neighbors_distance: 8.0
+      "10.0":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.max_neighbors_distance: 10.0
+
+  ER_point_to_edge_match:
+    # NOTE: ordre du nom = edge_nb_neighbors - edge_min_nb_neighbors - edge_max_model_error
+    configs:
+      "par-defaut-8-3-0.1":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_nb_neighbors: 8
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_min_nb_neighbors: 3
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_max_model_error: 0.1
+      "plus-court-6-3-0.1":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_nb_neighbors: 6
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_min_nb_neighbors: 3
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_max_model_error: 0.1
+      "plus-tolere-8-3-0.2":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_nb_neighbors: 8
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_min_nb_neighbors: 3
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.edge_max_model_error: 0.2
+
+  ER_point_to_plane_match:
+    # NOTE: ordre du nom = plane_nb_neighbors - planarity_threshold - plane_max_model_error
+    configs:
+      "par-defaut-5-0.04-0.1":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_nb_neighbors: 5
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.planarity_threshold: 0.04
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_max_model_error: 0.1
+      "plus-voisins-7-0.04-0.1":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_nb_neighbors: 7
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.planarity_threshold: 0.04
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_max_model_error: 0.1
+      "plus-tolere-5-0.04-0.2":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_nb_neighbors: 5
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.plane_max_model_error: 0.2
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.planarity_threshold: 0.04
+
+  ER_ICP_LM_Iter:
+    # NOTE: ordre du nom = ICP_max_iter - LM_max_iter
+    configs:
+      "par-defaut-4-15":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.ICP_max_iter: 4
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.LM_max_iter: 15
+      "rapide-3-10":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.ICP_max_iter: 3
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.LM_max_iter: 10
+      "lent-6-20":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.ICP_max_iter: 6
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.LM_max_iter: 20
+
+  ER_Optim_Saturation:
+    # NOTE: ordre du nom = init_saturation_distance - final_saturation_distance
+    configs:
+      "par-defaut-5.0-1.0":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.init_saturation_distance: 5.0
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.final_saturation_distance: 1.0
+      "plus-strict-3.0-0.8":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.init_saturation_distance: 3.0
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.final_saturation_distance: 0.8
+      "plus-large-7.0-1.5":
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.init_saturation_distance: 7.0
+        /lidar_slam.ros__parameters.slam.ego_motion_registration.final_saturation_distance: 1.5
+
+  ##########################################################################
+  # 3) LOC_* — mêmes familles sur slam.localization                         #
+  ##########################################################################
+
+  # ------------------------------------------------------------------
+  # LOC_max_neighbors_distance — slam.localization.max_neighbors_distance [m]
+  # Défaut indoor: 3.0
+  # ------------------------------------------------------------------
+  LOC_max_neighbors_distance:
+    # NOTE: ordre du nom = max_neighbors_distance
+    configs:
+      "par-defaut-3.0":
+        /lidar_slam.ros__parameters.slam.localization.max_neighbors_distance: 3.0
+      "2.0":
+        /lidar_slam.ros__parameters.slam.localization.max_neighbors_distance: 2.0
+      "4.0":
+        /lidar_slam.ros__parameters.slam.localization.max_neighbors_distance: 4.0
+      "8.0":
+        /lidar_slam.ros__parameters.slam.localization.max_neighbors_distance: 8.0
+      "12.0":
+        /lidar_slam.ros__parameters.slam.localization.max_neighbors_distance: 12.0
+
+  LOC_point_to_edge_match:
+    # NOTE: ordre du nom = edge_nb_neighbors - edge_min_nb_neighbors - edge_max_model_error
+    configs:
+      "par-defaut-9-5-0.1":
+        /lidar_slam.ros__parameters.slam.localization.edge_nb_neighbors: 9
+        /lidar_slam.ros__parameters.slam.localization.edge_min_nb_neighbors: 5
+        /lidar_slam.ros__parameters.slam.localization.edge_max_model_error: 0.1
+      "plus-court-7-5-0.1":
+        /lidar_slam.ros__parameters.slam.localization.edge_nb_neighbors: 7
+        /lidar_slam.ros__parameters.slam.localization.edge_min_nb_neighbors: 5
+        /lidar_slam.ros__parameters.slam.localization.edge_max_model_error: 0.1
+      "plus-tolere-9-5-0.2":
+        /lidar_slam.ros__parameters.slam.localization.edge_nb_neighbors: 9
+        /lidar_slam.ros__parameters.slam.localization.edge_min_nb_neighbors: 5
+        /lidar_slam.ros__parameters.slam.localization.edge_max_model_error: 0.2
+
+  LOC_point_to_plane_match:
+    # NOTE: ordre du nom = plane_nb_neighbors - planarity_threshold - plane_max_model_error
+    configs:
+      "par-defaut-7-0.04-0.1":
+        /lidar_slam.ros__parameters.slam.localization.plane_nb_neighbors: 7
+        /lidar_slam.ros__parameters.slam.localization.planarity_threshold: 0.04
+        /lidar_slam.ros__parameters.slam.localization.plane_max_model_error: 0.1
+      "plus-voisins-9-0.04-0.1":
+        /lidar_slam.ros__parameters.slam.localization.plane_nb_neighbors: 9
+        /lidar_slam.ros__parameters.slam.localization.planarity_threshold: 0.04
+        /lidar_slam.ros__parameters.slam.localization.plane_max_model_error: 0.1
+      "plus-tolere-7-0.04-0.2":
+        /lidar_slam.ros__parameters.slam.localization.plane_nb_neighbors: 7
+        /lidar_slam.ros__parameters.slam.localization.plane_max_model_error: 0.2
+        /lidar_slam.ros__parameters.slam.localization.planarity_threshold: 0.04
+
+  LOC_ICP_LM_Iter:
+    # NOTE: ordre du nom = ICP_max_iter - LM_max_iter
+    configs:
+      "par-defaut-3-15":
+        /lidar_slam.ros__parameters.slam.localization.ICP_max_iter: 3
+        /lidar_slam.ros__parameters.slam.localization.LM_max_iter: 15
+      "rapide-2-10":
+        /lidar_slam.ros__parameters.slam.localization.ICP_max_iter: 2
+        /lidar_slam.ros__parameters.slam.localization.LM_max_iter: 10
+      "lent-5-20":
+        /lidar_slam.ros__parameters.slam.localization.ICP_max_iter: 5
+        /lidar_slam.ros__parameters.slam.localization.LM_max_iter: 20
+
+  LOC_Optim_Saturation:
+    # NOTE: ordre du nom = init_saturation_distance - final_saturation_distance
+    configs:
+      "par-defaut-2.0-0.5":
+        /lidar_slam.ros__parameters.slam.localization.init_saturation_distance: 2.0
+        /lidar_slam.ros__parameters.slam.localization.final_saturation_distance: 0.5
+      "plus-strict-1.5-0.4":
+        /lidar_slam.ros__parameters.slam.localization.init_saturation_distance: 1.5
+        /lidar_slam.ros__parameters.slam.localization.final_saturation_distance: 0.4
+      "plus-large-3.0-0.8":
+        /lidar_slam.ros__parameters.slam.localization.init_saturation_distance: 3.0
+        /lidar_slam.ros__parameters.slam.localization.final_saturation_distance: 0.8
+
+  # (Optionnel) LOC_point_to_blob_match — si tu veux explorer l'impact de blob_nb_neighbors
+  LOC_point_to_blob_match:
+    # NOTE: ordre du nom = blob_nb_neighbors
+    configs:
+      "par-defaut-10":
+        /lidar_slam.ros__parameters.slam.localization.blob_nb_neighbors: 10
+      "dense-14":
+        /lidar_slam.ros__parameters.slam.localization.blob_nb_neighbors: 14
+      "leger-8":
+        /lidar_slam.ros__parameters.slam.localization.blob_nb_neighbors: 8
+
+  ##########################################################################
+  # 4) KE_* — paramètres de slam.ke                                        #
+  ##########################################################################
+
+  KE_blob:
+    # NOTE: ordre du nom = enable.blob {0|1}
+    configs:
+      "par-defaut-0":
+        /lidar_slam.ros__parameters.slam.ke.enable.blob: 0
+      "active-1":
+        /lidar_slam.ros__parameters.slam.ke.enable.blob: 1
+
+  KE_dist_sens:
+    # NOTE: ordre du nom = min_distance_to_sensor - max_distance_to_sensor
+    configs:
+      "par-defaut-1.0-200.0":
+        /lidar_slam.ros__parameters.slam.ke.min_distance_to_sensor: 1.0
+        /lidar_slam.ros__parameters.slam.ke.max_distance_to_sensor: 200.0
+      "rapproche-0.5-200.0":
+        /lidar_slam.ros__parameters.slam.ke.min_distance_to_sensor: 0.5
+        /lidar_slam.ros__parameters.slam.ke.max_distance_to_sensor: 200.0
+      "eloigne-1.0-300.0":
+        /lidar_slam.ros__parameters.slam.ke.min_distance_to_sensor: 1.0
+        /lidar_slam.ros__parameters.slam.ke.max_distance_to_sensor: 300.0
+
+  KE_azimuth:
+    # NOTE: ordre du nom = min_azimuth - max_azimuth (degrés)
+    configs:
+      "par-defaut-0-360":
+        /lidar_slam.ros__parameters.slam.ke.min_azimuth: 0
+        /lidar_slam.ros__parameters.slam.ke.max_azimuth: 360
+      "avant-etroit-315-45":
+        /lidar_slam.ros__parameters.slam.ke.min_azimuth: 315
+        /lidar_slam.ros__parameters.slam.ke.max_azimuth: 45
+      "avant-large-270-90":
+        /lidar_slam.ros__parameters.slam.ke.min_azimuth: 270
+        /lidar_slam.ros__parameters.slam.ke.max_azimuth: 90
+      "tres-large-225-135":
+        /lidar_slam.ros__parameters.slam.ke.min_azimuth: 225
+        /lidar_slam.ros__parameters.slam.ke.max_azimuth: 135
+
+  KE_edge:
+    # NOTE: ordre du nom = edge_depth_gap_threshold - edge_nb_gap_points - edge_intensity_gap_threshold
+    configs:
+      "par-defaut-0.5-10-20":
+        /lidar_slam.ros__parameters.slam.ke.edge_depth_gap_threshold: 0.5
+        /lidar_slam.ros__parameters.slam.ke.edge_nb_gap_points: 10
+        /lidar_slam.ros__parameters.slam.ke.edge_intensity_gap_threshold: 20.0
+      "strict-1.0-12-25":
+        /lidar_slam.ros__parameters.slam.ke.edge_depth_gap_threshold: 1.0
+        /lidar_slam.ros__parameters.slam.ke.edge_nb_gap_points: 12
+        /lidar_slam.ros__parameters.slam.ke.edge_intensity_gap_threshold: 25.0
+      "tres-strict-2.0-15-30":
+        /lidar_slam.ros__parameters.slam.ke.edge_depth_gap_threshold: 2.0
+        /lidar_slam.ros__parameters.slam.ke.edge_nb_gap_points: 15
+        /lidar_slam.ros__parameters.slam.ke.edge_intensity_gap_threshold: 30.0        
+      "tolere-0.3-8-15":
+        /lidar_slam.ros__parameters.slam.ke.edge_depth_gap_threshold: 0.3
+        /lidar_slam.ros__parameters.slam.ke.edge_nb_gap_points: 8
+        /lidar_slam.ros__parameters.slam.ke.edge_intensity_gap_threshold: 15.0
+      "tres-tolere-0.2-5-10":
+        /lidar_slam.ros__parameters.slam.ke.edge_depth_gap_threshold: 0.2
+        /lidar_slam.ros__parameters.slam.ke.edge_nb_gap_points: 5
+        /lidar_slam.ros__parameters.slam.ke.edge_intensity_gap_threshold: 10.0
+
+  # ------------------------------------------------------------------
+  # KE_downsampling_max_points — varie uniquement max_points
+  # NOTE nom = max-points ; max_points par défaut = 1000
+  # voxel_grid_resolution est figé à 1.0
+  # ------------------------------------------------------------------
+  KE_downsampling_max_points:
+    configs:
+      "par-defaut-1000":
+        /lidar_slam.ros__parameters.slam.ke.downsampling.max_points: 1000
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 1.0
+      "500":
+        /lidar_slam.ros__parameters.slam.ke.downsampling.max_points: 500
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 1.0
+      "1500":
+        /lidar_slam.ros__parameters.slam.ke.downsampling.max_points: 1500
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 1.0
+      "2000":
+        /lidar_slam.ros__parameters.slam.ke.downsampling.max_points: 2000
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 1.0
+
+  # ------------------------------------------------------------------
+  # KE_downsampling_voxel_grid — varie uniquement voxel_grid_resolution
+  # NOTE nom = voxel-grid-resolution ; voxel_grid_resolution défaut = 1.0
+  # max_points est figé à 1000
+  # ------------------------------------------------------------------
+  KE_downsampling_voxel_grid:
+    configs:
+      "par-defaut-1.0":
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 1.0
+        /lidar_slam.ros__parameters.slam.ke.downsampling.max_points: 1000
+      "0.5":
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 0.5
+        /lidar_slam.ros__parameters.slam.ke.downsampling.max_points: 1000
+      "1.5":
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 1.5
+        /lidar_slam.ros__parameters.slam.ke.downsampling.max_points: 1000
+      "2.0":
+        /lidar_slam.ros__parameters.slam.ke.downsampling.voxel_grid_resolution: 2.0
+        /lidar_slam.ros__parameters.slam.ke.downsampling.max_points: 1000
+
+
+  # ------------------------------------------------------------------
+  # KE_input_sampling_ratio — [0..1]
+  # Défaut indoor: 1.0
+  # ------------------------------------------------------------------
+  KE_input_sampling_ratio:
+    # NOTE: ordre du nom = input_sampling_ratio
+    configs:
+      "par-defaut-1.0":
+        /lidar_slam.ros__parameters.slam.ke.input_sampling_ratio: 1.0
+      "0.75":
+        /lidar_slam.ros__parameters.slam.ke.input_sampling_ratio: 0.75
+      "0.5":
+        /lidar_slam.ros__parameters.slam.ke.input_sampling_ratio: 0.5
+      "0.3":
+        /lidar_slam.ros__parameters.slam.ke.input_sampling_ratio: 0.3
+
+
+
+
+
+  # ------------------------------------------------------------------
+  # SLAM_interpolation_model — slam.interpolation_model (enum)
+  # 0: LINEAR, 1: QUADRATIC, 2: CUBIC   (défaut indoor: 0)
+  # ------------------------------------------------------------------
+  SLAM_interpolation_model:
+    # NOTE: ordre du nom = interpolation_model
+    configs:
+      "par-defaut-0-lineaire":   # LINEAR
+        /lidar_slam.ros__parameters.slam.interpolation_model: 0
+      "1-quadratique":              # QUADRATIC
+        /lidar_slam.ros__parameters.slam.interpolation_model: 1
+      "2-cubique":              # CUBIC
+        /lidar_slam.ros__parameters.slam.interpolation_model: 2
+
+  # ------------------------------------------------------------------
+  # SLAM_undistortion — slam.undistortion (enum)
+  # 0: NONE, 1: ONCE, 2: REFINED, 3: EXTERNAL   (défaut indoor: 2)
+  # ------------------------------------------------------------------
+  SLAM_undistortion:
+    # NOTE: ordre du nom = undistortion
+    configs:
+      "par-defaut-2-rafine":   # REFINED
+        /lidar_slam.ros__parameters.slam.undistortion: 2
+      "0-aucun":              # NONE
+        /lidar_slam.ros__parameters.slam.undistortion: 0
+      "1-unique":              # ONCE
+        /lidar_slam.ros__parameters.slam.undistortion: 1
+      "3-externe":              # EXTERNAL (nécessite poses externes)
+        /lidar_slam.ros__parameters.slam.undistortion: 3
+
+
+      # ------------------------------------------------------------------
+      # KF_thresholds — slam.keyframes.{distance_threshold [m], angle_threshold [°]}
+      # Défauts indoor: 0.1 m, 5°
+      # ------------------------------------------------------------------
+  KF_thresholds:
+    # NOTE: ordre du nom = distance_threshold - angle_threshold
+    configs:
+      "par-defaut-0.1-5":
+        /lidar_slam.ros__parameters.slam.keyframes.distance_threshold: 0.1
+        /lidar_slam.ros__parameters.slam.keyframes.angle_threshold: 5.0
+      "dense-0.05-3":
+        /lidar_slam.ros__parameters.slam.keyframes.distance_threshold: 0.05
+        /lidar_slam.ros__parameters.slam.keyframes.angle_threshold: 3.0
+      "leger-0.2-8":
+        /lidar_slam.ros__parameters.slam.keyframes.distance_threshold: 0.2
+        /lidar_slam.ros__parameters.slam.keyframes.angle_threshold: 8.0
+      "tres-leger-0.5-10":
+        /lidar_slam.ros__parameters.slam.keyframes.distance_threshold: 0.5
+        /lidar_slam.ros__parameters.slam.keyframes.angle_threshold: 10

@@ -1,0 +1,4 @@
+{
+  "/lidar_slam.ros__parameters.slam.ke.min_distance_to_sensor": 1.0,
+  "/lidar_slam.ros__parameters.slam.ke.max_distance_to_sensor": 300.0
+}

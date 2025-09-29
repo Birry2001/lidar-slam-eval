@@ -1,0 +1,5 @@
+{
+  "/lidar_slam.ros__parameters.slam.localization.plane_nb_neighbors": 7,
+  "/lidar_slam.ros__parameters.slam.localization.planarity_threshold": 0.04,
+  "/lidar_slam.ros__parameters.slam.localization.plane_max_model_error": 0.1
+}
